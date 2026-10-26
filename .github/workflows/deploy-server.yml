@@ -1,0 +1,27 @@
+name: server deploy
+
+# Deployment of one image digest to a project server: deploy/deploy.sh runs on the host with Docker Compose. Not in use:
+# the site is on GitHub Pages. TODO: the transport to the host (SSH with a deploy key, or a cloud run-command agent).
+on:
+  workflow_dispatch:
+    inputs:
+      image:
+        description: "image reference by digest: ghcr.io/<owner>/<repo>@sha256:<64 hex>"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      IMAGE: ${{ inputs.image }}
+    steps:
+      - name: Validate the input
+        run: |
+          [[ "$IMAGE" =~ ^ghcr\.io/[a-z0-9][a-z0-9._/-]{0,200}@sha256:[0-9a-f]{64}$ ]] || { echo "::error::image must be ghcr.io/<owner>/<repo>@sha256:<digest>"; exit 1; }
+      - name: The command for the host
+        run: |
+          echo "run on the server: sudo /opt/fdo-knowledge-dashboard/deploy/deploy.sh $IMAGE" >> "$GITHUB_STEP_SUMMARY"

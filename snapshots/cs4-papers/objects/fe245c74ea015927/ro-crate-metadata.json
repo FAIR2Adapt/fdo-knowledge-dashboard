@@ -1,0 +1,1067 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  "https://w3id.org/ro/terms/earth-science#",
+  "https://w3id.org/ro/terms/workflow-run#",
+  "https://w3id.org/ro/terms/test#",
+  {
+   "citeAs": "https://www.w3.org/ns/iana/link-relations/relation#cite-as",
+   "citeAs2": "http://www.iana.org/assignments/relation/cite-as",
+   "community": "http://w3id.org/ro-id/rohub/model#community",
+   "cdesc": "https://reliance.expertcustomers.ai/vocabulary/cdesc/",
+   "creation_mode": "http://w3id.org/ro-id/rohub/model#creation_mode",
+   "prov": "http://www.w3.org/ns/prov#",
+   "archivedAtTime": "http://purl.org/wf4ever/roevo#archivedAtTime",
+   "archivedBy": "http://purl.org/wf4ever/roevo#archivedBy",
+   "hasArchive": "http://purl.org/wf4ever/roevo#hasArchive",
+   "hasSnapshot": "http://purl.org/wf4ever/roevo#hasSnapshot",
+   "isArchiveOf": "http://purl.org/wf4ever/roevo#isArchiveOf",
+   "isFinalized": "http://purl.org/wf4ever/roevo#isFinalized",
+   "isSnapshotOf": "http://purl.org/wf4ever/roevo#isSnapshotOf",
+   "snapshotedAtTime": "http://purl.org/wf4ever/roevo#snapshotedAtTime",
+   "snapshotedBy": "http://purl.org/wf4ever/roevo#snapshotedBy",
+   "forkedAtTime": "http://purl.org/wf4ever/roevo#forkedAtTime",
+   "forkedBy": "http://purl.org/wf4ever/roevo#forkedBy",
+   "hasFork": "http://purl.org/wf4ever/roevo#hasFork",
+   "asWKT": "http://www.opengis.net/ont/geosparql#asWKT",
+   "hasGeometry": "http://www.opengis.net/ont/geosparql#hasGeometry",
+   "Concept": "https://w3id.org/ro/terms/earth-science#Concept",
+   "FieldOfResearch": "https://w3id.org/ro/terms/earth-science#FieldOfResearch",
+   "IPTC": "https://w3id.org/ro/terms/earth-science#IPTC",
+   "Lemma": "https://w3id.org/ro/terms/earth-science#Lemma",
+   "NASA": "https://w3id.org/ro/terms/earth-science#NASA",
+   "Person1": "https://w3id.org/contentdesc#Person",
+   "Phrase": "https://w3id.org/ro/terms/earth-science#Phrase",
+   "Sentence": "https://w3id.org/ro/terms/earth-science#Sentence",
+   "TimeReference": "https://w3id.org/ro/terms/earth-science#TimeReference",
+   "Domain": "https://w3id.org/contentdesc#Domain",
+   "Organization1": "https://w3id.org/contentdesc#Organization",
+   "Place": "https://w3id.org/contentdesc#Place",
+   "normScore": "https://w3id.org/ro/terms/earth-science#normScore",
+   "path": "https://w3id.org/ro/terms/earth-science#path",
+   "score": "https://w3id.org/ro/terms/earth-science#score",
+   "wikidata": "https://w3id.org/ro/terms/earth-science#wikidata",
+   "doi": "http://purl.org/ontology/bibo/doi",
+   "orcid": "https://w3id.org/dingo#orcid",
+   "template": "https://w3id.org/ro/terms/earth-science#template",
+   "dataType": "https://w3id.org/ro/terms/earth-science#dataType",
+   "datasetManager": "https://w3id.org/ro/terms/earth-science#datasetManager",
+   "minValue": "https://w3id.org/ro/terms/earth-science#minValue",
+   "maxValue": "https://w3id.org/ro/terms/earth-science#maxValue",
+   "status": "https://w3id.org/ro/terms/earth-science#status",
+   "DataCubeCollection": "https://w3id.org/ro/terms/earth-science#DataCubeCollection",
+   "DataCubeProduct": "https://w3id.org/ro/terms/earth-science#DataCubeProduct",
+   "enrichmentSubject": "http://w3id.org/ro-id/rohub/model#enrichmentSubject",
+   "softwareRequirements": "https://schema.org/softwareRequirements",
+   "geonames": "https://w3id.org/ro/terms/earth-science#geonames",
+   "value": "https://w3id.org/ro/terms/earth-science#value",
+   "accountablePerson": "https://schema.org/accountablePerson"
+  }
+ ],
+ "@graph": [
+  {
+   "@type": "CreativeWork",
+   "@id": "ro-crate-metadata.json",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "identifier": "https://w3id.org/ro-id/c594948e-cf4f-44ce-b96e-097e6ba5cd8e",
+   "hasPart": [
+    {
+     "@id": "https://doi.org/10.1088/1748-9326/ab465f",
+     "@type": "File"
+    },
+    {
+     "@id": "https://w3id.org/sciencelive/np/RACxKJTud2NB0PIkVILlmE_fPqpjB9hwTiFDl1xe_eFwk",
+     "@type": "File"
+    },
+    {
+     "@id": "https://w3id.org/sciencelive/np/RA-homXWYSYppy1iVP8vWcCqD_-YlsotNVW0C_Y1if0LE",
+     "@type": "File"
+    },
+    {
+     "@id": "https://w3id.org/sciencelive/np/RAK6IH0qBp9RBJPIPWTdnfjkhPlOBUVdCommHcNm5Y8ho",
+     "@type": "File"
+    }
+   ],
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "https://w3id.org/ro/terms/earth-science#BibliographyResearchObject",
+    "http://purl.org/wf4ever/roevo#LiveRO"
+   ],
+   "creator": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "author": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "datePublished": "2026-10-21 13:06:14.909492+00:00",
+   "dateCreated": "2026-10-21 13:06:14.909492+00:00",
+   "dateModified": "2026-10-22 11:48:01.414782+00:00",
+   "contributor": [],
+   "name": "A surface modelling approach for attribution and disentanglement of the effects of global warming from urbanization in temperature extremes: application to Lisbon",
+   "description": "Abstract\n               Attribution and disentanglement of the effects of global greenhouse gas and land-use changes on temperature extremes in urban areas is a complex and critical issue in the context of regional-to-local climate change mitigation and adaptation. Here, an innovative modelling framework based on a large ensemble of urban climate simulations, using SURFEX (a land-surface model) coupled to TEB (an urban canopy model), forced by E20C (a GCM-based reanalysis), is proposed, and applied to the capital of Portugal—Lisbon. This approach allowed to disentangle the main drivers of change of extreme temperatures in Lisbon, while also improving the simulated summer temperature variability compared to E20C, using station observations as reference. The improvements were physically linked to the strong sensitivity of summer mean and extreme temperatures to local land-use properties. The sensitivity was systematically investigated and robustly demonstrated here, with built-fraction (buildings + roads), albedo and emissivity emerging as key surface parameters. The results revealed a very strong summer temperature increase between 1951–1980 and 1981–2010 periods: 0.90 °C for daily maximum temperature (T\n                  max), and 0.76 °C for daily minimum temperature (T\n                  max). These changes were sensitive to considering different (but constant throughout the simulation) land-uses, varying by about 10% for T\n                  max, and around 17% for T\n                  min. Regarding the temperature extremes (quantified by extreme hot days, EHD, and extreme hot nights, EHN, respectively defined as exceeding the 95th-percentile of T\n                  max and T\n                  min) the changes and their dependencies with the land-use are much more drastic. The isolated effect of changing land-use (keeping the climate forcing unchanged) from rural/natural (low built-fraction) towards dense urbanization (high built-fraction) caused a significant increase in EHN (up to ∼+130 d per 30 years, larger than the effect due to climate forcing alone), and in EHD (∼+60 d per 30 years, which is similar to the effect due to climate forcing alone).",
+   "contentSize": 24525,
+   "encodingFormat": "application/ld+json",
+   "contentUrl": "https://api.rohub.org/api/ros/c594948e-cf4f-44ce-b96e-097e6ba5cd8e/crate/download/",
+   "citeAs": "Gonzalez, Esteban. \"A surface modelling approach for attribution and disentanglement of the effects of global warming from urbanization in temperature extremes: application to Lisbon.\" ROHub. Oct 21 ,2026. https://w3id.org/ro-id/c594948e-cf4f-44ce-b96e-097e6ba5cd8e.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "about": {
+    "@id": "http://eurovoc.europa.eu/2919"
+   },
+   "http://w3id.org/ro-id/rohub/model#creation_mode": "MANUAL",
+   "https://schema.org/isRelatedTo": {
+    "@id": "https://w3id.org/ro-id/c594948e-cf4f-44ce-b96e-097e6ba5cd8e/product/1"
+   },
+   "http://w3id.org/ro-id/rohub/model#enrichmentSubject": [
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/056aa331-a54a-4040-ae03-d74d739860d6"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/0bdbe294-9829-4390-9bed-f42bfe5bd8fd"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/0bddd3f0-124b-41b8-bbd6-846a62d34406"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/0fff875a-ebd1-4286-8eac-2aee3d2d64e7"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1488ae49-a0b5-4439-8e38-cd2c957f9395"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1807e72b-92f1-4ad6-ac55-7ab1c2931a17"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1928b206-c61b-4ccf-bf6e-bc3d6ba244d4"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/193f0052-4672-41ab-a9dd-c6ed50a20773"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1c527e0b-21ec-4c00-accd-73a0b2921cde"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1e80dc8e-922e-4860-a4b5-e15a4fbeb52e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2646b95b-8c78-41bd-931f-e673f731cc17"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2cd6bd73-d109-46a6-b005-55c5d26d15b6"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2da00e48-f20e-4333-b548-a0c7e9674156"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2e9c59f7-4de0-49e3-bc77-5a0bca841722"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2ef36028-ae52-449e-bf62-606b4476f637"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/3aeb77e0-a352-4e20-8a2e-00d32d9edb64"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/418c0fae-d5de-4fdf-b085-9beaec0446e3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/43e47594-02b4-4b2a-953f-ff1ff9bf5c3e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/48aad195-126e-4195-b10d-d72c40d70856"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/55bf17ee-f627-4974-807f-10635e778f8c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/5e6aeff7-12f5-4ee8-b2f8-c9d8fe494311"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/6a2faa95-00f6-4954-9d5b-04389c2b47eb"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/6c9b810c-b749-4291-bb7b-176a494568e2"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/7104bfbd-40a9-4218-9133-c698abf40562"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/75b50fd2-5a24-45f4-86a4-c5b2091d8e88"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/79172803-7a42-4635-a963-173d58efa048"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/7e660091-b5c2-4360-b90f-c37b4d078a8b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/81c199e0-157e-4057-9d09-a3ef82d612e1"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/85806516-3dc8-4d5a-be72-928d1a0ff528"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/866223d7-c632-43a4-a35d-4206e95b6aef"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/908726eb-3c89-4087-b789-1f99bdef964d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/94f5d3e1-1c4b-4d43-bddb-c19cb5cae699"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/9abaf94c-f4b0-4975-92fa-768721649c8b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/9b22cd25-5a55-4a0b-a212-f5abf695b186"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a522618c-be48-4353-a2d6-d0dc8e4d2afb"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a68488c0-8f66-43ef-971e-bacdffd01848"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a7194387-12a5-4378-a2cd-0a54eceb916d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a894a504-2dce-4cc6-b3cb-883857015d26"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/aa7ec06d-d3b7-441d-9d60-8eafebb8c209"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/bc076d33-b01b-46fe-aa31-11a69dbbd0a6"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/bc535db3-2db9-4f59-9f1f-3f667bcf4286"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/bec6e0d2-9f66-4f91-878d-09df9f3814c3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/bee7f3cf-68eb-4585-ab4a-097392536479"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c43aa79d-4fbd-4d46-9b97-0effcf0586ca"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c510228f-7de7-4901-a374-12da4d4bb982"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/cfc431af-8b96-48f3-be79-04d25cc1de3b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/dc88ccb2-37f8-49d2-ae06-fae7bb6213a9"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/dc9a9be3-c992-4653-b4be-d9b278709bd7"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e160fc86-375f-4682-bf1e-0c7428601fcd"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e21b2ccc-6e21-41ff-a6a2-cdcb21a2ec32"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e9192722-71d7-4437-9262-f112fda8ee0e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/eb49a326-24a6-4ec9-917b-aadcada9c84c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/f02b15d6-fb6d-4be9-a1ce-f16586c2143e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/f7478115-22a5-4245-8da3-80f190b2b0af"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/fa99fe2d-ebd1-48b2-9d0e-0085723693e6"
+    }
+   ]
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/2919",
+   "@type": "http://schema.org/DefinedTerm",
+   "name": "Environmental research",
+   "description": ""
+  },
+  {
+   "@id": "https://doi.org/10.1088/1748-9326/ab465f",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Publication"
+   ],
+   "name": "A surface modelling approach for attribution and disentanglement of the effects of global warming from urbanization in temperature extremes: application to Lisbon",
+   "creator": [
+    {
+     "@id": "https://id.crossref.org/contributor/miguel-nogueira-3uzdpoeb3yomp"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://id.crossref.org/contributor/miguel-nogueira-3uzdpoeb3yomp"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2026-10-21 13:06:20.139525+00:00",
+   "dateCreated": "2026-10-21 13:06:20.139525+00:00",
+   "dateModified": "2026-10-21 13:06:22.857119+00:00",
+   "contentUrl": "https://doi.org/10.1088/1748-9326/ab465f",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "description": "Abstract\n               Attribution and disentanglement of the effects of global greenhouse gas and land-use changes on temperature extremes in urban areas is a complex and critical issue in the context of regional-to-local climate change mitigation and adaptation. Here, an innovative modelling framework based on a large ensemble of urban climate simulations, using SURFEX (a land-surface model) coupled to TEB (an urban canopy model), forced by E20C (a GCM-based reanalysis), is proposed, and applied to the capital of Portugal—Lisbon. This approach allowed to disentangle the main drivers of change of extreme temperatures in Lisbon, while also improving the simulated summer temperature variability compared to E20C, using station observations as reference. The improvements were physically linked to the strong sensitivity of summer mean and extreme temperatures to local land-use properties. The sensitivity was systematically investigated and robustly demonstrated here, with built-fraction (buildings + roads), albedo and emissivity emerging as key surface parameters. The results revealed a very strong summer temperature increase between 1951–1980 and 1981–2010 periods: 0.90 °C for daily maximum temperature (T\n                  max), and 0.76 °C for daily minimum temperature (T\n                  max). These changes were sensitive to considering different (but constant throughout the simulation) land-uses, varying by about 10% for T\n                  max, and around 17% for T\n                  min. Regarding the temperature extremes (quantified by extreme hot days, EHD, and extreme hot nights, EHN, respectively defined as exceeding the 95th-percentile of T\n                  max and T\n                  min) the changes and their dependencies with the land-use are much more drastic. The isolated effect of changing land-use (keeping the climate forcing unchanged) from rural/natural (low built-fraction) towards dense urbanization (high built-fraction) caused a significant increase in EHN (up to ∼+130 d per 30 years, larger than the effect due to climate forcing alone), and in EHD (∼+60 d per 30 years, which is similar to the effect due to climate forcing alone)."
+  },
+  {
+   "@id": "https://id.crossref.org/issn/1748-9326",
+   "bibo:issn": "1748-9326",
+   "@type": [
+    "http://purl.org/ontology/bibo/Journal"
+   ],
+   "http://www.w3.org/2002/07/owl#sameAs": "urn:issn:1748-9326",
+   "http://prismstandard.org/namespaces/basic/2.1/issn": "1748-9326",
+   "name": "Environmental Research Letters"
+  },
+  {
+   "@id": "https://id.crossref.org/contributor/pedro-m-m-soares-3uzdpoeb3yomp",
+   "foaf:familyName": "Soares",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Person"
+   ],
+   "foaf:givenName": "Pedro M M",
+   "name": "Pedro M M Soares"
+  },
+  {
+   "@id": "https://id.crossref.org/contributor/miguel-nogueira-3uzdpoeb3yomp",
+   "foaf:givenName": "Miguel",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Person"
+   ],
+   "http://www.w3.org/2002/07/owl#sameAs": {
+    "@id": "https://orcid.org/0000-0003-4587-875X"
+   },
+   "foaf:familyName": "Nogueira",
+   "name": "Miguel Nogueira"
+  },
+  {
+   "@id": "https://w3id.org/sciencelive/np/RACxKJTud2NB0PIkVILlmE_fPqpjB9hwTiFDl1xe_eFwk",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://www.nanopub.org/nschema#Nanopublication"
+   ],
+   "name": "Between the 1951–1980 and 1981–2010 periods, Lisbon experienced a summer temperature increase of 0.90 °C for daily maximums and 0.76 °C for daily minimums.",
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-2104-3187"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-2104-3187"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2026-10-21 14:00:55.175705+00:00",
+   "dateCreated": "2026-10-21 14:00:55.175705+00:00",
+   "dateModified": "2026-10-21 14:01:58.392262+00:00",
+   "contentUrl": "https://w3id.org/sciencelive/np/RACxKJTud2NB0PIkVILlmE_fPqpjB9hwTiFDl1xe_eFwk",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   }
+  },
+  {
+   "@id": "https://w3id.org/sciencelive/np/RA-homXWYSYppy1iVP8vWcCqD_-YlsotNVW0C_Y1if0LE",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://www.nanopub.org/nschema#Nanopublication"
+   ],
+   "name": "Variations in land-use configurations alter the magnitude of daily maximum temperature changes by approximately 10% and daily minimum temperature changes by approximately 17%.",
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-2104-3187"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-2104-3187"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2026-10-21 14:01:15.840914+00:00",
+   "dateCreated": "2026-10-21 14:01:15.840914+00:00",
+   "dateModified": "2026-10-21 14:02:16.550406+00:00",
+   "contentUrl": "https://w3id.org/sciencelive/np/RA-homXWYSYppy1iVP8vWcCqD_-YlsotNVW0C_Y1if0LE",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   }
+  },
+  {
+   "@id": "https://w3id.org/sciencelive/np/RAK6IH0qBp9RBJPIPWTdnfjkhPlOBUVdCommHcNm5Y8ho",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://www.nanopub.org/nschema#Nanopublication"
+   ],
+   "name": "Converting rural land to dense urban areas increases the frequency of extreme hot days by approximately 60 days per 30 years, a magnitude equivalent to the impact of global climate forcing alone.",
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-2104-3187"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-2104-3187"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2026-10-21 14:01:31.157643+00:00",
+   "dateCreated": "2026-10-21 14:01:31.157643+00:00",
+   "dateModified": "2026-10-21 14:02:43.051266+00:00",
+   "contentUrl": "https://w3id.org/sciencelive/np/RAK6IH0qBp9RBJPIPWTdnfjkhPlOBUVdCommHcNm5Y8ho",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/c594948e-cf4f-44ce-b96e-097e6ba5cd8e/product/1",
+   "https://schema.org/spatialCoverage": {
+    "@id": "https://w3id.org/ro-id/c594948e-cf4f-44ce-b96e-097e6ba5cd8e/spatial/3"
+   },
+   "@type": [
+    "https://schema.org/Product"
+   ],
+   "https://schema.org/keywords": "temperature event, climate change hotspot, global warming impact, simulation ensemble, summer temperature extremes, Commons attribution, Res. Lett, application to Lisbon, Lisbon station pressure data, SURFEX-TEB simulation result, CTL simulation, Tmax value, land-surface model, SURFEX-TEB simulations Rur, observation data availability, land-use characterization"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/c594948e-cf4f-44ce-b96e-097e6ba5cd8e/spatial/3",
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/3467747"
+   },
+   "https://schema.org/name": "Campo Grande"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/c594948e-cf4f-44ce-b96e-097e6ba5cd8e/spatial/1",
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/2264397"
+   },
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/name": "Portugal"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/c594948e-cf4f-44ce-b96e-097e6ba5cd8e/spatial/2",
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/2267057"
+   },
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/name": "Lisbon"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/193f0052-4672-41ab-a9dd-c6ed50a20773",
+   "https://w3id.org/ro/terms/earth-science#score": "4.9",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "name": "sensitivity",
+   "https://w3id.org/ro/terms/earth-science#normScore": "13.960113960113961"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2da00e48-f20e-4333-b548-a0c7e9674156",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Funding",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/49b6dbca-8164-46fd-9c83-b08aac076afa"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2ef36028-ae52-449e-bf62-606b4476f637",
+   "name": "Portugal",
+   "@type": [
+    "https://w3id.org/contentdesc#Place"
+   ],
+   "https://w3id.org/ro/terms/earth-science#geonames": {
+    "@id": "https://www.geonames.org/2264397"
+   },
+   "https://w3id.org/ro/terms/earth-science#wikidata": {
+    "@id": "https://www.wikidata.org/wiki/Q45"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f84daebd-168f-4a32-8f1d-d7608fd1a252",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Geographical Scope",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/97903960-09ed-4c1c-b843-9a2ddea07a18"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/0bddd3f0-124b-41b8-bbd6-846a62d34406",
+   "https://w3id.org/ro/terms/earth-science#normScore": "32.89760348583878",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "name": "A surface modelling approach for attribution and disentanglement of the effects of global warming from urbanization in temperature extremes: application to Lisbon Abstract",
+   "https://w3id.org/ro/terms/earth-science#score": "15.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e21b2ccc-6e21-41ff-a6a2-cdcb21a2ec32",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/956bc751-d007-4bb0-b0b4-c9f769681443"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Key Type Measures"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a894a504-2dce-4cc6-b3cb-883857015d26",
+   "https://w3id.org/ro/terms/earth-science#normScore": "13.675213675213675",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "4.8",
+   "name": "E20C"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/3aeb77e0-a352-4e20-8a2e-00d32d9edb64",
+   "https://w3id.org/ro/terms/earth-science#path": "Environment/Climate change",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "name": "Climate change"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/908726eb-3c89-4087-b789-1f99bdef964d",
+   "name": "result",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "5.4",
+   "https://w3id.org/ro/terms/earth-science#normScore": "6.61764705882353"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8bbc7aa3-7eeb-424e-a6a7-8e314c4c8374",
+   "name": "Academia/ Research Institutions",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/989deb52-abd5-4f6a-a7f9-caea189e2e77",
+   "name": "none",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/dc9a9be3-c992-4653-b4be-d9b278709bd7",
+   "https://w3id.org/ro/terms/earth-science#score": "10.9",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "temperature",
+   "https://w3id.org/ro/terms/earth-science#normScore": "13.357843137254903"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/056aa331-a54a-4040-ae03-d74d739860d6",
+   "https://w3id.org/ro/terms/earth-science#score": "5.1",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "dependent territory",
+   "https://w3id.org/ro/terms/earth-science#normScore": "6.25"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1c527e0b-21ec-4c00-accd-73a0b2921cde",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "9.1",
+   "https://w3id.org/ro/terms/earth-science#normScore": "11.151960784313726",
+   "name": "mean temperature"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/81c199e0-157e-4057-9d09-a3ef82d612e1",
+   "https://w3id.org/ro/terms/earth-science#normScore": "18.233618233618234",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "6.4",
+   "name": "Lisbon"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f7478115-22a5-4245-8da3-80f190b2b0af",
+   "https://w3id.org/ro/terms/earth-science#score": "10.9",
+   "@type": [
+    "https://w3id.org/contentdesc#Domain"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "69.4267515923567",
+   "name": "meteorology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e9192722-71d7-4437-9262-f112fda8ee0e",
+   "https://w3id.org/ro/terms/earth-science#score": "5.9",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "name": "summer mean temperature",
+   "https://w3id.org/ro/terms/earth-science#normScore": "21.14695340501792"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/fa99fe2d-ebd1-48b2-9d0e-0085723693e6",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#TimeReference"
+   ],
+   "name": "1981-2010 periods"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/43e47594-02b4-4b2a-953f-ff1ff9bf5c3e",
+   "@type": [
+    "https://w3id.org/contentdesc#Place"
+   ],
+   "https://w3id.org/ro/terms/earth-science#geonames": {
+    "@id": "https://www.geonames.org/2267057"
+   },
+   "https://w3id.org/ro/terms/earth-science#wikidata": {
+    "@id": "https://www.wikidata.org/wiki/Q597"
+   },
+   "name": "Lisbon"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/55bf17ee-f627-4974-807f-10635e778f8c",
+   "name": "Policy Scale",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/068ec913-701a-4cc5-b3d4-62e00c3e010d"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/cfc431af-8b96-48f3-be79-04d25cc1de3b",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/989deb52-abd5-4f6a-a7f9-caea189e2e77"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "IPCC"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/956bc751-d007-4bb0-b0b4-c9f769681443",
+   "name": "Knowledge and Behavioural Change",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1928b206-c61b-4ccf-bf6e-bc3d6ba244d4",
+   "name": "land-use",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "8.4",
+   "https://w3id.org/ro/terms/earth-science#normScore": "23.931623931623932"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7e660091-b5c2-4360-b90f-c37b4d078a8b",
+   "name": "Stakeholders",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/8bbc7aa3-7eeb-424e-a6a7-8e314c4c8374"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/866223d7-c632-43a4-a35d-4206e95b6aef",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "name": "This approach allowed to disentangle the main drivers of change of extreme temperatures in Lisbon, while also improving the simulated summer temperature variability compared to E20C, using station observations as reference.",
+   "https://w3id.org/ro/terms/earth-science#score": "12.4",
+   "https://w3id.org/ro/terms/earth-science#normScore": "27.01525054466231"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/85806516-3dc8-4d5a-be72-928d1a0ff528",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Atmospheric Sciences"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/aa7ec06d-d3b7-441d-9d60-8eafebb8c209",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Physical Geography and Environmental Geoscience"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/79172803-7a42-4635-a963-173d58efa048",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "4.6",
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.637254901960784",
+   "name": "emissivity"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7575a5ce-1bb8-4c53-af54-eee7d19d3dd0",
+   "name": "Climate change impacts, risks and adaptation",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/6a2faa95-00f6-4954-9d5b-04389c2b47eb",
+   "https://w3id.org/ro/terms/earth-science#score": "4.9",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "6.004901960784315",
+   "name": "fraction"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1488ae49-a0b5-4439-8e38-cd2c957f9395",
+   "https://w3id.org/ro/terms/earth-science#score": "3.7",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "13.261648745519715",
+   "name": "Lisbon abstract"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1e80dc8e-922e-4860-a4b5-e15a4fbeb52e",
+   "name": "maximum",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.514705882352941",
+   "https://w3id.org/ro/terms/earth-science#score": "4.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1807e72b-92f1-4ad6-ac55-7ab1c2931a17",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "User Needs (RAST)",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/0f21dc34-7f28-4e7c-930b-4f471aec2f89"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/9b22cd25-5a55-4a0b-a212-f5abf695b186",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "7.6",
+   "https://w3id.org/ro/terms/earth-science#normScore": "27.24014336917563",
+   "name": "land-use property"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a522618c-be48-4353-a2d6-d0dc8e4d2afb",
+   "name": "physics",
+   "@type": [
+    "https://w3id.org/contentdesc#Domain"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "30.573248407643312",
+   "https://w3id.org/ro/terms/earth-science#score": "4.8"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/9abaf94c-f4b0-4975-92fa-768721649c8b",
+   "@type": [
+    "https://w3id.org/contentdesc#Organization"
+   ],
+   "name": "E20C"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2e9c59f7-4de0-49e3-bc77-5a0bca841722",
+   "name": "per 30 years",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#TimeReference"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/418c0fae-d5de-4fdf-b085-9beaec0446e3",
+   "name": "Earth Sciences",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FieldOfResearch"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a7194387-12a5-4378-a2cd-0a54eceb916d",
+   "name": "Chemistry",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "https://w3id.org/ro/terms/earth-science#path": "Science and technology/Natural science/Chemistry"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/bc076d33-b01b-46fe-aa31-11a69dbbd0a6",
+   "https://w3id.org/ro/terms/earth-science#score": "8.8",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "Lisbon",
+   "https://w3id.org/ro/terms/earth-science#normScore": "10.784313725490199"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a68488c0-8f66-43ef-971e-bacdffd01848",
+   "https://w3id.org/ro/terms/earth-science#score": "6.8",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "sensitivity",
+   "https://w3id.org/ro/terms/earth-science#normScore": "8.333333333333334"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/49b6dbca-8164-46fd-9c83-b08aac076afa",
+   "name": "Not reported/ Unknown",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/bee7f3cf-68eb-4585-ab4a-097392536479",
+   "https://w3id.org/ro/terms/earth-science#score": "5.1",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "extrication",
+   "https://w3id.org/ro/terms/earth-science#normScore": "6.25"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/6c9b810c-b749-4291-bb7b-176a494568e2",
+   "https://w3id.org/ro/terms/earth-science#normScore": "40.087145969498906",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "name": "The improvements were physically linked to the strong sensitivity of summer mean and extreme temperatures to local land-use properties.",
+   "https://w3id.org/ro/terms/earth-science#score": "18.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7104bfbd-40a9-4218-9133-c698abf40562",
+   "name": "Climate-ADAPT Adaptation Sectors",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/daca8ab3-973e-4be3-852a-fdc4f12f8d2f"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/daca8ab3-973e-4be3-852a-fdc4f12f8d2f",
+   "name": "Urban",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/0bdbe294-9829-4390-9bed-f42bfe5bd8fd",
+   "https://w3id.org/ro/terms/earth-science#normScore": "16.845878136200717",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "name": "T max",
+   "https://w3id.org/ro/terms/earth-science#score": "4.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/dc88ccb2-37f8-49d2-ae06-fae7bb6213a9",
+   "https://w3id.org/ro/terms/earth-science#score": "4.7",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.759803921568627",
+   "name": "climate"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/5e6aeff7-12f5-4ee8-b2f8-c9d8fe494311",
+   "name": "summer",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#TimeReference"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/48aad195-126e-4195-b10d-d72c40d70856",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/cf3b5c8c-2234-4047-8e78-0d1c4a648e89"
+   },
+   "name": "Methodology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/0fff875a-ebd1-4286-8eac-2aee3d2d64e7",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#NASA"
+   ],
+   "name": "Geosciences"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/eb49a326-24a6-4ec9-917b-aadcada9c84c",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "11.7",
+   "name": "land-use",
+   "https://w3id.org/ro/terms/earth-science#normScore": "14.338235294117649"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/bec6e0d2-9f66-4f91-878d-09df9f3814c3",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "https://w3id.org/ro/terms/earth-science#path": "Weather",
+   "name": "Weather"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/0f21dc34-7f28-4e7c-930b-4f471aec2f89",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Data on climate"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e160fc86-375f-4682-bf1e-0c7428601fcd",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/df12b74f-fbd1-420a-9f61-c514fce19a20"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Climate Hazard"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c43aa79d-4fbd-4d46-9b97-0effcf0586ca",
+   "name": "temperature extreme",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "11.965811965811966",
+   "https://w3id.org/ro/terms/earth-science#score": "4.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2646b95b-8c78-41bd-931f-e673f731cc17",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "21.505376344086024",
+   "https://w3id.org/ro/terms/earth-science#score": "6.0",
+   "name": "disentanglement of the effect"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/068ec913-701a-4cc5-b3d4-62e00c3e010d",
+   "name": "Local policy",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/df12b74f-fbd1-420a-9f61-c514fce19a20",
+   "name": "Extreme heat",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/cf3b5c8c-2234-4047-8e78-0d1c4a648e89",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Modeling/ Simulation"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2cd6bd73-d109-46a6-b005-55c5d26d15b6",
+   "name": "Knowledge Sector (EEA)",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/7575a5ce-1bb8-4c53-af54-eee7d19d3dd0"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c510228f-7de7-4901-a374-12da4d4bb982",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Meteorology and climatology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/bc535db3-2db9-4f59-9f1f-3f667bcf4286",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "name": "Housing and urban planning policy",
+   "https://w3id.org/ro/terms/earth-science#path": "Politics/Government policy/Interior policy/Housing and urban planning policy"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/97903960-09ed-4c1c-b843-9a2ddea07a18",
+   "name": "City in Portugal",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f02b15d6-fb6d-4be9-a1ce-f16586c2143e",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "name": "mean temperature",
+   "https://w3id.org/ro/terms/earth-science#normScore": "18.233618233618234",
+   "https://w3id.org/ro/terms/earth-science#score": "6.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/75b50fd2-5a24-45f4-86a4-c5b2091d8e88",
+   "name": "of summer",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#TimeReference"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/94f5d3e1-1c4b-4d43-bddb-c19cb5cae699",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#TimeReference"
+   ],
+   "name": "between 1951-1980"
+  },
+  {
+   "@id": "mailto:eg.guardia@gmail.com",
+   "name": "Esteban Gonzalez",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Agent"
+   ]
+  }
+ ]
+}

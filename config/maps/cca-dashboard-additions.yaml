@@ -1,0 +1,127 @@
+# owner: WP2; Dashboard profile v1.0.0 additions to CCA-Crate 0.9. Consumer mappings by Task 4.1 are marked "Consumer mapping".
+id: cca-dashboard-additions
+status: draft
+overlay: true
+source: "Dashboard terms (dashboard, panel, plugin, input, setting, access) read on top of cca-crate-0.9; applied when a contract names this map through profile_additions"
+selects: []
+extends: cca-crate-0.9
+fields:
+  access_rights: {iri: "http://purl.org/dc/terms/accessRights", level: should}
+  conditions_of_access: {iri: "https://schema.org/conditionsOfAccess", level: should}
+  policy: {iri: "http://www.w3.org/ns/odrl/2/hasPolicy", level: should}
+  # Consumer mapping; the draft does not list isBasedOn on the root. Read as the record's based_on, as for Loom records.
+  based_on: {iri: "https://schema.org/isBasedOn", level: may, many: true}
+entities:
+  Dataset:
+    fields:
+      access_rights: {iri: "http://purl.org/dc/terms/accessRights", level: should}
+      conditions_of_access: {iri: "https://schema.org/conditionsOfAccess", level: should}
+      policy: {iri: "http://www.w3.org/ns/odrl/2/hasPolicy", level: may}
+      # Consumer mapping; the draft does not state the axis order of the box.
+      spatial_box: {iri: ["https://schema.org/spatialCoverage", "https://schema.org/geo", "https://schema.org/box"], level: may}
+  Distribution:
+    via: "https://schema.org/distribution"
+    role: resource
+    level: should
+    fields:
+      url: {iri: "https://schema.org/contentUrl", level: should}
+      media_type: {iri: "https://schema.org/encodingFormat", level: should}
+      # Consumer mappings; not in the draft.
+      size: {iri: "https://schema.org/contentSize", level: may}
+      checksum: {iri: "https://w3id.org/fair2adapt/urban-pfr#sha256", level: may}
+  Variable:
+    via: "https://schema.org/variableMeasured"
+    type: "https://schema.org/PropertyValue"
+    level: should
+    fields:
+      name: {iri: "https://schema.org/name", level: should}
+      property_id: {iri: "https://schema.org/propertyID", level: should}
+      unit_code: {iri: "https://schema.org/unitCode", level: should}
+      unit_text: {iri: "https://schema.org/unitText", level: may}
+      description: {iri: "https://schema.org/description", level: may}
+  Claim:
+    via: "https://schema.org/hasClaim"
+    provides: [Assertion]
+    level: may
+    fields:
+      text: {iri: "https://schema.org/text", level: should}
+      record: {iri: "http://purl.org/dc/terms/isReferencedBy", level: should}
+      about: {iri: "https://schema.org/about", level: may}   # Consumer mapping; not in the draft.
+  # Consumer mapping: additionalProperty entries read by name; the draft marks their IRIs as to be agreed.
+  Property:
+    via: "https://schema.org/additionalProperty"
+    level: may
+    fields:
+      name: {iri: "https://schema.org/name", level: should}
+      value: {iri: "https://schema.org/value", level: should}
+
+  # Reached from the root by mainEntity: consumer mapping; the draft does not state how the dashboard entity is found.
+  Dashboard:
+    via: "https://schema.org/mainEntity"
+    type: "https://schema.org/CreativeWork"
+    level: may
+    fields:
+      name: {iri: "https://schema.org/name", level: should}
+      # Consumer mappings: the draft has no description or status row on the Dashboard.
+      description: {iri: "https://schema.org/description", level: may}
+      status: {iri: "https://schema.org/creativeWorkStatus", level: may}
+      about: {iri: "https://schema.org/about", level: should}
+      panels: {iri: "https://schema.org/hasPart", level: should, many: true}
+      style: {iri: "https://schema.org/additionalProperty", level: may, many: true}
+  # Consumer mapping: collection members are referenced by PID through hasPart; the draft names no collection entity.
+  # Consumer mapping: dashboard-level style values (PropertyValue named by Dashboard.style) are collected by type and matched by identifier; the Property rule above reaches panel values only.
+  Style:
+    type: "https://schema.org/PropertyValue"
+    level: may
+    fields:
+      name: {iri: "https://schema.org/name", level: should}
+      value: {iri: "https://schema.org/value", level: should}
+  Collection:
+    type: "https://schema.org/Collection"
+    level: may
+    fields:
+      name: {iri: "https://schema.org/name", level: may}
+      members: {iri: "https://schema.org/hasPart", level: should, many: true}
+      modified: {iri: "https://schema.org/dateModified", level: may}
+  # Temporary consumer mapping; the draft profile does not yet define a normative panel type.
+  Panel:
+    type: "https://schema.org/WebPageElement"
+    level: may
+    fields:
+      name: {iri: "https://schema.org/name", level: may}
+      instrument: {iri: "https://schema.org/instrument", level: should}
+      object: {iri: "https://schema.org/object", level: should}
+      query: {iri: "https://schema.org/query", level: may}
+      position: {iri: "https://schema.org/position", level: may}
+  # Reached from the root by mainEntity: consumer mapping, as for Dashboard.
+  Plugin:
+    via: "https://schema.org/mainEntity"
+    type: "https://schema.org/SoftwareApplication"
+    provides: [Component]
+    level: may
+    fields:
+      name: {iri: "https://schema.org/name", level: should}
+      kind: {iri: "https://schema.org/additionalType", level: should}
+      url: {iri: "https://schema.org/url", level: should}
+      version: {iri: "https://schema.org/softwareVersion", level: may}
+      inputs: {iri: "https://bioschemas.org/properties/input", level: should, many: true}
+      settings: {iri: "https://schema.org/additionalProperty", level: may, many: true}
+      interface: {iri: "https://schema.org/softwareRequirements", level: may}
+  Input:
+    type: "https://bioschemas.org/FormalParameter"
+    level: may
+    fields:
+      name: {iri: "https://schema.org/name", level: should}   # Consumer mapping: the stable input name a renderer binds to.
+      kind: {iri: "https://schema.org/additionalType", level: should}
+      variables: {iri: "https://schema.org/variableMeasured", level: may, many: true}
+      formats: {iri: "https://schema.org/encodingFormat", level: may, many: true}
+      shape: {iri: "http://purl.org/dc/terms/conformsTo", level: may}
+      required: {iri: "https://schema.org/valueRequired", level: may}
+      source: {iri: "https://schema.org/additionalProperty", level: may}
+  Setting:
+    type: "https://schema.org/PropertyValueSpecification"
+    level: may
+    fields:
+      name: {iri: "https://schema.org/valueName", level: should}
+      default: {iri: "https://schema.org/defaultValue", level: may}
+      description: {iri: "https://schema.org/description", level: may}

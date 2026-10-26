@@ -1,0 +1,13 @@
+.git
+.venv
+**/__pycache__
+**/*.pyc
+dist*
+tests-local
+.env
+node_modules
+**/.*.staging
+**/.*.previous
+**/*.lock
+.github
+doc_review*

@@ -1,0 +1,1114 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  "https://w3id.org/ro/terms/earth-science#",
+  "https://w3id.org/ro/terms/workflow-run#",
+  "https://w3id.org/ro/terms/test#",
+  {
+   "citeAs": "https://www.w3.org/ns/iana/link-relations/relation#cite-as",
+   "citeAs2": "http://www.iana.org/assignments/relation/cite-as",
+   "community": "http://w3id.org/ro-id/rohub/model#community",
+   "cdesc": "https://reliance.expertcustomers.ai/vocabulary/cdesc/",
+   "creation_mode": "http://w3id.org/ro-id/rohub/model#creation_mode",
+   "prov": "http://www.w3.org/ns/prov#",
+   "archivedAtTime": "http://purl.org/wf4ever/roevo#archivedAtTime",
+   "archivedBy": "http://purl.org/wf4ever/roevo#archivedBy",
+   "hasArchive": "http://purl.org/wf4ever/roevo#hasArchive",
+   "hasSnapshot": "http://purl.org/wf4ever/roevo#hasSnapshot",
+   "isArchiveOf": "http://purl.org/wf4ever/roevo#isArchiveOf",
+   "isFinalized": "http://purl.org/wf4ever/roevo#isFinalized",
+   "isSnapshotOf": "http://purl.org/wf4ever/roevo#isSnapshotOf",
+   "snapshotedAtTime": "http://purl.org/wf4ever/roevo#snapshotedAtTime",
+   "snapshotedBy": "http://purl.org/wf4ever/roevo#snapshotedBy",
+   "forkedAtTime": "http://purl.org/wf4ever/roevo#forkedAtTime",
+   "forkedBy": "http://purl.org/wf4ever/roevo#forkedBy",
+   "hasFork": "http://purl.org/wf4ever/roevo#hasFork",
+   "asWKT": "http://www.opengis.net/ont/geosparql#asWKT",
+   "hasGeometry": "http://www.opengis.net/ont/geosparql#hasGeometry",
+   "Concept": "https://w3id.org/ro/terms/earth-science#Concept",
+   "FieldOfResearch": "https://w3id.org/ro/terms/earth-science#FieldOfResearch",
+   "IPTC": "https://w3id.org/ro/terms/earth-science#IPTC",
+   "Lemma": "https://w3id.org/ro/terms/earth-science#Lemma",
+   "NASA": "https://w3id.org/ro/terms/earth-science#NASA",
+   "Person1": "https://w3id.org/contentdesc#Person",
+   "Phrase": "https://w3id.org/ro/terms/earth-science#Phrase",
+   "Sentence": "https://w3id.org/ro/terms/earth-science#Sentence",
+   "TimeReference": "https://w3id.org/ro/terms/earth-science#TimeReference",
+   "Domain": "https://w3id.org/contentdesc#Domain",
+   "Organization1": "https://w3id.org/contentdesc#Organization",
+   "Place": "https://w3id.org/contentdesc#Place",
+   "normScore": "https://w3id.org/ro/terms/earth-science#normScore",
+   "path": "https://w3id.org/ro/terms/earth-science#path",
+   "score": "https://w3id.org/ro/terms/earth-science#score",
+   "wikidata": "https://w3id.org/ro/terms/earth-science#wikidata",
+   "doi": "http://purl.org/ontology/bibo/doi",
+   "orcid": "https://w3id.org/dingo#orcid",
+   "template": "https://w3id.org/ro/terms/earth-science#template",
+   "dataType": "https://w3id.org/ro/terms/earth-science#dataType",
+   "datasetManager": "https://w3id.org/ro/terms/earth-science#datasetManager",
+   "minValue": "https://w3id.org/ro/terms/earth-science#minValue",
+   "maxValue": "https://w3id.org/ro/terms/earth-science#maxValue",
+   "status": "https://w3id.org/ro/terms/earth-science#status",
+   "DataCubeCollection": "https://w3id.org/ro/terms/earth-science#DataCubeCollection",
+   "DataCubeProduct": "https://w3id.org/ro/terms/earth-science#DataCubeProduct",
+   "enrichmentSubject": "http://w3id.org/ro-id/rohub/model#enrichmentSubject",
+   "softwareRequirements": "https://schema.org/softwareRequirements",
+   "geonames": "https://w3id.org/ro/terms/earth-science#geonames",
+   "value": "https://w3id.org/ro/terms/earth-science#value",
+   "accountablePerson": "https://schema.org/accountablePerson"
+  }
+ ],
+ "@graph": [
+  {
+   "@type": "CreativeWork",
+   "@id": "ro-crate-metadata.json",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "identifier": "https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db",
+   "hasPart": [
+    {
+     "@id": "https://doi.org/10.1016/j.buildenv.2015.05.019",
+     "@type": "File"
+    },
+    {
+     "@id": "https://w3id.org/sciencelive/np/RA6qAKGQuUGkUFkgqUn2mrovjHV-nm3Zq3umGQqILb2Bw",
+     "@type": "File"
+    },
+    {
+     "@id": "https://w3id.org/sciencelive/np/RARnp1x0ixvxqpIUnmvhd4R5tj3D8U_czJviSGw5j56og",
+     "@type": "File"
+    }
+   ],
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "https://w3id.org/ro/terms/earth-science#BibliographyResearchObject",
+    "http://purl.org/wf4ever/roevo#LiveRO"
+   ],
+   "creator": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "author": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "datePublished": "2026-10-21 14:15:42.060497+00:00",
+   "dateCreated": "2026-10-21 14:15:42.060497+00:00",
+   "dateModified": "2026-10-23 07:47:48.026533+00:00",
+   "contributor": [],
+   "name": "Climate change and thermal comfort in Southern Europe housing: A case study from Lisbon",
+   "description": "The world has been experiencing a significant increase in daily average temperatures per decade and climate change scenarios are projecting high probability of more frequent heat waves. In vulnerable regions, like Southern Europe, where most of the residential buildings still rely on natural ventilation for cooling, impact on thermal comfort can be significant in terms of health, well-being and also energy consumption. The question is particularly important for the existing building stock, which was not designed considering the projected future climate conditions and is prone to be subjected to interventions with the purpose of improving thermal performance. The study presents a vulnerability framework and methodology for the assessment of thermal comfort in existing dwellings in the context of climate change. Results relating to a 1960s typical building case study in Lisbon, Portugal, suggest that specific dwelling characteristics, such as orientation, and occupancy profiles are relevant when assessing vulnerability, suggesting significant differences, of up to 91% in discomfort hours on an annual basis. Furthermore, increased insulation seems to be effective in decreasing discomfort, as the best results (48% in discomfort hours decrease) stem from a context of external insulation for a heatwave situation. The methodology can be useful for assessing vulnerability in existing dwellings and its specific conditions. It can also contribute to understanding the effect of energy retrofitting measures in future climate conditions, assisting energy efficiency policies and decision-making regarding retrofit interventions.",
+   "contentSize": 24636,
+   "encodingFormat": "application/ld+json",
+   "contentUrl": "https://api.rohub.org/api/ros/1bffc87b-d080-41ec-96b5-5f46ecbd76db/crate/download/",
+   "citeAs": "Gonzalez, Esteban. \"Climate change and thermal comfort in Southern Europe housing: A case study from Lisbon.\" ROHub. Oct 21 ,2026. https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "about": {
+    "@id": "http://eurovoc.europa.eu/2919"
+   },
+   "http://w3id.org/ro-id/rohub/model#creation_mode": "MANUAL",
+   "https://schema.org/isRelatedTo": {
+    "@id": "https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db/product/1"
+   },
+   "http://w3id.org/ro-id/rohub/model#enrichmentSubject": [
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/070811f0-b29e-458c-a4be-a4c170da02a9"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/0853a35e-041d-44e3-b808-4f06fb946403"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/0b55c02d-9759-497b-b0e2-3975ea7e52a0"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/150445bb-7c9c-41c7-ac1a-b13d5de192cc"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/16f95926-78f6-4b15-b005-41e0e2f1882b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/18014020-7a59-4cfe-a694-8c0269a33dd4"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1833990a-3a94-485c-8b17-92777315a32b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1a170b9b-f974-4ec0-b744-0c7364531432"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1aca3066-9618-438d-bd46-7bbcbf0a7878"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/21ac16b0-9942-45d6-87f8-c50edf54e4fd"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/25857173-45cf-41f1-b943-755b51a4ee55"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/29585bee-f5ff-42fc-beee-5aff1f113034"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2b5ed0c6-1b24-4a31-b709-c6900b5f7232"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2d6f4aef-c0aa-4369-963b-b949a7bc2b01"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2d761d59-4c67-4a05-8b28-94b868ef075c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/30d4aaf2-f717-4e77-a57e-5de40151f7a3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/33b4f5b7-baea-45f7-a180-993122a6503d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/3404c8a6-eceb-4001-b7b9-26632323428a"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/35b22b73-c6b1-4c31-8ce9-ac665653c867"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/3f8356e4-9657-4841-9209-001a5015f930"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/40421b63-bbe2-4166-b35f-0ed5094e4d55"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/43fccfd4-0ae3-4269-8c05-a794859891cf"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/4439c3ba-5f12-4cc1-9b97-7706f41de2f2"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/49858875-2c30-46ca-8991-20adbcf853c7"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/4e7b81e7-6c5a-4226-905b-ca655d035068"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/54ffb97c-3485-4d01-9ac3-272c72fcea42"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/5796402d-6dd7-47ee-b99b-969733773500"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/59de5c37-8767-420d-bb0c-ad6eca9398b1"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/70f1a511-7b96-4226-92d8-22c052e1c5d7"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/733ca09e-9bdd-4a78-8472-b6112b0b677b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/7c71f6cd-ed26-4536-a6b4-875cd56fbb23"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/7cbae3db-feea-47a1-b915-c929802824cf"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/902b68bb-8ca2-45f0-8c10-261e0dad9947"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/90944e09-5981-46b9-b72f-3374f68b2201"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/92cb19cc-d92b-49cb-87ea-f06a3610d537"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/9469de0a-d3b3-4121-b0ce-aa94f85b1b6d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/974c9d7f-b90a-44e3-b0c7-182af0f79aea"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/9e648765-fea1-4767-a96d-2c7fad81d375"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/9f9d3e56-c881-49d5-929e-7b0f601ee702"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a1818d3f-1f49-4c30-a3fb-baef4a11d46c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a56bd4f1-ef36-4264-b477-b2f194fdd1ba"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a7d67b35-109a-45f5-8103-c5726ff06d2e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/abd0ab8a-5e82-47bc-a972-621beeaa8711"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/ac75cc8f-c126-44f2-848a-8a8a1a95806e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/b0b98263-aa38-47f0-a420-900b1a8a9bea"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/b8a887ba-6a5f-427d-a6bf-6fc134b5cff1"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c01811da-4e01-4ddb-9733-81df454af20d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c3fabbb4-8d90-4df2-a0b1-5e54ec665914"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c9d01977-5272-4772-80b5-a95e4eb3c354"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/dbfd96a1-8b8f-46f3-894a-6d5a1783be0d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/dc32e03c-a7f2-466a-937d-0cb99a57b035"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/dc6d4b8a-6059-4466-8c24-e8fd7948f354"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e10992f2-5040-43f1-a08d-62b8470a8b92"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e2c1b0cc-80f6-43e2-ad50-22051f3a5605"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e62eb620-33d0-4c23-8d21-9b199e45bb49"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e91c1522-22da-43ab-8bcd-c7a45437a829"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/ed232959-481d-405a-b58f-2660e920af15"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/f55a1cd6-676b-4a7b-b71a-b26c6c9723f2"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/f8ef683d-c5a0-451b-82c4-00ef62b533a3"
+    }
+   ]
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/2919",
+   "@type": "http://schema.org/DefinedTerm",
+   "name": "Environmental research",
+   "description": ""
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.buildenv.2015.05.019",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Publication"
+   ],
+   "name": "Climate change and thermal comfort in Southern Europe housing: A case study from Lisbon",
+   "creator": [
+    {
+     "@id": "https://id.crossref.org/contributor/ricardo-barbosa-1zx9nbq6f0qkq"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://id.crossref.org/contributor/ricardo-barbosa-1zx9nbq6f0qkq"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2026-10-21 14:15:46.961204+00:00",
+   "dateCreated": "2026-10-21 14:15:46.961204+00:00",
+   "dateModified": "2026-10-21 14:15:51.446919+00:00",
+   "contentUrl": "https://doi.org/10.1016/j.buildenv.2015.05.019",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "description": "The world has been experiencing a significant increase in daily average temperatures per decade and climate change scenarios are projecting high probability of more frequent heat waves. In vulnerable regions, like Southern Europe, where most of the residential buildings still rely on natural ventilation for cooling, impact on thermal comfort can be significant in terms of health, well-being and also energy consumption. The question is particularly important for the existing building stock, which was not designed considering the projected future climate conditions and is prone to be subjected to interventions with the purpose of improving thermal performance. The study presents a vulnerability framework and methodology for the assessment of thermal comfort in existing dwellings in the context of climate change. Results relating to a 1960s typical building case study in Lisbon, Portugal, suggest that specific dwelling characteristics, such as orientation, and occupancy profiles are relevant when assessing vulnerability, suggesting significant differences, of up to 91% in discomfort hours on an annual basis. Furthermore, increased insulation seems to be effective in decreasing discomfort, as the best results (48% in discomfort hours decrease) stem from a context of external insulation for a heatwave situation. The methodology can be useful for assessing vulnerability in existing dwellings and its specific conditions. It can also contribute to understanding the effect of energy retrofitting measures in future climate conditions, assisting energy efficiency policies and decision-making regarding retrofit interventions."
+  },
+  {
+   "@id": "https://id.crossref.org/contributor/ricardo-barbosa-1zx9nbq6f0qkq",
+   "name": "Ricardo Barbosa",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Person"
+   ],
+   "foaf:familyName": "Barbosa",
+   "foaf:givenName": "Ricardo"
+  },
+  {
+   "@id": "https://id.crossref.org/contributor/rui-santos-1zx9nbq6f0qkq",
+   "foaf:givenName": "Rui",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Person"
+   ],
+   "name": "Rui Santos",
+   "foaf:familyName": "Santos"
+  },
+  {
+   "@id": "https://id.crossref.org/issn/0360-1323",
+   "bibo:issn": "0360-1323",
+   "@type": [
+    "http://purl.org/ontology/bibo/Journal"
+   ],
+   "name": "Building and Environment",
+   "http://prismstandard.org/namespaces/basic/2.1/issn": "0360-1323",
+   "http://www.w3.org/2002/07/owl#sameAs": "urn:issn:0360-1323"
+  },
+  {
+   "@id": "https://id.crossref.org/contributor/romeu-vicente-1zx9nbq6f0qkq",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Person"
+   ],
+   "foaf:familyName": "Vicente",
+   "name": "Romeu Vicente",
+   "foaf:givenName": "Romeu"
+  },
+  {
+   "@id": "https://w3id.org/sciencelive/np/RA6qAKGQuUGkUFkgqUn2mrovjHV-nm3Zq3umGQqILb2Bw",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Publication"
+   ],
+   "name": "AIDA sentence: Climate change is projected to significantly increase the frequency of heat waves, leading to up to ...",
+   "creator": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "author": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2026-10-21 14:15:49.357239+00:00",
+   "dateCreated": "2026-10-21 14:15:49.357239+00:00",
+   "dateModified": "2026-10-21 14:15:49.751296+00:00",
+   "contentUrl": "https://w3id.org/sciencelive/np/RA6qAKGQuUGkUFkgqUn2mrovjHV-nm3Zq3umGQqILb2Bw",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   }
+  },
+  {
+   "@id": "https://w3id.org/sciencelive/np/RARnp1x0ixvxqpIUnmvhd4R5tj3D8U_czJviSGw5j56og",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Publication"
+   ],
+   "name": "AIDA sentence: Global daily average temperatures are rising at a statistically significant rate per decade, leading...",
+   "creator": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "author": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2026-10-21 14:15:50.170800+00:00",
+   "dateCreated": "2026-10-21 14:15:50.170800+00:00",
+   "dateModified": "2026-10-21 14:15:50.559533+00:00",
+   "contentUrl": "https://w3id.org/sciencelive/np/RARnp1x0ixvxqpIUnmvhd4R5tj3D8U_czJviSGw5j56og",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db/spatial/5",
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/6255148"
+   },
+   "https://schema.org/name": "Europe"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db/spatial/4",
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/2267057"
+   },
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/name": "Lisbon"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db/spatial/3",
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/2264397"
+   },
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/name": "Portugal"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db/spatial/1",
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/name": "England",
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/6269131"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db/product/1",
+   "https://schema.org/spatialCoverage": {
+    "@id": "https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db/spatial/3"
+   },
+   "@type": [
+    "https://schema.org/Product"
+   ],
+   "https://schema.org/keywords": "IPCC definition, climate change context, building type, heatwave situation, ventilated building control, building envelope, building stock, building design, occupancy data, case-study building, weather data, Model construction, construction technique, PVC window, building control, building simulation, ventilation profile, simulation variant, ventilation strategy, window opening schedule, climate change simulation, weather file, dwelling characteristic, windows opening"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db/spatial/2",
+   "https://schema.org/name": "France",
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/3017382"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db/spatial/6",
+   "https://schema.org/name": "Mediterranean Sea",
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/363196"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c98d9307-51df-4abe-8b0e-cf71a30b1a91",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Extreme heat"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/21ac16b0-9942-45d6-87f8-c50edf54e4fd",
+   "https://w3id.org/ro/terms/earth-science#score": "14.8",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "26.010544815465728",
+   "name": "The study presents a vulnerability framework and methodology for the assessment of thermal comfort in existing dwellings in the context of climate change."
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c01811da-4e01-4ddb-9733-81df454af20d",
+   "https://w3id.org/ro/terms/earth-science#normScore": "8.008429926238145",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "insulation",
+   "https://w3id.org/ro/terms/earth-science#score": "7.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ed232959-481d-405a-b58f-2660e920af15",
+   "name": "result",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "7.903055848261327",
+   "https://w3id.org/ro/terms/earth-science#score": "7.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2d6f4aef-c0aa-4369-963b-b949a7bc2b01",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "probability",
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.374077976817702",
+   "https://w3id.org/ro/terms/earth-science#score": "5.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/974c9d7f-b90a-44e3-b0c7-182af0f79aea",
+   "https://w3id.org/ro/terms/earth-science#normScore": "7.903055848261327",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "7.5",
+   "name": "exposure"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/30d4aaf2-f717-4e77-a57e-5de40151f7a3",
+   "name": "construction industry",
+   "@type": [
+    "https://w3id.org/contentdesc#Domain"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "44.02985074626865",
+   "https://w3id.org/ro/terms/earth-science#score": "5.9"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/902b68bb-8ca2-45f0-8c10-261e0dad9947",
+   "https://w3id.org/ro/terms/earth-science#normScore": "6.217070600632244",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "Lisbon",
+   "https://w3id.org/ro/terms/earth-science#score": "5.9"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/dc6d4b8a-6059-4466-8c24-e8fd7948f354",
+   "name": "climate change",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "10.53740779768177",
+   "https://w3id.org/ro/terms/earth-science#score": "10.0"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/90944e09-5981-46b9-b72f-3374f68b2201",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/e43f0aab-44d4-47d0-bcf8-5b175fb3ee1f"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Geographical Scope"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2d761d59-4c67-4a05-8b28-94b868ef075c",
+   "name": "Lisbon",
+   "@type": [
+    "https://w3id.org/contentdesc#Place"
+   ],
+   "https://w3id.org/ro/terms/earth-science#wikidata": {
+    "@id": "https://www.wikidata.org/wiki/Q597"
+   },
+   "https://w3id.org/ro/terms/earth-science#geonames": {
+    "@id": "https://www.geonames.org/2267057"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/3f8356e4-9657-4841-9209-001a5015f930",
+   "https://w3id.org/ro/terms/earth-science#normScore": "18.72037914691943",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "7.9",
+   "name": "climate change"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/4e7b81e7-6c5a-4226-905b-ca655d035068",
+   "name": "Funding",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/134f3b96-07aa-4d65-854b-f6623d4efbaa"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/134f3b96-07aa-4d65-854b-f6623d4efbaa",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Not reported/ Unknown"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7c71f6cd-ed26-4536-a6b4-875cd56fbb23",
+   "https://w3id.org/ro/terms/earth-science#normScore": "4.952581664910432",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "4.7",
+   "name": "home"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/43fccfd4-0ae3-4269-8c05-a794859891cf",
+   "name": "Atmospheric Sciences",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7cbae3db-feea-47a1-b915-c929802824cf",
+   "name": "case study",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.795574288724973",
+   "https://w3id.org/ro/terms/earth-science#score": "5.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/dbfd96a1-8b8f-46f3-894a-6d5a1783be0d",
+   "https://w3id.org/ro/terms/earth-science#normScore": "37.78558875219683",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "name": "Climate change and thermal comfort in Southern Europe housing: A case study from Lisbon The world has been experiencing a significant increase in daily average temperatures per decade and climate change scenarios are projecting high probability of more frequent heat waves.",
+   "https://w3id.org/ro/terms/earth-science#score": "21.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a7d67b35-109a-45f5-8103-c5726ff06d2e",
+   "https://w3id.org/ro/terms/earth-science#score": "6.1",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "intervention",
+   "https://w3id.org/ro/terms/earth-science#normScore": "6.4278187565858795"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/0853a35e-041d-44e3-b808-4f06fb946403",
+   "https://w3id.org/ro/terms/earth-science#score": "4.7",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "name": "Lisbon",
+   "https://w3id.org/ro/terms/earth-science#normScore": "11.137440758293838"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/dc32e03c-a7f2-466a-937d-0cb99a57b035",
+   "https://w3id.org/ro/terms/earth-science#score": "4.5",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "4.7418335089567965",
+   "name": "discomfort"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/59de5c37-8767-420d-bb0c-ad6eca9398b1",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/de4b166b-711e-4f4d-9298-e2fec05764bf"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Stakeholders"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ac75cc8f-c126-44f2-848a-8a8a1a95806e",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "name": "Weather phenomena",
+   "https://w3id.org/ro/terms/earth-science#path": "Weather/Weather phenomena"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/9e648765-fea1-4767-a96d-2c7fad81d375",
+   "https://w3id.org/ro/terms/earth-science#path": "Weather/Weather statistic",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "name": "Weather statistic"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/70f1a511-7b96-4226-92d8-22c052e1c5d7",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/ef8c1ab3-d561-464e-aa4f-993c3ce676b4"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Policy Scale"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c573fa66-4774-4afd-81cf-3b9ae93269d3",
+   "name": "comfort",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "6.2",
+   "https://w3id.org/ro/terms/earth-science#normScore": "14.691943127962084"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/4439c3ba-5f12-4cc1-9b97-7706f41de2f2",
+   "name": "Key Type Measures",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/e40de1e7-6030-401a-9b47-35062828fc85"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/16f95926-78f6-4b15-b005-41e0e2f1882b",
+   "https://w3id.org/ro/terms/earth-science#score": "6.1",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "14.454976303317535",
+   "name": "insulation"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/40421b63-bbe2-4166-b35f-0ed5094e4d55",
+   "name": "meteorology",
+   "@type": [
+    "https://w3id.org/contentdesc#Domain"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "5.7",
+   "https://w3id.org/ro/terms/earth-science#normScore": "42.537313432835816"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1aca3066-9618-438d-bd46-7bbcbf0a7878",
+   "https://w3id.org/ro/terms/earth-science#normScore": "11.61137440758294",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "4.9",
+   "name": "intervention"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f55a1cd6-676b-4a7b-b71a-b26c6c9723f2",
+   "https://w3id.org/ro/terms/earth-science#normScore": "12.680115273775217",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "4.4",
+   "name": "discomfort hour"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/733ca09e-9bdd-4a78-8472-b6112b0b677b",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "5.2",
+   "name": "residential building",
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.47945205479452"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/070811f0-b29e-458c-a4be-a4c170da02a9",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Environmental Science and Management"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/3404c8a6-eceb-4001-b7b9-26632323428a",
+   "name": "Environmental Sciences",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FieldOfResearch"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e91c1522-22da-43ab-8bcd-c7a45437a829",
+   "https://w3id.org/ro/terms/earth-science#score": "6.4",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "18.443804034582133",
+   "name": "retrofit intervention"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/18014020-7a59-4cfe-a694-8c0269a33dd4",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Knowledge Sector (EEA)",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/2e2456f8-79f6-4fdf-bc84-e75b644e06f4"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/54ffb97c-3485-4d01-9ac3-272c72fcea42",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/c98d9307-51df-4abe-8b0e-cf71a30b1a91"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Climate Hazard"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/0b55c02d-9759-497b-b0e2-3975ea7e52a0",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "13.981042654028435",
+   "https://w3id.org/ro/terms/earth-science#score": "5.9",
+   "name": "vulnerability"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c9d01977-5272-4772-80b5-a95e4eb3c354",
+   "name": "Weather",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "https://w3id.org/ro/terms/earth-science#path": "Weather"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2e2456f8-79f6-4fdf-bc84-e75b644e06f4",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Buildings and construction"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f06371af-0ecf-4f02-91fe-6dd69ec91178",
+   "name": "Case Study",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1a170b9b-f974-4ec0-b744-0c7364531432",
+   "name": "Geosciences",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#NASA"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e10992f2-5040-43f1-a08d-62b8470a8b92",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Building"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e43f0aab-44d4-47d0-bcf8-5b175fb3ee1f",
+   "name": "City in Portugal",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/49858875-2c30-46ca-8991-20adbcf853c7",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "36.20386643233743",
+   "name": "In vulnerable regions, like Southern Europe, where most of the residential buildings still rely on natural ventilation for cooling, impact on thermal comfort can be significant in terms of health, well-being and also energy consumption.",
+   "https://w3id.org/ro/terms/earth-science#score": "20.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/150445bb-7c9c-41c7-ac1a-b13d5de192cc",
+   "name": "Earth Sciences",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FieldOfResearch"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e40de1e7-6030-401a-9b47-35062828fc85",
+   "name": "Knowledge and Behavioural Change",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/9f9d3e56-c881-49d5-929e-7b0f601ee702",
+   "name": "Climate change",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "https://w3id.org/ro/terms/earth-science#path": "Environment/Climate change"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/b8a887ba-6a5f-427d-a6bf-6fc134b5cff1",
+   "https://w3id.org/ro/terms/earth-science#score": "9.7",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "10.221285563751316",
+   "name": "hot weather"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f8ef683d-c5a0-451b-82c4-00ef62b533a3",
+   "name": "case study from Lisbon",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "5.3",
+   "https://w3id.org/ro/terms/earth-science#normScore": "15.273775216138327"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1833990a-3a94-485c-8b17-92777315a32b",
+   "name": "Built Environment and Design",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FieldOfResearch"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/5796402d-6dd7-47ee-b99b-969733773500",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "10.4",
+   "https://w3id.org/ro/terms/earth-science#normScore": "29.971181556195962",
+   "name": "vulnerability framework"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/33b4f5b7-baea-45f7-a180-993122a6503d",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Architecture"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c3fabbb4-8d90-4df2-a0b1-5e54ec665914",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/e95dfb49-5a68-4aec-b23a-c9c7354b088f"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "User Needs (RAST)"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/35b22b73-c6b1-4c31-8ce9-ac665653c867",
+   "https://w3id.org/ro/terms/earth-science#score": "1.8",
+   "@type": [
+    "https://w3id.org/contentdesc#Domain"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "13.43283582089552",
+   "name": "physics"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/29585bee-f5ff-42fc-beee-5aff1f113034",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Meteorology and climatology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/abd0ab8a-5e82-47bc-a972-621beeaa8711",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/f06371af-0ecf-4f02-91fe-6dd69ec91178"
+   },
+   "name": "Methodology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ef8c1ab3-d561-464e-aa4f-993c3ce676b4",
+   "name": "Local policy",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/de4b166b-711e-4f4d-9298-e2fec05764bf",
+   "name": "Academia/ Research Institutions",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/25857173-45cf-41f1-b943-755b51a4ee55",
+   "https://w3id.org/ro/terms/earth-science#normScore": "23.63112391930835",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "8.2",
+   "name": "heatwave situation"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/acbf7ab6-db7f-4f46-bcf3-88581010d4b5",
+   "name": "none",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2b5ed0c6-1b24-4a31-b709-c6900b5f7232",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "name": "heat wave",
+   "https://w3id.org/ro/terms/earth-science#normScore": "15.402843601895734",
+   "https://w3id.org/ro/terms/earth-science#score": "6.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/b0b98263-aa38-47f0-a420-900b1a8a9bea",
+   "https://w3id.org/ro/terms/earth-science#normScore": "9.272918861959958",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "8.8",
+   "name": "comfort"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a56bd4f1-ef36-4264-b477-b2f194fdd1ba",
+   "name": "Environment pollution",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/9469de0a-d3b3-4121-b0ce-aa94f85b1b6d",
+   "name": "South Europe",
+   "@type": [
+    "https://w3id.org/contentdesc#Place"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e62eb620-33d0-4c23-8d21-9b199e45bb49",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Physical Geography and Environmental Geoscience"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/92cb19cc-d92b-49cb-87ea-f06a3610d537",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/876ca172-3c71-4500-a567-7a0a26651ca8"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Climate-ADAPT Adaptation Sectors"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e95dfb49-5a68-4aec-b23a-c9c7354b088f",
+   "name": "Identification of risks",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a1818d3f-1f49-4c30-a3fb-baef4a11d46c",
+   "https://w3id.org/ro/terms/earth-science#score": "6.8",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "weather",
+   "https://w3id.org/ro/terms/earth-science#normScore": "7.165437302423603"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e2c1b0cc-80f6-43e2-ad50-22051f3a5605",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/acbf7ab6-db7f-4f46-bcf3-88581010d4b5"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "IPCC"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/876ca172-3c71-4500-a567-7a0a26651ca8",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Buildings"
+  },
+  {
+   "@id": "mailto:eg.guardia@gmail.com",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Agent"
+   ],
+   "name": "Esteban Gonzalez"
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+name: release image
+
+# Container image to GHCR, by hand; the "release" environment gates the push only with a required-reviewers rule set in the
+# repository settings. The digest is the reference to deploy.
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "an existing release to attach the image digest to (image-digest.txt); empty tags the image 'manual'"
+
+permissions:
+  contents: read
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      contents: write
+      packages: write
+    outputs:
+      digest: ${{ steps.push.outputs.digest }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: The base image is pinned by digest
+        run: grep -Eq '^ARG PYTHON_IMAGE=python:[0-9.]+-slim@sha256:[0-9a-f]{64}$' Dockerfile
+      - uses: docker/setup-buildx-action@v3
+      - name: Build (tests run inside the build stage)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          load: true
+          tags: fdo-knowledge-dashboard:candidate
+      - name: Smoke test the candidate (the Portugal configuration from its recorded snapshot, built into a named volume)
+        run: |
+          docker volume create candidate-site
+          docker run --rm -v candidate-site:/data/site fdo-knowledge-dashboard:candidate \
+            python scripts/build_site.py --config config/portugal-dashboard.yaml --out /data/site --require-data-origin real
+          docker run -d --rm --name candidate -v candidate-site:/data/site -p 127.0.0.1:8020:8020 fdo-knowledge-dashboard:candidate
+          for i in $(seq 1 20); do curl -fsS http://127.0.0.1:8020/api/v1/health && break || sleep 2; done
+          curl -fsS http://127.0.0.1:8020/api/v1/health | grep -q '"status": "ok"'
+          docker stop candidate
+          docker volume rm candidate-site
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Image name (GHCR takes lowercase only)
+        id: name
+        run: echo "image=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
+      - name: Push by tag; the digest is the reference to deploy
+        id: push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ steps.name.outputs.image }}:${{ github.sha }}
+            ${{ steps.name.outputs.image }}:${{ inputs.release_tag || 'manual' }}
+      - name: Digest
+        env:
+          GH_TOKEN: ${{ github.token }}
+          IMAGE: ${{ steps.name.outputs.image }}
+          DIGEST: ${{ steps.push.outputs.digest }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          echo "image digest $DIGEST (deploy this reference, never a tag)" >> "$GITHUB_STEP_SUMMARY"
+          echo "base image $(grep -oE 'PYTHON_IMAGE=\S+' Dockerfile)" >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$RELEASE_TAG" ]; then
+            printf '%s@%s\n' "$IMAGE" "$DIGEST" > image-digest.txt
+            gh release upload "$RELEASE_TAG" image-digest.txt --clobber
+          fi

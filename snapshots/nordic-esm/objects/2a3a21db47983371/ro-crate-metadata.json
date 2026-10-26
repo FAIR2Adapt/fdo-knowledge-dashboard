@@ -1,0 +1,964 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.1/context",
+  "https://w3id.org/ro/terms/earth-science#",
+  "https://w3id.org/ro/terms/workflow-run#",
+  "https://w3id.org/ro/terms/test#",
+  {
+   "citeAs": "https://www.w3.org/ns/iana/link-relations/relation#cite-as",
+   "community": "http://w3id.org/ro-id/rohub/model#community",
+   "cdesc": "https://reliance.expertcustomers.ai/vocabulary/cdesc/",
+   "creation_mode": "http://w3id.org/ro-id/rohub/model#creation_mode",
+   "prov": "http://www.w3.org/ns/prov#",
+   "archivedAtTime": "http://purl.org/wf4ever/roevo#archivedAtTime",
+   "archivedBy": "http://purl.org/wf4ever/roevo#archivedBy",
+   "hasArchive": "http://purl.org/wf4ever/roevo#hasArchive",
+   "hasSnapshot": "http://purl.org/wf4ever/roevo#hasSnapshot",
+   "isArchiveOf": "http://purl.org/wf4ever/roevo#isArchiveOf",
+   "isFinalized": "http://purl.org/wf4ever/roevo#isFinalized",
+   "isSnapshotOf": "http://purl.org/wf4ever/roevo#isSnapshotOf",
+   "snapshotedAtTime": "http://purl.org/wf4ever/roevo#snapshotedAtTime",
+   "snapshotedBy": "http://purl.org/wf4ever/roevo#snapshotedBy",
+   "forkedAtTime": "http://purl.org/wf4ever/roevo#forkedAtTime",
+   "forkedBy": "http://purl.org/wf4ever/roevo#forkedBy",
+   "hasFork": "http://purl.org/wf4ever/roevo#hasFork",
+   "asWKT": "http://www.opengis.net/ont/geosparql#asWKT",
+   "hasGeometry": "http://www.opengis.net/ont/geosparql#hasGeometry",
+   "Concept": "https://w3id.org/ro/terms/earth-science#Concept",
+   "FieldOfResearch": "https://w3id.org/ro/terms/earth-science#FieldOfResearch",
+   "IPTC": "https://w3id.org/ro/terms/earth-science#IPTC",
+   "Lemma": "https://w3id.org/ro/terms/earth-science#Lemma",
+   "NASA": "https://w3id.org/ro/terms/earth-science#NASA",
+   "Person1": "https://w3id.org/contentdesc#Person",
+   "Phrase": "https://w3id.org/ro/terms/earth-science#Phrase",
+   "Sentence": "https://w3id.org/ro/terms/earth-science#Sentence",
+   "TimeReference": "https://w3id.org/ro/terms/earth-science#TimeReference",
+   "Domain": "https://w3id.org/contentdesc#Domain",
+   "Organization1": "https://w3id.org/contentdesc#Organization",
+   "Place": "https://w3id.org/contentdesc#Place",
+   "normScore": "https://w3id.org/ro/terms/earth-science#normScore",
+   "path": "https://w3id.org/ro/terms/earth-science#path",
+   "score": "https://w3id.org/ro/terms/earth-science#score",
+   "wikidata": "https://w3id.org/ro/terms/earth-science#wikidata",
+   "doi": "http://purl.org/ontology/bibo/doi",
+   "orcid": "https://w3id.org/dingo#orcid",
+   "template": "https://w3id.org/ro/terms/earth-science#template",
+   "dataType": "https://w3id.org/ro/terms/earth-science#dataType",
+   "datasetManager": "https://w3id.org/ro/terms/earth-science#datasetManager",
+   "minValue": "https://w3id.org/ro/terms/earth-science#minValue",
+   "maxValue": "https://w3id.org/ro/terms/earth-science#maxValue",
+   "status": "https://w3id.org/ro/terms/earth-science#status",
+   "DataCubeCollection": "https://w3id.org/ro/terms/earth-science#DataCubeCollection",
+   "DataCubeProduct": "https://w3id.org/ro/terms/earth-science#DataCubeProduct",
+   "enrichmentSubject": "http://w3id.org/ro-id/rohub/model#enrichmentSubject",
+   "softwareRequirements": "https://schema.org/softwareRequirements"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "#0f28e1b1-5319-4ec4-871b-e7ab0d184cfc",
+   "@type": "GeoShape",
+   "name": "POLYGON ((-169.74610805511477 -81.23552390236422, -169.74610805511477 84.98081744706498, 192.94923305511477 84.98081744706498, 192.94923305511477 -81.23552390236422, -169.74610805511477 -81.23552390236422))",
+   "polygon": "-169.74610805511477 -81.23552390236422, -169.74610805511477 84.98081744706498, 192.94923305511477 84.98081744706498, 192.94923305511477 -81.23552390236422, -169.74610805511477 -81.23552390236422"
+  },
+  {
+   "@id": "#961cdf63-647b-46c4-aba0-5d8897100aa6",
+   "@type": "s:Place",
+   "geo": {
+    "@id": "#0f28e1b1-5319-4ec4-871b-e7ab0d184cfc"
+   },
+   "identifier": "961cdf63-647b-46c4-aba0-5d8897100aa6",
+   "name": "POLYGON ((-169.74610805511477 -81.23552390236422, -169.74610805511477 84.98081744706498, 192.94923305511477 84.98081744706498, 192.94923305511477 -81.23552390236422, -169.74610805511477 -81.23552390236422))"
+  },
+  {
+   "@id": "./",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "https://w3id.org/ro/terms/earth-science#ExecutableResearchObject",
+    "http://w3id.org/ro/earth-scienceExecutableResearchObject",
+    "http://purl.org/wf4ever/roevo#LiveRO"
+   ],
+   "about": [
+    {
+     "@id": "http://eurovoc.europa.eu/3949"
+    },
+    {
+     "@id": "http://eurovoc.europa.eu/6384"
+    }
+   ],
+   "author": {
+    "@id": "mailto:annefou@geo.uio.no"
+   },
+   "contentLocation": {
+    "@id": "#961cdf63-647b-46c4-aba0-5d8897100aa6"
+   },
+   "contentSize": 27937,
+   "contentUrl": "https://api.rohub.org/api/ros/f99a5c78-6e3d-44a6-a283-3a61e46e249b/crate/download/",
+   "contributor": {
+    "@id": "mailto:jean.iaquinta@geo.uio.no"
+   },
+   "copyrightHolder": {
+    "@id": "https://ror.org/01xtthb56"
+   },
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:11:26.901247+00:00",
+   "dateModified": "2025-10-18 11:32:30.246000+00:00",
+   "datePublished": "2022-06-12 19:11:26.901247+00:00",
+   "description": "This Research Object aggregates all the resources needed for running a fully coupled CESM B1850 f19_g17 on Galaxy using the CESM Galaxy Tool.  i) Examples of input datasets needed for running CESM B1850 f17_g19 on Galaxy; ii) Galaxy Workflow (.ga) and corresponding CWL abstract and diagram; iii) Link to a published Galaxy history.",
+   "encodingFormat": "application/ld+json",
+   "hasPart": [
+    {
+     "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/folders/28469a8c-532c-4c93-927a-f76c402b4d7f"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/folders/5ec46171-6ce6-4f51-a4b6-2d274fa60173"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/folders/aae48488-77fd-43a8-a9e6-8a34cdfda0f4"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/folders/6f8c2288-d616-4882-9f83-237c8a4f272f"
+    }
+   ],
+   "identifier": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b",
+   "keywords": [
+    "CESM",
+    "climate",
+    "climate-prediction",
+    "historical",
+    "ESM"
+   ],
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "mainEntity": "Workflow",
+   "name": "Galaxy CESM Tool Example",
+   "publisher": {
+    "@id": "https://ror.org/04jcwf484"
+   },
+   "community": {
+    "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9"
+   },
+   "creation_mode": "MANUAL",
+   "enrichmentSubject": [
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/099f749b-16e9-4159-a622-57018113a4e7"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/0e241ccf-afa7-4430-92b9-5b9471aaecdd"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/18e1bf3b-a741-491e-9e55-906f86d75d78"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1e22b381-c255-4169-8a8a-eb486d210d17"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2233e9de-e997-4bb6-8adf-00245d196ed4"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/239ff51f-e00d-454c-b00d-53ca7d810c4b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2504e40a-58d4-4bc8-8e9e-1fc079fb1701"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/28b04280-13e5-4170-8d44-5e8a15da9736"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/32b785b8-09cf-474c-94ee-85e89d0c1ab0"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/43791d20-8bd8-4039-8353-809c336f1b06"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/50262840-5fdf-4cdb-a0b0-a9e74ebf37a7"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/53f47d22-2905-44ca-8c3a-29ec6aeee5c9"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/54d4c8be-af63-4ce0-b0d5-2408eeee709b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/5d15ca3c-1f90-4523-8f81-249d415dcace"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/67930108-5e02-4251-9e46-0ee14b125c33"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/71b8dc72-9607-4e11-a69b-738272f1b12d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/7433e744-2d8e-419a-b1ec-e9aa6d4f75c4"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/8c9f883c-5f3f-4c48-aa85-0c6754fb1c97"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/92261fa2-6b59-4dd0-93af-9fad8096716d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/9540ce30-32bb-462e-8edc-11dda40b5fe3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/97a1583e-e157-4138-8e03-6b3d4df872ad"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a1db5460-7559-4d20-a20a-815a6c999b84"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a3b5b07c-8896-43b8-941f-7153c4376325"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/acf2ac6f-ba97-47b1-9438-a754616eeebb"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c3d84957-ce8e-40cf-8ac9-00ec8dabc6c9"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/f2ce9c23-731c-4f13-8957-e314fc5b73f0"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/f4dd3cd9-a1a2-4ba2-9f0e-7bf265dd64cb"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/d6f644a2-bddc-42ea-a650-208da3cb18f0"
+    }
+   ],
+   "hasGeometry": {
+    "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/b8a72a9f-c63d-4507-9b79-fdf4d5c82dd4"
+   },
+   "cite-as": "Anne Foilloux, and Jean Iaquinta. \"Galaxy CESM Tool Example.\" ROHub. Jun 12 ,2022. https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b."
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/3949",
+   "@type": "s:DefinedTerm",
+   "description": "",
+   "name": "Applied sciences"
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/6384",
+   "@type": "s:DefinedTerm",
+   "description": "",
+   "name": "Climatology"
+  },
+  {
+   "@id": "https://github.com/ESCOMP/CESM",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://w3id.org/ro/earth-scienceSWDocumentation"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://github.com/ESCOMP/CESM",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:28:28.652973+00:00",
+   "dateModified": "2022-06-12 19:28:29.254776+00:00",
+   "description": "This github repository contains all the versions of the Community Earth System Model (CESM).",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Source code of CESM",
+   "sdDatePublished": "2022-06-12 19:28:28.652973+00:00"
+  },
+  {
+   "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a425bd13fde6e5a21/display?to_ext=data&hdca_id=8ca88ef64f587a1e&element_identifier=plot",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#Sketch"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a425bd13fde6e5a21/display?to_ext=data&hdca_id=8ca88ef64f587a1e&element_identifier=plot",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:46:58.117971+00:00",
+   "dateModified": "2022-06-12 19:46:58.887727+00:00",
+   "description": "Plot showing the reference height temperature (Kelvin) for 0001-02-01 00:00:00",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Reference height temperature plot",
+   "sdDatePublished": "2022-06-12 19:46:58.117971+00:00"
+  },
+  {
+   "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a53dd3a49d7755c69/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=cesm_log.txt",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Report"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a53dd3a49d7755c69/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=cesm_log.txt",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:42:13.540759+00:00",
+   "dateModified": "2022-06-12 19:42:13.770339+00:00",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "cesm_log.txt",
+   "sdDatePublished": "2022-06-12 19:42:13.540759+00:00"
+  },
+  {
+   "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a631cc9273d4c9cff/display?to_ext=tar",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/wf4ever#Dataset"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a631cc9273d4c9cff/display?to_ext=tar",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:25:22.239580+00:00",
+   "dateModified": "2022-06-12 19:25:22.759304+00:00",
+   "description": "Tar file containing all the input datasets for running the Community Earth System Modelling in fully coupled mode B1850 f17_g19.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "inputdata_cesm_2.1.3_B1850_f19_g17.tar",
+   "sdDatePublished": "2022-06-12 19:25:22.239580+00:00"
+  },
+  {
+   "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a9f86d43452ea92d4/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=cpl_log.txt",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Report"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a9f86d43452ea92d4/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=cpl_log.txt",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:42:45.965215+00:00",
+   "dateModified": "2022-06-12 19:42:46.257522+00:00",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "cpl_log.txt",
+   "sdDatePublished": "2022-06-12 19:42:45.965215+00:00"
+  },
+  {
+   "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33abe24099ece8ecf8b/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=atm_log.txt",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Report"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33abe24099ece8ecf8b/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=atm_log.txt",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:40:57.754810+00:00",
+   "dateModified": "2022-06-12 19:57:46.465986+00:00",
+   "description": "Collection containing the logfile for the atmosphere compoment.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "atm_log.txt",
+   "sdDatePublished": "2022-06-12 19:40:57.754810+00:00"
+  },
+  {
+   "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33ac6a6f7ad39875add/display?to_ext=txt",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/wf4ever#Dataset"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33ac6a6f7ad39875add/display?to_ext=txt",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:26:39.579207+00:00",
+   "dateModified": "2022-06-12 19:53:19.325645+00:00",
+   "description": "Customized user namelist for CAM restart (atmosphere component) to create history files and restart files at the end of the run.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "user_nl_cam_rs",
+   "sdDatePublished": "2022-06-12 19:26:39.579207+00:00"
+  },
+  {
+   "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33ad451692baeeaddab/display?to_ext=netcdf",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/wf4ever#Dataset"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33ad451692baeeaddab/display?to_ext=netcdf",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:45:23.938693+00:00",
+   "dateModified": "2022-06-12 19:45:24.454344+00:00",
+   "description": "History file (1 month) for the atmosphere component (CAM).",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "b1850_f19_g17.cam.h0.0001-01.nc",
+   "sdDatePublished": "2022-06-12 19:45:23.938693+00:00"
+  },
+  {
+   "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33adb3f747f35568f54/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=rof_log.txt",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Report"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33adb3f747f35568f54/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=rof_log.txt",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:43:37.120543+00:00",
+   "dateModified": "2022-06-12 19:43:37.816344+00:00",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "rof_log.txt",
+   "sdDatePublished": "2022-06-12 19:43:37.120543+00:00"
+  },
+  {
+   "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33af3a72f3dab5a14f2/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=lnd_log.txt",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Report"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33af3a72f3dab5a14f2/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=lnd_log.txt",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:43:12.056705+00:00",
+   "dateModified": "2022-06-12 19:43:12.739217+00:00",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "lnd_log.txt",
+   "sdDatePublished": "2022-06-12 19:43:12.056705+00:00"
+  },
+  {
+   "@id": "https://live.usegalaxy.eu/u/annefou/h/cesm-b1850-f19g17",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#ExampleRun"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://live.usegalaxy.eu/u/annefou/h/cesm-b1850-f19g17",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:36:38.733653+00:00",
+   "dateModified": "2022-06-12 19:36:39.225827+00:00",
+   "description": "This Galaxy history contains all the inputs and generated outputs for this CESM example. If you have an account on Galaxy Europe (if not you can open one), you can import this history and reuse it.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Galaxy history CESM B1850 f19_g17",
+   "sdDatePublished": "2022-06-12 19:36:38.733653+00:00"
+  },
+  {
+   "@id": "https://ror.org/01xtthb56",
+   "@type": [
+    "s:Organization",
+    "foaf:Agent"
+   ],
+   "identifier": "01xtthb56",
+   "name": "University of Oslo"
+  },
+  {
+   "@id": "https://ror.org/04jcwf484",
+   "@type": [
+    "s:Organization",
+    "foaf:Agent"
+   ],
+   "identifier": "04jcwf484",
+   "name": "Nordic e-Infrastructure Collaboration"
+  },
+  {
+   "@id": "https://toolshed.g2.bx.psu.edu/repository?repository_id=7aa3cab2c60dddc0&changeset_revision=7a7ba86e95a4",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "SoftwareApplication"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://toolshed.g2.bx.psu.edu/repository?repository_id=7aa3cab2c60dddc0&changeset_revision=7a7ba86e95a4",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:32:03.784559+00:00",
+   "dateModified": "2022-06-12 19:56:01.321895+00:00",
+   "description": "Link to the Galaxy Tool shed for CESM Galaxy Tool repository. This repository is useful whenever you want to install CESM Galaxy Tool in your own Galaxy instance. The version used in this example is revision: 7a7ba86e95a4",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Galaxy Toolshed for CESM Galaxy Tool repository",
+   "sdDatePublished": "2022-06-12 19:32:03.784559+00:00"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9",
+   "@type": "community",
+   "description": "NICEST-2 - the second phase of the Nordic Collaboration on e-Infrastructures for Earth System Modeling focuses on strengthening the Nordic position within climate modeling by leveraging, reinforcing and complementing ongoing initiatives.",
+   "name": "Nordic Collaboration on e-Infrastructures for Earth System Modeling Tools",
+   "url": "https://w3id.org/ro-id/ed4e6aa2-9db8-452d-9301-ba1606361034"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/099f749b-16e9-4159-a622-57018113a4e7",
+   "@type": "Phrase",
+   "name": "CESM galaxy Tool.",
+   "normScore": "47.77662874870734",
+   "score": "46.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/0e241ccf-afa7-4430-92b9-5b9471aaecdd",
+   "@type": "Phrase",
+   "name": "examples of input dataset",
+   "normScore": "17.063081695966908",
+   "score": "16.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/18e1bf3b-a741-491e-9e55-906f86d75d78",
+   "@type": "Lemma",
+   "name": "Einet Galaxy",
+   "normScore": "9.428129829984544",
+   "score": "6.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1e22b381-c255-4169-8a8a-eb486d210d17",
+   "@type": "Domain",
+   "name": "mechanics",
+   "normScore": "100.0",
+   "score": "3.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2233e9de-e997-4bb6-8adf-00245d196ed4",
+   "@type": "NASA",
+   "name": "space sciences (general)",
+   "normScore": "100.0",
+   "score": "0.14256678521633148"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/239ff51f-e00d-454c-b00d-53ca7d810c4b",
+   "@type": "IPTC",
+   "name": "Wireless technology",
+   "path": "Economy, business and finance/Economic sector/Computing and information technology/Wireless technology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2504e40a-58d4-4bc8-8e9e-1fc079fb1701",
+   "@type": "Concept",
+   "name": "diagram",
+   "normScore": "13.793103448275863",
+   "score": "4.8"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/28b04280-13e5-4170-8d44-5e8a15da9736",
+   "@type": "Phrase",
+   "name": "Galaxy CESM tool example",
+   "normScore": "14.270941054808686",
+   "score": "13.8"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/32b785b8-09cf-474c-94ee-85e89d0c1ab0",
+   "@type": "Concept",
+   "name": "dataset",
+   "normScore": "12.643678160919542",
+   "score": "4.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/43791d20-8bd8-4039-8353-809c336f1b06",
+   "@type": "NASA",
+   "name": "space sciences",
+   "normScore": "100.0",
+   "score": "0.14256678521633148"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/50262840-5fdf-4cdb-a0b0-a9e74ebf37a7",
+   "@type": "Concept",
+   "name": "abstraction",
+   "normScore": "16.091954022988507",
+   "score": "5.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/53f47d22-2905-44ca-8c3a-29ec6aeee5c9",
+   "@type": "Phrase",
+   "name": "CWL abstract",
+   "normScore": "17.269906928645295",
+   "score": "16.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/54d4c8be-af63-4ce0-b0d5-2408eeee709b",
+   "@type": "Lemma",
+   "name": "example",
+   "normScore": "11.901081916537867",
+   "score": "7.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/5d15ca3c-1f90-4523-8f81-249d415dcace",
+   "@type": "Phrase",
+   "name": "galaxy Tool.",
+   "normScore": "3.6194415718717683",
+   "score": "3.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/67930108-5e02-4251-9e46-0ee14b125c33",
+   "@type": "Lemma",
+   "name": "Research Object",
+   "normScore": "15.610510046367851",
+   "score": "10.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/71b8dc72-9607-4e11-a69b-738272f1b12d",
+   "@type": "Sentence",
+   "name": "Galaxy CESM Tool Example.",
+   "normScore": "10.51051051051051",
+   "score": "10.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7433e744-2d8e-419a-b1ec-e9aa6d4f75c4",
+   "@type": "Concept",
+   "name": "natural resources",
+   "normScore": "18.678160919540232",
+   "score": "6.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8c9f883c-5f3f-4c48-aa85-0c6754fb1c97",
+   "@type": "Lemma",
+   "name": "B1850",
+   "normScore": "18.856259659969087",
+   "score": "12.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/92261fa2-6b59-4dd0-93af-9fad8096716d",
+   "@type": "Lemma",
+   "name": "CESM",
+   "normScore": "21.32921174652241",
+   "score": "13.8"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/9540ce30-32bb-462e-8edc-11dda40b5fe3",
+   "@type": "Sentence",
+   "name": "This Research Object aggregates all the resources needed for running a fully coupled CESM B1850 f19_g17 on Galaxy using the CESM Galaxy Tool.  i) Examples of input datasets needed for running CESM B1850 f17_g19 on Galaxy; ii) Galaxy Workflow (.ga) and corresponding CWL abstract and diagram; iii) Link to a published Galaxy history.",
+   "normScore": "89.48948948948949",
+   "score": "89.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/97a1583e-e157-4138-8e03-6b3d4df872ad",
+   "@type": "FieldOfResearch",
+   "name": "geology",
+   "normScore": "100.0",
+   "score": "0.9624638557434082"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a1db5460-7559-4d20-a20a-815a6c999b84",
+   "@type": "FieldOfResearch",
+   "name": "earth sciences",
+   "normScore": "100.0",
+   "score": "0.9624638557434082"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a3b5b07c-8896-43b8-941f-7153c4376325",
+   "@type": "Lemma",
+   "name": "Tool.",
+   "normScore": "12.210200927357032",
+   "score": "7.9"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/acf2ac6f-ba97-47b1-9438-a754616eeebb",
+   "@type": "IPTC",
+   "name": "IT-computer sciences",
+   "path": "Science and technology/Technology and engineering/IT-computer sciences"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c3d84957-ce8e-40cf-8ac9-00ec8dabc6c9",
+   "@type": "Concept",
+   "name": "Einet Galaxy",
+   "normScore": "16.091954022988507",
+   "score": "5.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d6f644a2-bddc-42ea-a650-208da3cb18f0",
+   "@type": "Concept",
+   "name": "example",
+   "normScore": "22.70114942528736",
+   "score": "7.9"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f2ce9c23-731c-4f13-8957-e314fc5b73f0",
+   "@type": "IPTC",
+   "name": "Natural resources",
+   "path": "Environment/Natural resources"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f4dd3cd9-a1a2-4ba2-9f0e-7bf265dd64cb",
+   "@type": "Lemma",
+   "name": "resource",
+   "normScore": "10.664605873261205",
+   "score": "6.9"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/b8a72a9f-c63d-4507-9b79-fdf4d5c82dd4",
+   "@type": [
+    "http://www.opengis.net/ont/sf#Polygon",
+    "http://www.opengis.net/ont/geosparql#Geometry"
+   ],
+   "asWKT": "POLYGON ((-169.74610805511477 -81.23552390236422, -169.74610805511477 84.98081744706498, 192.94923305511477 84.98081744706498, 192.94923305511477 -81.23552390236422, -169.74610805511477 -81.23552390236422))"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/folders/28469a8c-532c-4c93-927a-f76c402b4d7f",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "hasPart": {
+    "@id": "https://www.cesm.ucar.edu/"
+   },
+   "name": "biblio"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/folders/478eb171-62b1-4ca8-9b62-e8528a838e05",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "description": "Folder containing all the logfiles.",
+   "hasPart": [
+    {
+     "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33abe24099ece8ecf8b/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=atm_log.txt"
+    },
+    {
+     "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a53dd3a49d7755c69/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=cesm_log.txt"
+    },
+    {
+     "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a9f86d43452ea92d4/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=cpl_log.txt"
+    },
+    {
+     "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33af3a72f3dab5a14f2/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=lnd_log.txt"
+    },
+    {
+     "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33adb3f747f35568f54/display?to_ext=data&hdca_id=bb750a5908336204&element_identifier=rof_log.txt"
+    }
+   ],
+   "name": "logfiles"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/folders/5ec46171-6ce6-4f51-a4b6-2d274fa60173",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "hasPart": [
+    {
+     "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a631cc9273d4c9cff/display?to_ext=tar"
+    },
+    {
+     "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33ac6a6f7ad39875add/display?to_ext=txt"
+    }
+   ],
+   "name": "input"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/folders/6f8c2288-d616-4882-9f83-237c8a4f272f",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "hasPart": [
+    {
+     "@id": "https://github.com/ESCOMP/CESM"
+    },
+    {
+     "@id": "https://toolshed.g2.bx.psu.edu/repository?repository_id=7aa3cab2c60dddc0&changeset_revision=7a7ba86e95a4"
+    },
+    {
+     "@id": "https://workflowhub.eu/workflows/364"
+    },
+    {
+     "@id": "https://live.usegalaxy.eu/u/annefou/h/cesm-b1850-f19g17"
+    }
+   ],
+   "name": "tool"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/folders/aae48488-77fd-43a8-a9e6-8a34cdfda0f4",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "hasPart": [
+    {
+     "@id": "https://w3id.org/ro-id/f99a5c78-6e3d-44a6-a283-3a61e46e249b/folders/478eb171-62b1-4ca8-9b62-e8528a838e05"
+    },
+    {
+     "@id": "https://workflowhub.eu/workflows/364/diagram?version=1"
+    },
+    {
+     "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33ad451692baeeaddab/display?to_ext=netcdf"
+    },
+    {
+     "@id": "https://live.usegalaxy.eu/datasets/11ac94870d0bb33a425bd13fde6e5a21/display?to_ext=data&hdca_id=8ca88ef64f587a1e&element_identifier=plot"
+    }
+   ],
+   "name": "output"
+  },
+  {
+   "@id": "https://workflowhub.eu/workflows/364",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#WorkflowDefinition"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://workflowhub.eu/workflows/364",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:33:26.020345+00:00",
+   "dateModified": "2022-06-12 19:55:11.697497+00:00",
+   "description": "This is a link to Workflow Research Object stored in workflowhub.eu. It contains a Galaxy workflow (.ga), abstract CWL (.cwl) and diagram (.png).",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Galaxy Workflow for CESM Galaxy Tool",
+   "sdDatePublished": "2022-06-12 19:33:26.020345+00:00"
+  },
+  {
+   "@id": "https://workflowhub.eu/workflows/364/diagram?version=1",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#Sketch"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://workflowhub.eu/workflows/364/diagram?version=1",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:16:41.044493+00:00",
+   "dateModified": "2022-06-12 19:56:56.251936+00:00",
+   "description": "Abstract CWL Automatically generated from the Galaxy workflow file: Workflow constructed from history CESM B1850 f19_g17",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Abstract CWK figure for CESM Galaxy Tool",
+   "sdDatePublished": "2022-06-12 19:16:41.044493+00:00"
+  },
+  {
+   "@id": "https://www.cesm.ucar.edu/",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/wf4ever#Document"
+   ],
+   "author": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "contentUrl": "https://www.cesm.ucar.edu/",
+   "contributor": [],
+   "creator": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "dateCreated": "2022-06-12 19:21:08.294812+00:00",
+   "dateModified": "2022-06-12 19:21:08.846263+00:00",
+   "description": "General webpage where the documentation for the Community Earth System Model is available.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "CESM Documentation",
+   "sdDatePublished": "2022-06-12 19:21:08.294812+00:00"
+  },
+  {
+   "@id": "mailto:annefou@geo.uio.no",
+   "@type": "foaf:Agent",
+   "affiliation": "Nordic e-Infrastructure Collaboration (NeIC)",
+   "email": "annefou@geo.uio.no",
+   "name": "Anne Fouilloux",
+   "orcid": "0000-0002-1784-2920"
+  },
+  {
+   "@id": "mailto:jean.iaquinta@geo.uio.no",
+   "@type": "foaf:Agent",
+   "affiliation": "UiO",
+   "email": "jean.iaquinta@geo.uio.no",
+   "name": "Jean Iaquinta"
+  },
+  {
+   "@id": "mailto:nordicesmhub@gmail.com",
+   "@type": "foaf:Agent",
+   "name": "admin NordicESMHub"
+  },
+  {
+   "@id": "mailto:service-account-enrichment",
+   "@type": "foaf:Agent",
+   "name": "service-account-enrichment"
+  },
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.1"
+   },
+   "about": {
+    "@id": "./"
+   }
+  }
+ ]
+}

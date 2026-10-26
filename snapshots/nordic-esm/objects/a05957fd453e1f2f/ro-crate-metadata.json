@@ -1,0 +1,609 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  "https://w3id.org/ro/terms/earth-science#",
+  "https://w3id.org/ro/terms/workflow-run#",
+  "https://w3id.org/ro/terms/test#",
+  {
+   "citeAs": "https://www.w3.org/ns/iana/link-relations/relation#cite-as",
+   "citeAs2": "http://www.iana.org/assignments/relation/cite-as",
+   "community": "http://w3id.org/ro-id/rohub/model#community",
+   "cdesc": "https://reliance.expertcustomers.ai/vocabulary/cdesc/",
+   "creation_mode": "http://w3id.org/ro-id/rohub/model#creation_mode",
+   "prov": "http://www.w3.org/ns/prov#",
+   "archivedAtTime": "http://purl.org/wf4ever/roevo#archivedAtTime",
+   "archivedBy": "http://purl.org/wf4ever/roevo#archivedBy",
+   "hasArchive": "http://purl.org/wf4ever/roevo#hasArchive",
+   "hasSnapshot": "http://purl.org/wf4ever/roevo#hasSnapshot",
+   "isArchiveOf": "http://purl.org/wf4ever/roevo#isArchiveOf",
+   "isFinalized": "http://purl.org/wf4ever/roevo#isFinalized",
+   "isSnapshotOf": "http://purl.org/wf4ever/roevo#isSnapshotOf",
+   "snapshotedAtTime": "http://purl.org/wf4ever/roevo#snapshotedAtTime",
+   "snapshotedBy": "http://purl.org/wf4ever/roevo#snapshotedBy",
+   "forkedAtTime": "http://purl.org/wf4ever/roevo#forkedAtTime",
+   "forkedBy": "http://purl.org/wf4ever/roevo#forkedBy",
+   "hasFork": "http://purl.org/wf4ever/roevo#hasFork",
+   "asWKT": "http://www.opengis.net/ont/geosparql#asWKT",
+   "hasGeometry": "http://www.opengis.net/ont/geosparql#hasGeometry",
+   "Concept": "https://w3id.org/ro/terms/earth-science#Concept",
+   "FieldOfResearch": "https://w3id.org/ro/terms/earth-science#FieldOfResearch",
+   "IPTC": "https://w3id.org/ro/terms/earth-science#IPTC",
+   "Lemma": "https://w3id.org/ro/terms/earth-science#Lemma",
+   "NASA": "https://w3id.org/ro/terms/earth-science#NASA",
+   "Person1": "https://w3id.org/contentdesc#Person",
+   "Phrase": "https://w3id.org/ro/terms/earth-science#Phrase",
+   "Sentence": "https://w3id.org/ro/terms/earth-science#Sentence",
+   "TimeReference": "https://w3id.org/ro/terms/earth-science#TimeReference",
+   "Domain": "https://w3id.org/contentdesc#Domain",
+   "Organization1": "https://w3id.org/contentdesc#Organization",
+   "Place": "https://w3id.org/contentdesc#Place",
+   "normScore": "https://w3id.org/ro/terms/earth-science#normScore",
+   "path": "https://w3id.org/ro/terms/earth-science#path",
+   "score": "https://w3id.org/ro/terms/earth-science#score",
+   "wikidata": "https://w3id.org/ro/terms/earth-science#wikidata",
+   "doi": "http://purl.org/ontology/bibo/doi",
+   "orcid": "https://w3id.org/dingo#orcid",
+   "template": "https://w3id.org/ro/terms/earth-science#template",
+   "dataType": "https://w3id.org/ro/terms/earth-science#dataType",
+   "datasetManager": "https://w3id.org/ro/terms/earth-science#datasetManager",
+   "minValue": "https://w3id.org/ro/terms/earth-science#minValue",
+   "maxValue": "https://w3id.org/ro/terms/earth-science#maxValue",
+   "status": "https://w3id.org/ro/terms/earth-science#status",
+   "DataCubeCollection": "https://w3id.org/ro/terms/earth-science#DataCubeCollection",
+   "DataCubeProduct": "https://w3id.org/ro/terms/earth-science#DataCubeProduct",
+   "enrichmentSubject": "http://w3id.org/ro-id/rohub/model#enrichmentSubject",
+   "softwareRequirements": "https://schema.org/softwareRequirements",
+   "geonames": "https://w3id.org/ro/terms/earth-science#geonames",
+   "value": "https://w3id.org/ro/terms/earth-science#value",
+   "accountablePerson": "https://schema.org/accountablePerson"
+  }
+ ],
+ "@graph": [
+  {
+   "@type": "CreativeWork",
+   "@id": "ro-crate-metadata.json",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "identifier": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470",
+   "hasPart": [
+    {
+     "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/folders/015da11d-aa80-4b46-8573-f6028e266ab9",
+     "@type": "Dataset"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/folders/3be750fc-47fe-45b4-a721-604f56307f24",
+     "@type": "Dataset"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/folders/cd6b0959-5734-49a8-a336-b8d395994873",
+     "@type": "Dataset"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/folders/9fb408ea-dc6d-4dac-919e-05cdd7cf9381",
+     "@type": "Dataset"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/resources/cd42d251-f203-4588-99e9-f71571ac8bdf",
+     "@type": "File"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/resources/52e95231-62c0-4655-95f7-bd85718a8c8d",
+     "@type": "File"
+    }
+   ],
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "https://w3id.org/ro/terms/earth-science#ExecutableResearchObject",
+    "http://purl.org/wf4ever/roevo#LiveRO"
+   ],
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    },
+    {
+     "@id": "https://orcid.org/0000-0002-1784-2920"
+    }
+   ],
+   "datePublished": "2024-04-18 15:03:25.200841+00:00",
+   "dateCreated": "2024-04-18 15:03:25.200841+00:00",
+   "dateModified": "2026-09-23 06:41:17.345000+00:00",
+   "contributor": [],
+   "name": "UHI-Stream: A User-Friendly, Cloud-Based Tool for Rapid Analysis of Urban Heat Island Effect Changes Anywhere On Earth",
+   "description": "The term \"Urban Heat Island\" (UHI) effect describes the phenomenon where urban environments exhibit higher air temperatures than their rural counterparts, a difference that is especially pronounced at night. This effect arises from the greater capacity of urban materials and man-made structures, such as buildings and pavements, to absorb, store, and then re-radiate heat compared to natural landscapes.\n\nFirst identified over two centuries ago, the UHI effect is subject of research to understand, measure, and mitigate its impacts on society, economic activities, and public health. Although traditionally the prerogative of specialists, the UHI is also attracting increasing interest among citizens. However, not all have the necessary technical expertise or infrastructure access to source relevant data (from in-situ measurements, satellite remote sensing, or numerical models), process it efficiently, synthesize it and interpret the changes over time or between different locations.\n\nThe UHI-Stream tool was specifically developed to bridge this gap and quickly analyze temperature differences between two points anywhere on Earth's by leveraging EGI compute and storage resources (owned by CESNET) and ERA5-Land reanalysis data (available from 1950, as part of the Copernicus Climate Change Service). The corresponding hourly 2m air temperatures are streamed from S3 buckets, processed on-the-fly and visualized as annual heat-maps or animations spanning user-defined time-frames.\n\nConveniently hosted on [RoHub][1] as a FAIR (Findable, Accessible, Interoperable, and Reusable) Executable Research Object, UHI-Stream is expected to be further converted into a Galaxy tool with a Graphical User Interface as part of the [EuroScienceGateway][2] project, potentially incorporating additional features to help users pinpoint representative urban and adjacent rural areas, or account for more grid cells.\n\nIn summary, UHI-Stream is poised to become a valuable asset in urban climatology studies, enabling easier identification of UHI patterns and estimating climate impacts on a regional scale. The tool’s versatility in analyzing any two geographic points enhances its usefulness beyond the mere urban-rural context, allowing for comparative analyses of temperature changes across diverse locales, regardless of their relationship.\n\n\n  [1]: http://www.rohub.org\n  [2]: http://www.eurosciencegateway.eu",
+   "contentSize": 6832,
+   "encodingFormat": "application/ld+json",
+   "contentUrl": "https://api.rohub.org/api/ros/d640e4aa-63bf-4aac-b579-eef79f1da470/crate/download/",
+   "citeAs": "Iaquinta, Jean, and Anne Fouilloux. \"UHI-Stream: A User-Friendly, Cloud-Based Tool for Rapid Analysis of Urban Heat Island Effect Changes Anywhere On Earth.\" ROHub. Apr 18 ,2024. https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "contentLocation": [
+    {
+     "@id": "#52661c39-fb0f-4ac6-8f58-ecc700809b22",
+     "identifier": "52661c39-fb0f-4ac6-8f58-ecc700809b22",
+     "@type": "http://schema.org/Place",
+     "geo": {
+      "@id": "#07c8c5a2-fabd-4317-96a7-9d2aa7c22b5e"
+     },
+     "name": "POINT (-38.90632152557374 -3.6988422103623573)"
+    }
+   ],
+   "about": [
+    {
+     "@id": "http://eurovoc.europa.eu/3949"
+    },
+    {
+     "@id": "http://eurovoc.europa.eu/6384"
+    },
+    {
+     "@id": "http://eurovoc.europa.eu/1892"
+    }
+   ],
+   "http://w3id.org/ro-id/rohub/model#community": [
+    {
+     "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9"
+    }
+   ],
+   "http://www.opengis.net/ont/geosparql#hasGeometry": {
+    "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/1740d504-c1da-4e3c-9ffb-362b9c7795f2"
+   },
+   "http://w3id.org/ro-id/rohub/model#creation_mode": "MANUAL",
+   "https://w3id.org/ro/terms/earth-science#template": "https://w3id.org/ro/terms/earth-science#ExecutableResearchObjectTemplate",
+   "keywords": [
+    "ERA5-land",
+    "heat-map",
+    "temperatures"
+   ],
+   "http://w3id.org/ro-id/rohub/model#enrichmentSubject": [
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/4af7f068-ad7d-4416-abe2-204ef34c6919"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/6be84a7e-d12e-4720-a055-50eb6256b02e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/785c1bd2-daec-4240-8871-fa61afd394bc"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/81617333-bb2d-4027-9f45-e5967e6d3ee0"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/89a6377a-247b-41d8-aab4-af9e399f5ef3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a368c37e-45a6-461b-a0ee-55eb913225b0"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c41749e8-2808-4857-a9c6-a2af49f30fd7"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c6206c64-72a3-4e59-b243-37f9de9affc5"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c66bdbb7-1276-4840-92f5-344e2a5afa91"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/cb70f9c1-b36d-41b1-9289-96ba7f96491f"
+    }
+   ]
+  },
+  {
+   "@id": "#07c8c5a2-fabd-4317-96a7-9d2aa7c22b5e",
+   "@type": "http://schema.org/GeoCoordinates",
+   "latitude": "-38.90632152557374",
+   "longitude": "-3.6988422103623573",
+   "name": "POINT (-38.90632152557374 -3.6988422103623573)"
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/3949",
+   "@type": "http://schema.org/DefinedTerm",
+   "name": "Applied sciences",
+   "description": ""
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/6384",
+   "@type": "http://schema.org/DefinedTerm",
+   "name": "Climatology",
+   "description": ""
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/1892",
+   "@type": "http://schema.org/DefinedTerm",
+   "name": "Meteorology",
+   "description": ""
+  },
+  {
+   "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9",
+   "@type": "http://w3id.org/ro-id/rohub/model#community",
+   "name": "Nordic Collaboration on e-Infrastructures for Earth System Modeling Tools",
+   "description": "NICEST-2 - the second phase of the Nordic Collaboration on e-Infrastructures for Earth System Modeling focuses on strengthening the Nordic position within climate modeling by leveraging, reinforcing and complementing ongoing initiatives.",
+   "url": "https://w3id.org/ro-id/ed4e6aa2-9db8-452d-9301-ba1606361034"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/folders/015da11d-aa80-4b46-8573-f6028e266ab9",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "name": "biblio"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/folders/3be750fc-47fe-45b4-a721-604f56307f24",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "name": "input"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/folders/cd6b0959-5734-49a8-a336-b8d395994873",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "name": "output"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/folders/9fb408ea-dc6d-4dac-919e-05cdd7cf9381",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "name": "tool",
+   "hasPart": [
+    {
+     "@id": "https://raw.githubusercontent.com/j34ni/UHI-Stream/main/notebook/UHI-create-movie.ipynb",
+     "@type": "File"
+    },
+    {
+     "@id": "https://j34ni.github.io/UHI-Stream/UHI-create-movie.html",
+     "@type": "File"
+    }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/resources/cd42d251-f203-4588-99e9-f71571ac8bdf",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "VideoObject"
+   ],
+   "name": "T2m_UHI_Fortaleza.mp4",
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2024-04-18 15:33:37.801794+00:00",
+   "dateCreated": "2024-04-18 15:33:37.801794+00:00",
+   "dateModified": "2024-04-18 15:33:38.533541+00:00",
+   "contentUrl": "https://api.rohub.org/api/resources/cd42d251-f203-4588-99e9-f71571ac8bdf/download/",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "contentSize": 415182,
+   "encodingFormat": "video/mp4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/resources/52e95231-62c0-4655-95f7-bd85718a8c8d",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#Sketch"
+   ],
+   "name": "Fortaleza-2023.png",
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2024-04-18 15:40:52.244217+00:00",
+   "dateCreated": "2024-04-18 15:40:52.244217+00:00",
+   "dateModified": "2024-04-18 15:40:52.863647+00:00",
+   "contentUrl": "https://api.rohub.org/api/resources/52e95231-62c0-4655-95f7-bd85718a8c8d/download/",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "contentSize": 62282,
+   "encodingFormat": "image/png"
+  },
+  {
+   "@id": "https://raw.githubusercontent.com/j34ni/UHI-Stream/main/notebook/UHI-create-movie.ipynb",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "https://w3id.org/ro/terms/earth-science#JupyterNotebook"
+   ],
+   "name": "Urban Heat Island Effect Changes (Jupyter Notebook)",
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-1784-2920"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-1784-2920"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2024-09-12 12:07:29.065021+00:00",
+   "dateCreated": "2024-09-12 12:07:29.065021+00:00",
+   "dateModified": "2024-09-12 12:07:30.283486+00:00",
+   "contentUrl": "https://raw.githubusercontent.com/j34ni/UHI-Stream/main/notebook/UHI-create-movie.ipynb",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "description": "Jupyter notebook to create a movie highlight the Urban heat island effect over a defined period of time."
+  },
+  {
+   "@id": "https://j34ni.github.io/UHI-Stream/UHI-create-movie.html",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/wf4ever#WebService"
+   ],
+   "name": "Urban Heat Island Effect Changes (rendered HTML notebook)",
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-1784-2920"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-1784-2920"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2024-09-12 12:09:44.304182+00:00",
+   "dateCreated": "2024-09-12 12:09:44.304182+00:00",
+   "dateModified": "2024-09-12 12:09:46.125931+00:00",
+   "contentUrl": "https://j34ni.github.io/UHI-Stream/UHI-create-movie.html",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "encodingFormat": "text/html",
+   "description": "This HTML page shows the HTML webpage of the rendered Jupyter notebook."
+  },
+  {
+   "@id": "https://w3id.org/ro-id/d640e4aa-63bf-4aac-b579-eef79f1da470/1740d504-c1da-4e3c-9ffb-362b9c7795f2",
+   "http://www.opengis.net/ont/geosparql#asWKT": "POINT (-38.90632152557374 -3.6988422103623573)",
+   "@type": [
+    "http://www.opengis.net/ont/geosparql#Geometry",
+    "http://www.opengis.net/ont/sf#Point"
+   ]
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-8763-1643",
+   "name": "Jean Iaquinta",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Agent"
+   ],
+   "https://w3id.org/dingo#orcid": "0000-0002-8763-1643",
+   "email": "jeani@uio.no"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-1784-2920",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Agent"
+   ],
+   "email": "annef@simula.no",
+   "name": "Anne Fouilloux",
+   "affiliation": "Simula Research Laboratory",
+   "https://w3id.org/dingo#orcid": "0000-0002-1784-2920"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/81617333-bb2d-4027-9f45-e5967e6d3ee0",
+   "name": "IPCC",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/a8ac2f66-4249-4b4e-ac1c-51a223fb928d"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/89a6377a-247b-41d8-aab4-af9e399f5ef3",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Policy Scale",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/d557c3b4-3378-46bb-b3e6-28dd40d82e08"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2bf60d8a-0e67-4043-9f69-f7018455fd1c",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "none"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/6be84a7e-d12e-4720-a055-50eb6256b02e",
+   "name": "Methodology",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/fda48f90-68f8-4da4-bd06-b76f670bc3b3"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a368c37e-45a6-461b-a0ee-55eb913225b0",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Funding",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/553b7aa1-3c38-46e6-8647-f052e01f5ba6"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/4af7f068-ad7d-4416-abe2-204ef34c6919",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/ca2f9ace-f117-4e2f-ab2a-3a9cce15a5d1"
+   },
+   "name": "Knowledge Sector (EEA)"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c6206c64-72a3-4e59-b243-37f9de9affc5",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/2bf60d8a-0e67-4043-9f69-f7018455fd1c"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "User Needs (RAST)"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2081483d-0660-4663-b835-9e60da1a77a4",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/9965a662-e00b-4cfe-925e-bcc41fae1c3b"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Key Type Measures"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/5b983ec1-7884-40a1-8fb8-f2dd7580328e",
+   "name": "none",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/9965a662-e00b-4cfe-925e-bcc41fae1c3b",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "none"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c66bdbb7-1276-4840-92f5-344e2a5afa91",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/68237b87-6817-472b-8c97-4075baa5c11f"
+   },
+   "name": "Climate-ADAPT Adaptation Sectors"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/68237b87-6817-472b-8c97-4075baa5c11f",
+   "name": "none",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/fda48f90-68f8-4da4-bd06-b76f670bc3b3",
+   "name": "none",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/cb70f9c1-b36d-41b1-9289-96ba7f96491f",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/5b983ec1-7884-40a1-8fb8-f2dd7580328e"
+   },
+   "name": "Geographical Scope"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ca2f9ace-f117-4e2f-ab2a-3a9cce15a5d1",
+   "name": "none",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/553b7aa1-3c38-46e6-8647-f052e01f5ba6",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "none"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/3744b65a-855d-448b-b826-123a0afba7c1",
+   "name": "none",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d557c3b4-3378-46bb-b3e6-28dd40d82e08",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "none"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c41749e8-2808-4857-a9c6-a2af49f30fd7",
+   "name": "Stakeholders",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/a1fb5c1d-0d68-4467-8fee-ba9d07f0808c"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a8ac2f66-4249-4b4e-ac1c-51a223fb928d",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "none"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a1fb5c1d-0d68-4467-8fee-ba9d07f0808c",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "none"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/785c1bd2-daec-4240-8871-fa61afd394bc",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Climate Hazard",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/3744b65a-855d-448b-b826-123a0afba7c1"
+   }
+  }
+ ]
+}

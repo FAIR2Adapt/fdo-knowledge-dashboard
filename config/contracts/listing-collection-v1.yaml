@@ -1,0 +1,21 @@
+contract_id: listing-collection-v1
+version: 1
+consumer:
+  service: "fdo-knowledge-dashboard: a list of the FDOs of one collection and a page per resource"
+  capability: "head the list with the collection's title and description and list its members"
+source:
+  document: "Dashboard profile v1.0.0, Collection and Dashboard FDO"
+  section: "owner: WP4 Task 4.1"
+needs:
+  - term: title
+    level: should
+    source: "Collection: name MUST"
+    reason: "heads the home page and the list; otherwise the site title"
+  - term: members
+    level: must
+    source: "Collection: hasPart MUST 1..n, FDO IRIs"
+    reason: "nothing to list, search or count without members"
+  - term: description
+    level: should
+    source: "no profile term; listing/catalog.py"
+    reason: "under the title on the home page"

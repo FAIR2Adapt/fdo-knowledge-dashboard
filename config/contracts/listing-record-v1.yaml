@@ -1,0 +1,47 @@
+contract_id: listing-record-v1
+version: 1
+consumer:
+  service: "fdo-knowledge-dashboard: a list of the FDOs of one collection and a page per resource"
+  capability: "show one member as a card of the list and as a resource page"
+source:
+  document: "Dashboard profile v1.0.0, Member; RO-Crate 1.2 root data entity"
+  section: "owner: WP4 Task 4.1"
+description: "Data products, files, status and access conditions are shown when the object states them; not required."
+profile_additions: cca-dashboard-additions
+needs:
+  - term: title
+    level: must
+    source: "Member: name MUST"
+    reason: "heads the card and the page; a member without one is listed as not usable"
+  - term: description
+    level: should
+    source: "no profile term; listing/catalog.py"
+    reason: "the description line of the card and the page"
+  - term: date
+    level: should
+    source: "Member: datePublished SHOULD"
+    reason: "shown on the card; the Year facet"
+  - term: licence
+    level: should
+    source: "Member: license SHOULD"
+    reason: "reuse conditions on the page"
+  - term: type
+    level: should
+    source: "Member: additionalType MUST"
+    reason: "type counts and filter; none stated counts as 'type not stated'"
+  - term: keywords
+    level: should
+    source: "Member: keywords SHOULD"
+    reason: "the Topics facet"
+  - term: author
+    level: should
+    source: "Member: author or publisher SHOULD"
+    reason: "who made the resource"
+  - term: identifier
+    level: should
+    source: "RO-Crate 1.2 root: identifier"
+    reason: "the stated identifier, next to the PID it is listed under"
+  - term: access_rights
+    level: should
+    source: "cca-dashboard-additions: accessRights on the root"
+    reason: "access conditions on the page"

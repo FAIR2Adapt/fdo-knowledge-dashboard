@@ -1,0 +1,710 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.1/context",
+  "https://w3id.org/ro/terms/earth-science#",
+  "https://w3id.org/ro/terms/workflow-run#",
+  "https://w3id.org/ro/terms/test#",
+  {
+   "citeAs": "https://www.w3.org/ns/iana/link-relations/relation#cite-as",
+   "community": "http://w3id.org/ro-id/rohub/model#community",
+   "cdesc": "https://reliance.expertcustomers.ai/vocabulary/cdesc/",
+   "creation_mode": "http://w3id.org/ro-id/rohub/model#creation_mode",
+   "prov": "http://www.w3.org/ns/prov#",
+   "archivedAtTime": "http://purl.org/wf4ever/roevo#archivedAtTime",
+   "archivedBy": "http://purl.org/wf4ever/roevo#archivedBy",
+   "hasArchive": "http://purl.org/wf4ever/roevo#hasArchive",
+   "hasSnapshot": "http://purl.org/wf4ever/roevo#hasSnapshot",
+   "isArchiveOf": "http://purl.org/wf4ever/roevo#isArchiveOf",
+   "isFinalized": "http://purl.org/wf4ever/roevo#isFinalized",
+   "isSnapshotOf": "http://purl.org/wf4ever/roevo#isSnapshotOf",
+   "snapshotedAtTime": "http://purl.org/wf4ever/roevo#snapshotedAtTime",
+   "snapshotedBy": "http://purl.org/wf4ever/roevo#snapshotedBy",
+   "forkedAtTime": "http://purl.org/wf4ever/roevo#forkedAtTime",
+   "forkedBy": "http://purl.org/wf4ever/roevo#forkedBy",
+   "hasFork": "http://purl.org/wf4ever/roevo#hasFork",
+   "asWKT": "http://www.opengis.net/ont/geosparql#asWKT",
+   "hasGeometry": "http://www.opengis.net/ont/geosparql#hasGeometry",
+   "Concept": "https://w3id.org/ro/terms/earth-science#Concept",
+   "FieldOfResearch": "https://w3id.org/ro/terms/earth-science#FieldOfResearch",
+   "IPTC": "https://w3id.org/ro/terms/earth-science#IPTC",
+   "Lemma": "https://w3id.org/ro/terms/earth-science#Lemma",
+   "NASA": "https://w3id.org/ro/terms/earth-science#NASA",
+   "Person1": "https://w3id.org/contentdesc#Person",
+   "Phrase": "https://w3id.org/ro/terms/earth-science#Phrase",
+   "Sentence": "https://w3id.org/ro/terms/earth-science#Sentence",
+   "TimeReference": "https://w3id.org/ro/terms/earth-science#TimeReference",
+   "Domain": "https://w3id.org/contentdesc#Domain",
+   "Organization1": "https://w3id.org/contentdesc#Organization",
+   "Place": "https://w3id.org/contentdesc#Place",
+   "normScore": "https://w3id.org/ro/terms/earth-science#normScore",
+   "path": "https://w3id.org/ro/terms/earth-science#path",
+   "score": "https://w3id.org/ro/terms/earth-science#score",
+   "wikidata": "https://w3id.org/ro/terms/earth-science#wikidata",
+   "doi": "http://purl.org/ontology/bibo/doi",
+   "orcid": "https://w3id.org/dingo#orcid",
+   "template": "https://w3id.org/ro/terms/earth-science#template",
+   "dataType": "https://w3id.org/ro/terms/earth-science#dataType",
+   "datasetManager": "https://w3id.org/ro/terms/earth-science#datasetManager",
+   "minValue": "https://w3id.org/ro/terms/earth-science#minValue",
+   "maxValue": "https://w3id.org/ro/terms/earth-science#maxValue",
+   "status": "https://w3id.org/ro/terms/earth-science#status",
+   "DataCubeCollection": "https://w3id.org/ro/terms/earth-science#DataCubeCollection",
+   "DataCubeProduct": "https://w3id.org/ro/terms/earth-science#DataCubeProduct",
+   "enrichmentSubject": "http://w3id.org/ro-id/rohub/model#enrichmentSubject",
+   "softwareRequirements": "https://schema.org/softwareRequirements"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "#3184754a-0b35-4660-8bf8-bdbadef1fd0a",
+   "@type": "GeoCoordinates",
+   "latitude": "16.4146363735199",
+   "longitude": "48.235011905128175",
+   "name": "POINT (16.4146363735199 48.235011905128175)"
+  },
+  {
+   "@id": "#7d91fc4a-2753-443a-85bb-acc61fdb99b1",
+   "@type": "s:Place",
+   "geo": {
+    "@id": "#3184754a-0b35-4660-8bf8-bdbadef1fd0a"
+   },
+   "identifier": "7d91fc4a-2753-443a-85bb-acc61fdb99b1",
+   "name": "POINT (16.4146363735199 48.235011905128175)"
+  },
+  {
+   "@id": "./",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "http://purl.org/wf4ever/roevo#LiveRO"
+   ],
+   "about": {
+    "@id": "http://eurovoc.europa.eu/3949"
+   },
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentLocation": {
+    "@id": "#7d91fc4a-2753-443a-85bb-acc61fdb99b1"
+   },
+   "contentSize": 161850,
+   "contentUrl": "https://api.rohub.org/api/ros/e2e015af-b02c-45c4-ae8a-f74271a813f0/crate/download/",
+   "contributor": [],
+   "copyrightHolder": {
+    "@id": "https://ror.org/00vn06n10"
+   },
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2024-04-19 17:26:42.189137+00:00",
+   "dateModified": "2025-10-16 12:30:24.188836+00:00",
+   "datePublished": "2024-04-19 17:26:42.189137+00:00",
+   "description": "In this presentation, we will share firsthand experiences and insights gained from navigating the EOSC (European Open Science Cloud), offering a glimpse into how EOSC influences our day-to-day work and how it has become an invaluable ally for our team. We belong to the Nordic e-Infrastructure Collaboration on Earth System Modeling Tools (NICEST), a small community composed of researchers, Research Software Engineers (RSEs), and engineers from Norway, Sweden, Finland, Denmark, and Estonia, working in different organisations such as national meteorological services, national compute/storage infrastructure providers and support services, universities and other research institutes either working directly on climate or supporting related activities. The NICEST community strengthens the Nordic position in climate modelling by addressing e-infra challenges, leveraging Earth System Models (ESMs) to understand climate processes, adapt to global change, and mitigate impacts.\n\nOur presentation extends beyond the technical aspects, offering a narrative of collaborative discovery that illustrates how EOSC has transformed into an indispensable companion, enabling our team to embody the principles of FAIR (Findable, Accessible, Interoperable, and Reusable) and open science. Throughout the session, we will highlight the operational intricacies of frameworks like EOSC, emphasising our nuanced approach to leveraging these frameworks for maximum impact.\n\nThis personal narrative is not just about success stories; it explores the challenges we've faced and the lessons we've learned. We place a special emphasis on our evolving understanding of effectively exploiting specific EOSC services, transforming it into more than just infrastructure but a trusted friend in our professional lives.\n\nAs we reflect on our collaborative journey, we'll share stories of triumphs, challenges, and the unique bond that has developed between our team and those contributing to EOSC's development. We'll explain how we've moved from being mere users to active contributors, contributing to the deployment of our own services to serve our community. Today, our aim is to actively participate in the construction of EOSC, demonstrating that through collaboration and co-design, we can significantly contribute to its ongoing evolution. This collaboration becomes truly effective when each actor recognizes the value of others, enabling us to pool efforts and enhance efficiency together.",
+   "encodingFormat": "application/ld+json",
+   "hasPart": [
+    {
+     "@id": "https://w3id.org/ro-id/e2e015af-b02c-45c4-ae8a-f74271a813f0/resources/49113661-187b-4602-b0da-4cd9d7933c53"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/e2e015af-b02c-45c4-ae8a-f74271a813f0/resources/a0355564-8fc4-4be4-8e96-32d30e589b14"
+    },
+    {
+     "@id": "https://doi.org/10.5194/egusphere-egu24-3441"
+    }
+   ],
+   "identifier": "https://w3id.org/ro-id/e2e015af-b02c-45c4-ae8a-f74271a813f0",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "mainEntity": "Presentation",
+   "name": "How EOSC became our best ally?",
+   "publisher": {
+    "@id": "https://ror.org/00vn06n10"
+   },
+   "community": {
+    "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9"
+   },
+   "creation_mode": "MANUAL",
+   "enrichmentSubject": [
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/006e0f5b-40f3-4444-95c8-05fb8915a3c9"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/10a5f16b-b188-40c7-98c2-71ed41db8224"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/14012a9e-0751-4461-8bfe-6972be2141a5"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/14018e77-c547-4ba0-9ecf-40f6e3f4d1f0"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1dd0ed33-3373-4c3f-a148-7b9a361af568"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/24650e0a-4a58-4a68-8fce-3495e310ec32"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2576a24b-857a-4ccc-85fe-29bbc3833800"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/25f0164a-9d77-4654-a658-82bb84484f34"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2cdc6e16-fa3a-42fa-8ad6-c53afd219a73"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/31704edd-4734-41c9-9c43-dd622bd7d8c4"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/328f8723-14d8-4f9d-988c-9e1fc29deea2"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/33d86b20-dc2a-4559-890b-55d0ce740e1d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/38313518-7907-4ab4-ae56-4e7e6b81043b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/448e1567-81a8-44e5-9aae-7e9fbac89b36"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/47ab21b7-40f4-4b25-acf4-138ca30946ff"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/4b085868-ab0b-40b3-aa84-ffb485ad883b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/52243ceb-7661-4533-b25f-33e6fcb08e95"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/5c0efb40-1b15-4707-9131-04cc6ff02c41"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/6858b921-fe78-4fb6-88b0-267f4fbbe9c4"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/6ac7b999-94f6-456c-8698-4ae9da00eed3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/7086c03c-ad7f-44b5-8cc2-fcd1e75291ef"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/766b7fd3-f299-41a4-97b0-9555869ebf0b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/79275fc5-4133-494e-93db-367ad54d3f34"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/7c8b27d6-84ad-451b-b110-a044d4150a4d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/7f74fde8-71d4-4c1f-96c2-731908959708"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/880dc2ff-bb6d-4eb7-8595-53708aab6c84"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/8a7cd256-f8a3-4ea4-ab88-32074dccfd3f"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/8d9078e2-3d49-45db-8099-4a6eda639ad7"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a2c57302-9fe5-43c6-8855-38c7b84ff869"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a2f0b138-342f-44bc-8e95-0c1e1eb59916"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a8cd3503-8586-4002-976e-0301188bdfb7"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/aaae2ed6-a6b0-401f-8dfd-7e941ebfae3c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/b33c00be-c75c-4210-83ec-7701eb30ed7a"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c30b5612-6f0f-42ef-9177-ff4dca5d3bfe"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c8ea2b04-3055-4c97-8864-40f090ed3338"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c9b68471-518f-44e2-9ff4-34dbda072cbd"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/cc4609af-f3e3-4758-8596-b4f1105eb746"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/d425ccff-89bc-4d96-922d-4517bdc34992"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/d7b535f8-10de-4911-8a5b-2d3aaa1e5cee"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e6c7feb6-5560-457c-9b54-13f78f38d4bb"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/eadf9322-eceb-4790-8930-690b5cb04052"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/ed45e3e7-6b03-4ff6-b4a0-eb76e88dbecb"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/ee1ab276-a556-4d2f-a5a6-9ad641326736"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/fb870157-fa51-4310-b099-fd3a48b3bfc1"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/d7f0ae7a-2b0d-4723-a461-792b46e71054"
+    }
+   ],
+   "hasGeometry": {
+    "@id": "https://w3id.org/ro-id/e2e015af-b02c-45c4-ae8a-f74271a813f0/7f69d6d9-261b-4570-9a46-d6868c12b630"
+   },
+   "cite-as": "Fouilloux, Anne. \"How EOSC became our best ally?.\" ROHub. Apr 19 ,2024. https://w3id.org/ro-id/e2e015af-b02c-45c4-ae8a-f74271a813f0."
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/3949",
+   "@type": "s:DefinedTerm",
+   "description": "",
+   "name": "Applied sciences"
+  },
+  {
+   "@id": "https://doi.org/10.5194/egusphere-egu24-3441",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/wf4ever#Document"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://doi.org/10.5194/egusphere-egu24-3441",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2024-04-19 17:41:34.722230+00:00",
+   "dateModified": "2024-04-19 17:41:36.307490+00:00",
+   "description": "Abstract corresponding to the talk at EGU 2024.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "EGU'24 abstract",
+   "sdDatePublished": "2024-04-19 17:41:34.722230+00:00"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-1784-2920",
+   "@type": "foaf:Agent",
+   "affiliation": "Simula Research Laboratory",
+   "email": "annef@simula.no",
+   "name": "Anne Fouilloux",
+   "orcid": "0000-0002-1784-2920"
+  },
+  {
+   "@id": "https://ror.org/00vn06n10",
+   "@type": [
+    "s:Organization",
+    "foaf:Agent"
+   ],
+   "email": "post@simula.no",
+   "identifier": "00vn06n10",
+   "name": "Simula Research Laboratory"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9",
+   "@type": "community",
+   "description": "NICEST-2 - the second phase of the Nordic Collaboration on e-Infrastructures for Earth System Modeling focuses on strengthening the Nordic position within climate modeling by leveraging, reinforcing and complementing ongoing initiatives.",
+   "name": "Nordic Collaboration on e-Infrastructures for Earth System Modeling Tools",
+   "url": "https://w3id.org/ro-id/ed4e6aa2-9db8-452d-9301-ba1606361034"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e2e015af-b02c-45c4-ae8a-f74271a813f0/7f69d6d9-261b-4570-9a46-d6868c12b630",
+   "@type": [
+    "http://www.opengis.net/ont/geosparql#Geometry",
+    "http://www.opengis.net/ont/sf#Point"
+   ],
+   "asWKT": "POINT (16.4146363735199 48.235011905128175)"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e2e015af-b02c-45c4-ae8a-f74271a813f0/resources/49113661-187b-4602-b0da-4cd9d7933c53",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#Sketch"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentSize": 199077,
+   "contentUrl": "https://api.rohub.org/api/resources/49113661-187b-4602-b0da-4cd9d7933c53/download/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2024-04-19 17:33:46.366627+00:00",
+   "dateModified": "2024-04-19 17:33:47.247098+00:00",
+   "encodingFormat": "image/png",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "NICEST2.png",
+   "sdDatePublished": "2024-04-19 17:33:46.366627+00:00"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e2e015af-b02c-45c4-ae8a-f74271a813f0/resources/a0355564-8fc4-4be4-8e96-32d30e589b14",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "PresentationDigitalDocument"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentSize": 3892388,
+   "contentUrl": "https://api.rohub.org/api/resources/a0355564-8fc4-4be4-8e96-32d30e589b14/download/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2024-04-19 17:40:23.572101+00:00",
+   "dateModified": "2024-04-19 17:40:26.775321+00:00",
+   "description": "Oral presentation given at EGU DOI: [10.5194/egusphere-egu24-3441](https://doi.org/10.5194/egusphere-egu24-3441)",
+   "encodingFormat": "application/pdf",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "How EOSC became our best ally? (EGU'24 presentation slides)",
+   "sdDatePublished": "2024-04-19 17:40:23.572101+00:00"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/006e0f5b-40f3-4444-95c8-05fb8915a3c9",
+   "@type": "IPTC",
+   "name": "Climate change",
+   "path": "Environment/Climate change"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/10a5f16b-b188-40c7-98c2-71ed41db8224",
+   "@type": "IPTC",
+   "name": "Science and technology",
+   "path": "Science and technology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/14012a9e-0751-4461-8bfe-6972be2141a5",
+   "@type": "Concept",
+   "name": "collaboration",
+   "normScore": "9.735744089012517",
+   "score": "7.0"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/14018e77-c547-4ba0-9ecf-40f6e3f4d1f0",
+   "@type": "Concept",
+   "name": "insight",
+   "normScore": "6.11961057023644",
+   "score": "4.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1dd0ed33-3373-4c3f-a148-7b9a361af568",
+   "@type": "Lemma",
+   "name": "narrative",
+   "normScore": "9.803921568627452",
+   "score": "4.0"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/24650e0a-4a58-4a68-8fce-3495e310ec32",
+   "@type": "Place",
+   "name": "Estonia",
+   "wikidata": {
+    "@id": "https://www.wikidata.org/wiki/Q191"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2576a24b-857a-4ccc-85fe-29bbc3833800",
+   "@type": "Concept",
+   "name": "challenge",
+   "normScore": "7.927677329624478",
+   "score": "5.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/25f0164a-9d77-4654-a658-82bb84484f34",
+   "@type": "Lemma",
+   "name": "collaboration",
+   "normScore": "12.254901960784315",
+   "score": "5.0"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2cdc6e16-fa3a-42fa-8ad6-c53afd219a73",
+   "@type": "IPTC",
+   "name": "Weather",
+   "path": "Weather"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/31704edd-4734-41c9-9c43-dd622bd7d8c4",
+   "@type": "Lemma",
+   "name": "infrastructure",
+   "normScore": "11.764705882352942",
+   "score": "4.8"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/328f8723-14d8-4f9d-988c-9e1fc29deea2",
+   "@type": "Concept",
+   "name": "intricacy",
+   "normScore": "5.006954102920723",
+   "score": "3.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/33d86b20-dc2a-4559-890b-55d0ce740e1d",
+   "@type": "Phrase",
+   "name": "Eosc's development",
+   "normScore": "17.183770883054894",
+   "score": "7.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/38313518-7907-4ab4-ae56-4e7e6b81043b",
+   "@type": "Concept",
+   "name": "allies",
+   "normScore": "10.709318497913769",
+   "score": "7.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/448e1567-81a8-44e5-9aae-7e9fbac89b36",
+   "@type": "Domain",
+   "name": "job market",
+   "normScore": "20.754716981132077",
+   "score": "1.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/47ab21b7-40f4-4b25-acf4-138ca30946ff",
+   "@type": "Place",
+   "name": "Sweden",
+   "wikidata": {
+    "@id": "https://www.wikidata.org/wiki/Q34"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/4b085868-ab0b-40b3-aa84-ffb485ad883b",
+   "@type": "NASA",
+   "name": "meteorology and climatology",
+   "normScore": "100.0",
+   "score": "0.8775330781936646"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/52243ceb-7661-4533-b25f-33e6fcb08e95",
+   "@type": "Place",
+   "name": "Norway",
+   "wikidata": {
+    "@id": "https://www.wikidata.org/wiki/Q20"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/5c0efb40-1b15-4707-9131-04cc6ff02c41",
+   "@type": "Place",
+   "name": "Denmark",
+   "wikidata": {
+    "@id": "https://www.wikidata.org/wiki/Q35"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/6858b921-fe78-4fb6-88b0-267f4fbbe9c4",
+   "@type": "Sentence",
+   "name": "How EOSC became our best ally?",
+   "normScore": "22.867513611615244",
+   "score": "12.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/6ac7b999-94f6-456c-8698-4ae9da00eed3",
+   "@type": "Concept",
+   "name": "impact",
+   "normScore": "5.1460361613351875",
+   "score": "3.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7086c03c-ad7f-44b5-8cc2-fcd1e75291ef",
+   "@type": "Domain",
+   "name": "sociology",
+   "normScore": "28.30188679245283",
+   "score": "1.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/766b7fd3-f299-41a4-97b0-9555869ebf0b",
+   "@type": "Lemma",
+   "name": "ally",
+   "normScore": "13.23529411764706",
+   "score": "5.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/79275fc5-4133-494e-93db-367ad54d3f34",
+   "@type": "Concept",
+   "name": "story",
+   "normScore": "7.927677329624478",
+   "score": "5.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7c8b27d6-84ad-451b-b110-a044d4150a4d",
+   "@type": "Domain",
+   "name": "politics",
+   "normScore": "28.30188679245283",
+   "score": "1.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7f74fde8-71d4-4c1f-96c2-731908959708",
+   "@type": "FieldOfResearch",
+   "name": "geology",
+   "normScore": "100.0",
+   "score": "0.4694598913192749"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/880dc2ff-bb6d-4eb7-8595-53708aab6c84",
+   "@type": "Phrase",
+   "name": "climate processes",
+   "normScore": "18.615751789976134",
+   "score": "7.8"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8a7cd256-f8a3-4ea4-ab88-32074dccfd3f",
+   "@type": "Phrase",
+   "name": "Earth System Models",
+   "normScore": "12.649164677804297",
+   "score": "5.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8d9078e2-3d49-45db-8099-4a6eda639ad7",
+   "@type": "Concept",
+   "name": "development",
+   "normScore": "8.762169680111265",
+   "score": "6.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a2c57302-9fe5-43c6-8855-38c7b84ff869",
+   "@type": "Concept",
+   "name": "community",
+   "normScore": "14.047287899860917",
+   "score": "10.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a2f0b138-342f-44bc-8e95-0c1e1eb59916",
+   "@type": "Concept",
+   "name": "climate",
+   "normScore": "10.570236439499304",
+   "score": "7.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a8cd3503-8586-4002-976e-0301188bdfb7",
+   "@type": "Sentence",
+   "name": "In this presentation, we will share firsthand experiences and insights gained from navigating the EOSC (European Open Science Cloud), offering a glimpse into how EOSC influences our day-to-day work and how it has become an invaluable ally for our team.",
+   "normScore": "59.89110707803992",
+   "score": "33.0"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/aaae2ed6-a6b0-401f-8dfd-7e941ebfae3c",
+   "@type": "IPTC",
+   "name": "Environmental politics",
+   "path": "Environment/Environmental politics"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/b33c00be-c75c-4210-83ec-7701eb30ed7a",
+   "@type": "Concept",
+   "name": "work",
+   "normScore": "4.728789986091794",
+   "score": "3.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c30b5612-6f0f-42ef-9177-ff4dca5d3bfe",
+   "@type": "Phrase",
+   "name": "storage infrastructure provider",
+   "normScore": "22.43436754176611",
+   "score": "9.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c8ea2b04-3055-4c97-8864-40f090ed3338",
+   "@type": "FieldOfResearch",
+   "name": "earth sciences",
+   "normScore": "100.0",
+   "score": "0.4694598913192749"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c9b68471-518f-44e2-9ff4-34dbda072cbd",
+   "@type": "Sentence",
+   "name": "The NICEST community strengthens the Nordic position in climate modelling by addressing e-infra challenges, leveraging Earth System Models (ESMs) to understand climate processes, adapt to global change, and mitigate impacts.",
+   "normScore": "17.241379310344826",
+   "score": "9.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/cc4609af-f3e3-4758-8596-b4f1105eb746",
+   "@type": "Phrase",
+   "name": "Eosc service",
+   "normScore": "29.116945107398568",
+   "score": "12.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d425ccff-89bc-4d96-922d-4517bdc34992",
+   "@type": "Lemma",
+   "name": "climate",
+   "normScore": "12.990196078431373",
+   "score": "5.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d7b535f8-10de-4911-8a5b-2d3aaa1e5cee",
+   "@type": "IPTC",
+   "name": "Architecture",
+   "path": "Arts, culture and entertainment/Arts and entertainment/Visual arts/Architecture"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d7f0ae7a-2b0d-4723-a461-792b46e71054",
+   "@type": "NASA",
+   "name": "geosciences",
+   "normScore": "100.0",
+   "score": "0.8775330781936646"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e6c7feb6-5560-457c-9b54-13f78f38d4bb",
+   "@type": "Lemma",
+   "name": "challenge",
+   "normScore": "10.049019607843137",
+   "score": "4.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/eadf9322-eceb-4790-8930-690b5cb04052",
+   "@type": "Concept",
+   "name": "infrastructure",
+   "normScore": "9.318497913769123",
+   "score": "6.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ed45e3e7-6b03-4ff6-b4a0-eb76e88dbecb",
+   "@type": "Place",
+   "name": "Finland",
+   "wikidata": {
+    "@id": "https://www.wikidata.org/wiki/Q33"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ee1ab276-a556-4d2f-a5a6-9ad641326736",
+   "@type": "Domain",
+   "name": "meteorology",
+   "normScore": "22.641509433962266",
+   "score": "1.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/fb870157-fa51-4310-b099-fd3a48b3bfc1",
+   "@type": "Lemma",
+   "name": "European Open Science Cloud",
+   "normScore": "29.901960784313726",
+   "score": "12.2"
+  },
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.1"
+   },
+   "about": {
+    "@id": "./"
+   }
+  }
+ ]
+}

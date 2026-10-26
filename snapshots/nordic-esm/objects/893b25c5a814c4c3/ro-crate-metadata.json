@@ -1,0 +1,1077 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  "https://w3id.org/ro/terms/earth-science#",
+  "https://w3id.org/ro/terms/workflow-run#",
+  "https://w3id.org/ro/terms/test#",
+  {
+   "citeAs": "https://www.w3.org/ns/iana/link-relations/relation#cite-as",
+   "citeAs2": "http://www.iana.org/assignments/relation/cite-as",
+   "community": "http://w3id.org/ro-id/rohub/model#community",
+   "cdesc": "https://reliance.expertcustomers.ai/vocabulary/cdesc/",
+   "creation_mode": "http://w3id.org/ro-id/rohub/model#creation_mode",
+   "prov": "http://www.w3.org/ns/prov#",
+   "archivedAtTime": "http://purl.org/wf4ever/roevo#archivedAtTime",
+   "archivedBy": "http://purl.org/wf4ever/roevo#archivedBy",
+   "hasArchive": "http://purl.org/wf4ever/roevo#hasArchive",
+   "hasSnapshot": "http://purl.org/wf4ever/roevo#hasSnapshot",
+   "isArchiveOf": "http://purl.org/wf4ever/roevo#isArchiveOf",
+   "isFinalized": "http://purl.org/wf4ever/roevo#isFinalized",
+   "isSnapshotOf": "http://purl.org/wf4ever/roevo#isSnapshotOf",
+   "snapshotedAtTime": "http://purl.org/wf4ever/roevo#snapshotedAtTime",
+   "snapshotedBy": "http://purl.org/wf4ever/roevo#snapshotedBy",
+   "forkedAtTime": "http://purl.org/wf4ever/roevo#forkedAtTime",
+   "forkedBy": "http://purl.org/wf4ever/roevo#forkedBy",
+   "hasFork": "http://purl.org/wf4ever/roevo#hasFork",
+   "asWKT": "http://www.opengis.net/ont/geosparql#asWKT",
+   "hasGeometry": "http://www.opengis.net/ont/geosparql#hasGeometry",
+   "Concept": "https://w3id.org/ro/terms/earth-science#Concept",
+   "FieldOfResearch": "https://w3id.org/ro/terms/earth-science#FieldOfResearch",
+   "IPTC": "https://w3id.org/ro/terms/earth-science#IPTC",
+   "Lemma": "https://w3id.org/ro/terms/earth-science#Lemma",
+   "NASA": "https://w3id.org/ro/terms/earth-science#NASA",
+   "Person1": "https://w3id.org/contentdesc#Person",
+   "Phrase": "https://w3id.org/ro/terms/earth-science#Phrase",
+   "Sentence": "https://w3id.org/ro/terms/earth-science#Sentence",
+   "TimeReference": "https://w3id.org/ro/terms/earth-science#TimeReference",
+   "Domain": "https://w3id.org/contentdesc#Domain",
+   "Organization1": "https://w3id.org/contentdesc#Organization",
+   "Place": "https://w3id.org/contentdesc#Place",
+   "normScore": "https://w3id.org/ro/terms/earth-science#normScore",
+   "path": "https://w3id.org/ro/terms/earth-science#path",
+   "score": "https://w3id.org/ro/terms/earth-science#score",
+   "wikidata": "https://w3id.org/ro/terms/earth-science#wikidata",
+   "doi": "http://purl.org/ontology/bibo/doi",
+   "orcid": "https://w3id.org/dingo#orcid",
+   "template": "https://w3id.org/ro/terms/earth-science#template",
+   "dataType": "https://w3id.org/ro/terms/earth-science#dataType",
+   "datasetManager": "https://w3id.org/ro/terms/earth-science#datasetManager",
+   "minValue": "https://w3id.org/ro/terms/earth-science#minValue",
+   "maxValue": "https://w3id.org/ro/terms/earth-science#maxValue",
+   "status": "https://w3id.org/ro/terms/earth-science#status",
+   "DataCubeCollection": "https://w3id.org/ro/terms/earth-science#DataCubeCollection",
+   "DataCubeProduct": "https://w3id.org/ro/terms/earth-science#DataCubeProduct",
+   "enrichmentSubject": "http://w3id.org/ro-id/rohub/model#enrichmentSubject",
+   "softwareRequirements": "https://schema.org/softwareRequirements",
+   "geonames": "https://w3id.org/ro/terms/earth-science#geonames",
+   "value": "https://w3id.org/ro/terms/earth-science#value",
+   "accountablePerson": "https://schema.org/accountablePerson"
+  }
+ ],
+ "@graph": [
+  {
+   "@type": "CreativeWork",
+   "@id": "ro-crate-metadata.json",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "identifier": "https://w3id.org/ro-id/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc",
+   "hasPart": [
+    {
+     "@id": "https://w3id.org/ro-id/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc/folders/2c679596-664b-46fd-864f-3877a7ae4681",
+     "@type": "Dataset"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc/resources/c5c7e757-e7be-471e-9894-5357018cc1ac",
+     "@type": "File"
+    }
+   ],
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "https://w3id.org/ro/terms/earth-science#BibliographyResearchObject",
+    "http://purl.org/wf4ever/roevo#LiveRO"
+   ],
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    },
+    {
+     "@id": "https://orcid.org/0000-0002-1784-2920"
+    }
+   ],
+   "datePublished": "2024-03-11 09:07:07.239581+00:00",
+   "dateCreated": "2024-03-11 09:07:07.239581+00:00",
+   "dateModified": "2026-10-12 15:11:00.540447+00:00",
+   "contributor": [],
+   "name": "An \"Urban Heat Island\" tool in Galaxy",
+   "description": "This Research Object (RO) encapsulates the various steps leading to the creation of an \"Urban Heat Island\" (UHI) effect analysis tool tailored for the UseGalaxy.eu platform, providing an accessible resource for a broad user base, including urban planners, educators, and community members. \n\nThe tool predominantly utilizes ERA5-Land meteorological reanalysis data to characterize and quantify the UHI effect. It will also offer a straightforward approach to examining the temperature contrasts between urban and surrounding rural areas either defined by the user or delineated with the aid of satellite data to ensure accurate urban-rural categorization.\n\nThe interactive interface of the tool is meant to ensure that users can engage with the data without requiring specialized technical knowledge, promoting environmental awareness and facilitating informed decision-making for heat mitigation and urban planning. The objective of the integration with the UseGalaxy.eu platform is to democratize access to complex climate data, fostering community-driven solutions to combat the challenges posed by increased urban temperatures.",
+   "contentSize": 3393551,
+   "encodingFormat": "application/ld+json",
+   "contentUrl": "https://api.rohub.org/api/ros/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc/crate/download/",
+   "citeAs": "Iaquinta, Jean, and Anne Fouilloux. \"An \"Urban Heat Island\" tool in Galaxy.\" ROHub. Mar 11 ,2024. https://w3id.org/ro-id/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "publisher": [
+    {
+     "@id": "https://ror.org/01xtthb56"
+    },
+    {
+     "@id": "https://ror.org/00vn06n10"
+    }
+   ],
+   "copyrightHolder": [
+    {
+     "@id": "https://ror.org/01xtthb56"
+    },
+    {
+     "@id": "https://ror.org/00vn06n10"
+    }
+   ],
+   "contentLocation": [
+    {
+     "@id": "#19d5c70a-513b-45e3-b93c-2184c25bfe41",
+     "identifier": "19d5c70a-513b-45e3-b93c-2184c25bfe41",
+     "@type": "http://schema.org/Place",
+     "geo": {
+      "@id": "#05d48444-0e2c-456a-9e01-12ffa147a4b5"
+     },
+     "name": "POINT (10.717281103134157 59.943557942061524)"
+    },
+    {
+     "@id": "#0d1fbbde-5183-49a7-9433-da14d5234361",
+     "identifier": "0d1fbbde-5183-49a7-9433-da14d5234361",
+     "@type": "http://schema.org/Place",
+     "geo": {
+      "@id": "#37755ed3-2ebe-4638-8535-9611dfd4bf4b"
+     },
+     "name": "POINT (10.736072659492494 59.91734068961647)"
+    }
+   ],
+   "about": [
+    {
+     "@id": "http://eurovoc.europa.eu/3949"
+    },
+    {
+     "@id": "http://eurovoc.europa.eu/6384"
+    },
+    {
+     "@id": "http://eurovoc.europa.eu/1892"
+    }
+   ],
+   "http://w3id.org/ro-id/rohub/model#community": [
+    {
+     "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9"
+    }
+   ],
+   "keywords": [
+    "reanalysis",
+    "rural area",
+    "UHI"
+   ],
+   "http://www.opengis.net/ont/geosparql#hasGeometry": [
+    {
+     "@id": "https://w3id.org/ro-id/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc/918c49bc-6a47-4894-9221-8da52bbcbc29"
+    }
+   ],
+   "https://w3id.org/ro/terms/earth-science#template": "https://w3id.org/ro/terms/earth-science#BibliographyCentricResearchObjectTemplate",
+   "http://w3id.org/ro-id/rohub/model#creation_mode": "MANUAL",
+   "http://w3id.org/ro-id/rohub/model#enrichmentSubject": [
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/10436b77-7fe0-41db-8e1c-cb4e065899f4"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/11d50424-ad75-4635-86ad-df54e14fba40"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1cc62d03-409a-4f14-8948-6d8158a8f1b5"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/21a9dad7-fbfb-4c62-92d3-71ef3b288715"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/24ddc532-dda1-442b-8644-32b355bca225"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2500a130-3e38-4111-b355-240bef0dbf22"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2726f83d-b235-43d5-b7ad-b7b275c0929e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/27fd6430-4c8e-46f6-9c0c-5d20151d0009"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2ba05aad-4574-4ea5-8f4e-588f61de2ea3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/3260c273-b938-488f-9f02-1bee14a0458a"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/32a47da1-085b-4ed9-af8a-eb9f310c5919"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/33ab1118-531a-42c9-8e08-2b5b98f1b6b0"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/359145a7-4b73-40a9-a737-87efbcbe840b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/373e9325-1bde-4c25-be97-fabc153fbd3e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/3952c6bc-6cd1-495d-9f10-a012b834ed3b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/3b6c49f0-97b1-4cdf-8260-14cd3ad67603"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/415cce61-4300-46f7-b021-0a9cb652cb5c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/4eed8b61-d5da-4933-8157-ef4d129ab701"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/5eda0eb0-f4ae-4c34-aa91-c72f603dc689"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/615947bf-e960-482d-b1de-84e156d0cffa"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/71c65285-9232-4b0e-aa4e-8c887f1ed538"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/72a93f6c-3a6d-491e-bd9f-68b27b2e0c2d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/7399e91f-529a-4555-ae97-b70620be7b78"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/793b9b76-30c8-4d76-82c2-16bed1509951"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/7ea607f6-20ea-49d9-a387-c9cf76f6f116"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/851fa7f8-46ef-49c5-b321-a84b8dd8415d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/85212f9b-1c7c-414d-8cca-619b0ceba0c9"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/85a9df46-96b0-4155-8e58-d214b349b40c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/8789f0ef-49fa-400f-8e0d-ad7670e95268"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/88f5a8a5-c451-473c-9b97-ace458131e80"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/8c23dc40-8e92-4095-9222-ba1dffca8930"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/9ae4ef20-bc51-4893-ba72-2b3237913b5b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a1050823-2c05-4f1a-bcfc-9af72fb21dbd"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a73c97ce-e741-4adc-9507-ca04278c7146"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/b07a4898-f85e-4c27-aa22-f0549da6a76b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c223424a-b310-4f75-9bc2-b5bacad4da1d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c5713dc6-28cb-4dff-aabd-af619c433216"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c8100b66-9f47-4157-be3d-574522e8fdfe"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c9f4abe3-0fc9-42d9-aa47-60eec0269a38"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/cc2992a3-a58e-4538-a6ea-420636130f3c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/d13f377f-37f9-4bd2-9794-1c5ddc71371d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/d1e300a3-7301-4a8c-945b-17e0e3acf98e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/dcbeb68b-323c-4b66-9bb8-bd7ad78e1f4a"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e564cd43-d904-4de0-bf23-8df5a67633d2"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/edd23677-0869-4652-805e-a3e2022af8b3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/ef8888c6-ab57-4d25-a536-320c521a2aae"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/f280daaf-3aca-44b8-88b3-db54cbb5734d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/f43b5c17-4674-4048-9325-49306b81b4f4"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/f7ad184a-5224-4b98-83a9-5402da9e7331"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/fc1fbacf-94c6-4326-8be4-54422d9f5263"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/ff48dc75-1b64-4f39-b926-877e16199dc6"
+    }
+   ]
+  },
+  {
+   "@id": "https://ror.org/01xtthb56",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Agent"
+   ],
+   "name": "University of Oslo",
+   "identifier": "01xtthb56"
+  },
+  {
+   "@id": "https://ror.org/00vn06n10",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Agent"
+   ],
+   "name": "Simula Research Laboratory",
+   "email": "post@simula.no",
+   "identifier": "00vn06n10"
+  },
+  {
+   "@id": "#05d48444-0e2c-456a-9e01-12ffa147a4b5",
+   "@type": "http://schema.org/GeoCoordinates",
+   "latitude": "10.717281103134157",
+   "longitude": "59.943557942061524",
+   "name": "POINT (10.717281103134157 59.943557942061524)"
+  },
+  {
+   "@id": "#37755ed3-2ebe-4638-8535-9611dfd4bf4b",
+   "@type": "http://schema.org/GeoCoordinates",
+   "latitude": "10.736072659492494",
+   "longitude": "59.91734068961647",
+   "name": "POINT (10.736072659492494 59.91734068961647)"
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/3949",
+   "@type": "http://schema.org/DefinedTerm",
+   "name": "Applied sciences",
+   "description": ""
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/6384",
+   "@type": "http://schema.org/DefinedTerm",
+   "name": "Climatology",
+   "description": ""
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/1892",
+   "@type": "http://schema.org/DefinedTerm",
+   "name": "Meteorology",
+   "description": ""
+  },
+  {
+   "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9",
+   "@type": "http://w3id.org/ro-id/rohub/model#community",
+   "name": "Nordic Collaboration on e-Infrastructures for Earth System Modeling Tools",
+   "description": "NICEST-2 - the second phase of the Nordic Collaboration on e-Infrastructures for Earth System Modeling focuses on strengthening the Nordic position within climate modeling by leveraging, reinforcing and complementing ongoing initiatives.",
+   "url": "https://w3id.org/ro-id/ed4e6aa2-9db8-452d-9301-ba1606361034"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc/folders/2c679596-664b-46fd-864f-3877a7ae4681",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "name": "biblio",
+   "hasPart": [
+    {
+     "@id": "https://arxiv.org/abs/2205.00319",
+     "@type": "File"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc/resources/eb4f3c60-ac13-4d3e-9a82-b42b9731ba76",
+     "@type": "File"
+    }
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc/resources/c5c7e757-e7be-471e-9894-5357018cc1ac",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#Sketch"
+   ],
+   "name": "ERA5_UHI_Mumbai_per_hour_1952-1961.jpg",
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2024-03-11 09:14:16.186048+00:00",
+   "dateCreated": "2024-03-11 09:14:16.186048+00:00",
+   "dateModified": "2024-03-11 09:14:17.037627+00:00",
+   "contentUrl": "https://api.rohub.org/api/resources/c5c7e757-e7be-471e-9894-5357018cc1ac/download/",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "contentSize": 43037,
+   "encodingFormat": "image/jpeg"
+  },
+  {
+   "@id": "https://arxiv.org/abs/2205.00319",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Article"
+   ],
+   "name": "UHI in Fortaleza and trends on screen-level air temperature and precipitation",
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2024-03-11 09:27:20.635833+00:00",
+   "dateCreated": "2024-03-11 09:27:20.635833+00:00",
+   "dateModified": "2024-03-11 09:27:33.960648+00:00",
+   "contentUrl": "https://arxiv.org/abs/2205.00319",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "description": "There is a consensus that Urban Heat Island phenomenon - UHI occurs in every large city. This\neffect is characterized by higher air temperatures in cities than in the neighboring countryside at\nnight. However, to date, there has been no systematic study on the Fortaleza case, the Brazil’s 5th\nlargest city. By the comparison between screen-level air temperature measured by two automatic\nweather stations, one located in the city and the other in the neighboring region, this work shows the\noccurrence of the UHI in Fortaleza, even during the rainy season. In an attempt to find some effect\nof the UHI on precipitation (and vice-versa), historical series of air temperature and precipitation\nwere analyzed from 1966 to 2020. Besides the considerable increase in air temperature over the\nyears, a slight downward trend was observed in UHI and even more in precipitation between the\nhours of 15:00 and 21:00 (local time). However, one believes that these trends may be related to\nclimate change at large scale rather than an urban scale.",
+   "keywords": [
+    "Brazil",
+    "UHI"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc/resources/eb4f3c60-ac13-4d3e-9a82-b42b9731ba76",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Book"
+   ],
+   "name": "The climate of London",
+   "creator": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2024-03-11 10:06:48.968829+00:00",
+   "dateCreated": "2024-03-11 10:06:48.968829+00:00",
+   "dateModified": "2024-03-11 10:06:51.533378+00:00",
+   "contentUrl": "https://api.rohub.org/api/resources/eb4f3c60-ac13-4d3e-9a82-b42b9731ba76/download/",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "contentSize": 3529718,
+   "encodingFormat": "application/pdf",
+   "keywords": [
+    "climate",
+    "UHI"
+   ],
+   "description": "This edition of Luke Howard’s CLIMATE OF LONDON has been produced by the\r\nInternational Association for Urban Climate (IAUC). While Howard is best known for his work on\r\nclouds1, he was also the first to recognise the effect that urban areas have on local climate. Much of\r\nhis studies on climate, including his description, analysis and observations, are contained in CLIMATE ,\r\nwhich can reasonably claim to be the first textbook on climatology. Despite its title, the majority of\r\nthe book is concerned with weather and climate in general, rather than that of the London\r\nmetropolis. Nevertheless, one hundred and thirty-two years after its publication, Chandler dedicated\r\nhis study of the spatial and temporal character of metropolis’ climate to Luke Howard (1772-1864),\r\nwhom he described as the pioneer of urban climatic studies."
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-8763-1643",
+   "email": "jeani@uio.no",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Agent"
+   ],
+   "name": "Jean Iaquinta",
+   "https://w3id.org/dingo#orcid": "0000-0002-8763-1643"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc/80937b7b-4c5a-4ac8-9fc4-531e4125c83e",
+   "@type": [
+    "http://www.opengis.net/ont/sf#Point",
+    "http://www.opengis.net/ont/geosparql#Geometry"
+   ],
+   "http://www.opengis.net/ont/geosparql#asWKT": "POINT (10.736072659492494 59.91734068961647)"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/083e5bf4-19f5-4e2a-8e27-f9b7f1f59abc/918c49bc-6a47-4894-9221-8da52bbcbc29",
+   "http://www.opengis.net/ont/geosparql#asWKT": "POINT (10.717281103134157 59.943557942061524)",
+   "@type": [
+    "http://www.opengis.net/ont/sf#Point",
+    "http://www.opengis.net/ont/geosparql#Geometry"
+   ]
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-1784-2920",
+   "email": "annef@simula.no",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Agent"
+   ],
+   "affiliation": "Simula Research Laboratory",
+   "https://w3id.org/dingo#orcid": "0000-0002-1784-2920",
+   "name": "Anne Fouilloux"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d13f377f-37f9-4bd2-9794-1c5ddc71371d",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.794947994056463",
+   "name": "temperature",
+   "https://w3id.org/ro/terms/earth-science#score": "3.9"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/851fa7f8-46ef-49c5-b321-a84b8dd8415d",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Knowledge Sector (EEA)",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/0139d7f4-108b-4ea5-880d-a31259a05146"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/9ae4ef20-bc51-4893-ba72-2b3237913b5b",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/b20ae61c-820a-4944-b0ae-9f3cb0f7a6cb"
+   },
+   "name": "Funding"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7ea607f6-20ea-49d9-a387-c9cf76f6f116",
+   "https://w3id.org/ro/terms/earth-science#score": "5.7",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "11.377245508982034",
+   "name": "rural area"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c94f6c45-655b-450c-b855-9e26ba4ace0a",
+   "name": "No policy or regulation",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c8100b66-9f47-4157-be3d-574522e8fdfe",
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.943536404160476",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "4.0",
+   "name": "decision making"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/415cce61-4300-46f7-b021-0a9cb652cb5c",
+   "https://w3id.org/ro/terms/earth-science#score": "6.2",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "12.375249500998002",
+   "name": "reanalysis"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f7ad184a-5224-4b98-83a9-5402da9e7331",
+   "@type": [
+    "https://w3id.org/contentdesc#Domain"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "33.333333333333336",
+   "https://w3id.org/ro/terms/earth-science#score": "2.5",
+   "name": "city planning"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/b07a4898-f85e-4c27-aa22-f0549da6a76b",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FieldOfResearch"
+   ],
+   "name": "Earth Sciences"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/edd23677-0869-4652-805e-a3e2022af8b3",
+   "https://w3id.org/ro/terms/earth-science#normScore": "11.177644710578841",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "name": "tool",
+   "https://w3id.org/ro/terms/earth-science#score": "5.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/78b22b95-a7a5-4bb1-a322-2af651b12be9",
+   "name": "Extreme heat",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/fc1fbacf-94c6-4326-8be4-54422d9f5263",
+   "https://w3id.org/ro/terms/earth-science#score": "7.1",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "rural area",
+   "https://w3id.org/ro/terms/earth-science#normScore": "10.549777117384844"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2500a130-3e38-4111-b355-240bef0dbf22",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/c94f6c45-655b-450c-b855-9e26ba4ace0a"
+   },
+   "name": "Policy Scale"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f85e57c4-e58f-4cde-9191-e5876bf031eb",
+   "name": "Physical and Technological",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2ba05aad-4574-4ea5-8f4e-588f61de2ea3",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/82e61a42-239b-4e6a-b9d3-d6958be23250"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "IPCC"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a73c97ce-e741-4adc-9507-ca04278c7146",
+   "name": "UseGalaxy.eu platform",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "13.2",
+   "https://w3id.org/ro/terms/earth-science#normScore": "20.985691573926868"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1798e0f9-6124-45cf-9a08-e8df60aa2f7d",
+   "name": "re-analysis",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "11.292719167904904",
+   "https://w3id.org/ro/terms/earth-science#score": "7.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ab37061b-4181-4445-ab3d-96d70f320430",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Data on climate"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d1e300a3-7301-4a8c-945b-17e0e3acf98e",
+   "https://w3id.org/ro/terms/earth-science#score": "10.6",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "21.15768463073852",
+   "name": "data"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/3952c6bc-6cd1-495d-9f10-a012b834ed3b",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Environment pollution"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/85a9df46-96b0-4155-8e58-d214b349b40c",
+   "https://w3id.org/ro/terms/earth-science#normScore": "66.66666666666667",
+   "@type": [
+    "https://w3id.org/contentdesc#Domain"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "5.0",
+   "name": "computer science"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/3b6c49f0-97b1-4cdf-8260-14cd3ad67603",
+   "name": "UHI effect",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "15.0",
+   "https://w3id.org/ro/terms/earth-science#normScore": "23.84737678855326"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/4eed8b61-d5da-4933-8157-ef4d129ab701",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/8e98d79e-9358-4f2a-b0a8-59ad924eb530"
+   },
+   "name": "Methodology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/72a93f6c-3a6d-491e-bd9f-68b27b2e0c2d",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "community",
+   "https://w3id.org/ro/terms/earth-science#normScore": "9.212481426448738",
+   "https://w3id.org/ro/terms/earth-science#score": "6.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c223424a-b310-4f75-9bc2-b5bacad4da1d",
+   "https://w3id.org/ro/terms/earth-science#score": "7.1",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "10.549777117384844",
+   "name": "tool"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1cc62d03-409a-4f14-8948-6d8158a8f1b5",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/42823750-ed6f-4efa-b8ac-cdfc517c9ed7"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Geographical Scope"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d9d7c39d-c805-493a-9869-3184344714e8",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Communities"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/dcbeb68b-323c-4b66-9bb8-bd7ad78e1f4a",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "name": "Architecture",
+   "https://w3id.org/ro/terms/earth-science#path": "Arts, culture and entertainment/Arts and entertainment/Visual arts/Architecture"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f43b5c17-4674-4048-9325-49306b81b4f4",
+   "name": "Key Type Measures",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/f85e57c4-e58f-4cde-9191-e5876bf031eb"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/5eda0eb0-f4ae-4c34-aa91-c72f603dc689",
+   "name": "An \"Urban Heat Island\" tool in Galaxy This Research Object (RO) encapsulates the various steps leading to the creation of an \"Urban Heat Island\" (UHI) effect analysis tool tailored for the UseGalaxy.eu platform, providing an accessible resource for a broad user base, including urban planners, educators, and community members.",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "41.3400758533502",
+   "https://w3id.org/ro/terms/earth-science#score": "32.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e564cd43-d904-4de0-bf23-8df5a67633d2",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/78b22b95-a7a5-4bb1-a322-2af651b12be9"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Climate Hazard"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ef8888c6-ab57-4d25-a536-320c521a2aae",
+   "https://w3id.org/ro/terms/earth-science#score": "6.3",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "name": "UseGalaxy.eu",
+   "https://w3id.org/ro/terms/earth-science#normScore": "12.574850299401195"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/42823750-ed6f-4efa-b8ac-cdfc517c9ed7",
+   "name": "none",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c99adda4-3e99-40d1-a77a-30705f43576f",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Urban"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8c23dc40-8e92-4095-9222-ba1dffca8930",
+   "https://w3id.org/ro/terms/earth-science#normScore": "6.8350668647845465",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "4.6",
+   "name": "user interface"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/11d50424-ad75-4635-86ad-df54e14fba40",
+   "name": "data",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "12.6",
+   "https://w3id.org/ro/terms/earth-science#normScore": "18.7221396731055"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/b20ae61c-820a-4944-b0ae-9f3cb0f7a6cb",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Not reported/ Unknown"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/82e61a42-239b-4e6a-b9d3-d6958be23250",
+   "name": "Structural/physical: Technological",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/27fd6430-4c8e-46f6-9c0c-5d20151d0009",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "13.5",
+   "https://w3id.org/ro/terms/earth-science#normScore": "17.06700379266751",
+   "name": "The objective of the integration with the UseGalaxy.eu platform is to democratize access to complex climate data, fostering community-driven solutions to combat the challenges posed by increased urban temperatures."
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a1050823-2c05-4f1a-bcfc-9af72fb21dbd",
+   "name": "Research Object",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "7.8",
+   "https://w3id.org/ro/terms/earth-science#normScore": "15.5688622754491"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/615947bf-e960-482d-b1de-84e156d0cffa",
+   "name": "community member",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "6.9",
+   "https://w3id.org/ro/terms/earth-science#normScore": "10.9697933227345"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/71c65285-9232-4b0e-aa4e-8c887f1ed538",
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.943536404160476",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "4.0",
+   "name": "aim"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/21a9dad7-fbfb-4c62-92d3-71ef3b288715",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/d9d7c39d-c805-493a-9869-3184344714e8"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Stakeholders"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/88f5a8a5-c451-473c-9b97-ace458131e80",
+   "name": "Housing and urban planning policy",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "https://w3id.org/ro/terms/earth-science#path": "Politics/Government policy/Interior policy/Housing and urban planning policy"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/373e9325-1bde-4c25-be97-fabc153fbd3e",
+   "name": "town planner",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "3.4",
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.052005943536404"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/3260c273-b938-488f-9f02-1bee14a0458a",
+   "name": "Built Environment and Design",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FieldOfResearch"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c9f4abe3-0fc9-42d9-aa47-60eec0269a38",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/ab37061b-4181-4445-ab3d-96d70f320430"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "User Needs (RAST)"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/33ab1118-531a-42c9-8e08-2b5b98f1b6b0",
+   "name": "Environmental Sciences",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FieldOfResearch"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/10436b77-7fe0-41db-8e1c-cb4e065899f4",
+   "name": "Environmental Science and Management",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/cc2992a3-a58e-4538-a6ea-420636130f3c",
+   "name": "reanalysis data",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "24.80127186009539",
+   "https://w3id.org/ro/terms/earth-science#score": "15.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/0139d7f4-108b-4ea5-880d-a31259a05146",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Urban sustainability"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8e98d79e-9358-4f2a-b0a8-59ad924eb530",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Modeling/ Simulation"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c5713dc6-28cb-4dff-aabd-af619c433216",
+   "https://w3id.org/ro/terms/earth-science#score": "12.2",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "19.395866454689983",
+   "name": "effect analysis tool"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/359145a7-4b73-40a9-a737-87efbcbe840b",
+   "name": "Atmospheric Sciences",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2726f83d-b235-43d5-b7ad-b7b275c0929e",
+   "https://w3id.org/ro/terms/earth-science#score": "6.8",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "heat island",
+   "https://w3id.org/ro/terms/earth-science#normScore": "10.104011887072808"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7399e91f-529a-4555-ae97-b70620be7b78",
+   "https://w3id.org/ro/terms/earth-science#normScore": "15.768463073852292",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "7.9",
+   "name": "UHI"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/85212f9b-1c7c-414d-8cca-619b0ceba0c9",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#NASA"
+   ],
+   "name": "Geosciences"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8789f0ef-49fa-400f-8e0d-ad7670e95268",
+   "name": "Climate-ADAPT Adaptation Sectors",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/c99adda4-3e99-40d1-a77a-30705f43576f"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/793b9b76-30c8-4d76-82c2-16bed1509951",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "https://w3id.org/ro/terms/earth-science#path": "Weather",
+   "name": "Weather"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/24ddc532-dda1-442b-8644-32b355bca225",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "32.9",
+   "https://w3id.org/ro/terms/earth-science#normScore": "41.5929203539823",
+   "name": "The tool predominantly utilizes ERA5-Land meteorological reanalysis data to characterize and quantify the UHI effect."
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ff48dc75-1b64-4f39-b926-877e16199dc6",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Urban and Regional Planning"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/32a47da1-085b-4ed9-af8a-eb9f310c5919",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Meteorology and climatology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f280daaf-3aca-44b8-88b3-db54cbb5734d",
+   "@type": [
+    "https://w3id.org/contentdesc#Place"
+   ],
+   "name": "UHI"
+  }
+ ]
+}

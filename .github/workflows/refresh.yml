@@ -1,0 +1,64 @@
+name: data refresh
+
+# Records the configured PIDs again from ROHub, commits the snapshot and deploys the site; a failed PID keeps the last
+# snapshot and deployment. By hand only; a push made with GITHUB_TOKEN starts no other workflow, so the deployment is done here.
+# TODO: weekly schedule for statistics snapshot, once the membership rule is confirmed (community tag, Collection FDO or PID list).
+
+on:
+  workflow_dispatch:
+    inputs:
+      config:
+        description: "configuration with source.kind pids or community and source.crate_url; otherwise the repository variable LISTING_CONFIG, otherwise config/portugal-dashboard.yaml"
+      accept_partial:
+        description: "promote when at least one PID was recorded (failed PIDs keep their last copy)"
+        type: boolean
+        default: false
+  # schedule:
+  #   - cron: "17 3 * * 1"      # Mondays 03:17 UTC
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          source=$(grep -oE 'ARG FDO_CONSUME_SOURCE=\S+' Dockerfile | cut -d= -f2)
+          pip install -r requirements.lock.txt "fdo-consume @ $source"
+      - name: Record the PIDs again and build
+        env:
+          LISTING_CONFIG: ${{ inputs.config || vars.LISTING_CONFIG || 'config/portugal-dashboard.yaml' }}
+          ACCEPT_PARTIAL: ${{ inputs.accept_partial }}
+        run: |
+          partial=""; [ "$ACCEPT_PARTIAL" = "true" ] && partial="--accept-partial"
+          python scripts/build_site.py --out dist --refresh --require-data-origin real --config "$LISTING_CONFIG" $partial
+      - name: Commit the recorded snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add snapshots
+          git diff --cached --quiet || git commit -m "Record the snapshot again ($(date -u +%Y-%m-%d))"
+          git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

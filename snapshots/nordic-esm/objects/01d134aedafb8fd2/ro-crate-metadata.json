@@ -1,0 +1,681 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.1/context",
+  "https://w3id.org/ro/terms/earth-science#",
+  "https://w3id.org/ro/terms/workflow-run#",
+  "https://w3id.org/ro/terms/test#",
+  {
+   "citeAs": "https://www.w3.org/ns/iana/link-relations/relation#cite-as",
+   "community": "http://w3id.org/ro-id/rohub/model#community",
+   "cdesc": "https://reliance.expertcustomers.ai/vocabulary/cdesc/",
+   "creation_mode": "http://w3id.org/ro-id/rohub/model#creation_mode",
+   "prov": "http://www.w3.org/ns/prov#",
+   "archivedAtTime": "http://purl.org/wf4ever/roevo#archivedAtTime",
+   "archivedBy": "http://purl.org/wf4ever/roevo#archivedBy",
+   "hasArchive": "http://purl.org/wf4ever/roevo#hasArchive",
+   "hasSnapshot": "http://purl.org/wf4ever/roevo#hasSnapshot",
+   "isArchiveOf": "http://purl.org/wf4ever/roevo#isArchiveOf",
+   "isFinalized": "http://purl.org/wf4ever/roevo#isFinalized",
+   "isSnapshotOf": "http://purl.org/wf4ever/roevo#isSnapshotOf",
+   "snapshotedAtTime": "http://purl.org/wf4ever/roevo#snapshotedAtTime",
+   "snapshotedBy": "http://purl.org/wf4ever/roevo#snapshotedBy",
+   "forkedAtTime": "http://purl.org/wf4ever/roevo#forkedAtTime",
+   "forkedBy": "http://purl.org/wf4ever/roevo#forkedBy",
+   "hasFork": "http://purl.org/wf4ever/roevo#hasFork",
+   "asWKT": "http://www.opengis.net/ont/geosparql#asWKT",
+   "hasGeometry": "http://www.opengis.net/ont/geosparql#hasGeometry",
+   "Concept": "https://w3id.org/ro/terms/earth-science#Concept",
+   "FieldOfResearch": "https://w3id.org/ro/terms/earth-science#FieldOfResearch",
+   "IPTC": "https://w3id.org/ro/terms/earth-science#IPTC",
+   "Lemma": "https://w3id.org/ro/terms/earth-science#Lemma",
+   "NASA": "https://w3id.org/ro/terms/earth-science#NASA",
+   "Person1": "https://w3id.org/contentdesc#Person",
+   "Phrase": "https://w3id.org/ro/terms/earth-science#Phrase",
+   "Sentence": "https://w3id.org/ro/terms/earth-science#Sentence",
+   "TimeReference": "https://w3id.org/ro/terms/earth-science#TimeReference",
+   "Domain": "https://w3id.org/contentdesc#Domain",
+   "Organization1": "https://w3id.org/contentdesc#Organization",
+   "Place": "https://w3id.org/contentdesc#Place",
+   "normScore": "https://w3id.org/ro/terms/earth-science#normScore",
+   "path": "https://w3id.org/ro/terms/earth-science#path",
+   "score": "https://w3id.org/ro/terms/earth-science#score",
+   "wikidata": "https://w3id.org/ro/terms/earth-science#wikidata",
+   "doi": "http://purl.org/ontology/bibo/doi",
+   "orcid": "https://w3id.org/dingo#orcid",
+   "template": "https://w3id.org/ro/terms/earth-science#template",
+   "dataType": "https://w3id.org/ro/terms/earth-science#dataType",
+   "datasetManager": "https://w3id.org/ro/terms/earth-science#datasetManager",
+   "minValue": "https://w3id.org/ro/terms/earth-science#minValue",
+   "maxValue": "https://w3id.org/ro/terms/earth-science#maxValue",
+   "status": "https://w3id.org/ro/terms/earth-science#status",
+   "DataCubeCollection": "https://w3id.org/ro/terms/earth-science#DataCubeCollection",
+   "DataCubeProduct": "https://w3id.org/ro/terms/earth-science#DataCubeProduct",
+   "enrichmentSubject": "http://w3id.org/ro-id/rohub/model#enrichmentSubject",
+   "softwareRequirements": "https://schema.org/softwareRequirements"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "#13837731-a437-4fd6-a544-26bd1d0e07da",
+   "@type": "s:Place",
+   "geo": {
+    "@id": "#3f10b524-55c3-401f-8c4a-be0f9caaba91"
+   },
+   "identifier": "13837731-a437-4fd6-a544-26bd1d0e07da",
+   "name": "POINT (10.737304631620646 59.91051696907157)"
+  },
+  {
+   "@id": "#3f10b524-55c3-401f-8c4a-be0f9caaba91",
+   "@type": "GeoCoordinates",
+   "latitude": "10.737304631620646",
+   "longitude": "59.91051696907157",
+   "name": "POINT (10.737304631620646 59.91051696907157)"
+  },
+  {
+   "@id": "./",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "https://w3id.org/ro/terms/earth-science#BibliographyResearchObject",
+    "http://purl.org/wf4ever/roevo#LiveRO"
+   ],
+   "hasSnapshot": {
+    "@id": "https://w3id.org/ro-id/73e65f3b-c8eb-4aca-b7dc-af81e4ec9b4a"
+   },
+   "about": [
+    {
+     "@id": "http://eurovoc.europa.eu/3949"
+    },
+    {
+     "@id": "http://eurovoc.europa.eu/2919"
+    }
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentLocation": {
+    "@id": "#13837731-a437-4fd6-a544-26bd1d0e07da"
+   },
+   "contentSize": 13629583,
+   "contentUrl": "https://api.rohub.org/api/ros/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/crate/download/",
+   "contributor": {
+    "@id": "mailto:nordicesmhub@gmail.com"
+   },
+   "copyrightHolder": {
+    "@id": "https://ror.org/00vn06n10"
+   },
+   "creator": {
+    "@id": "mailto:annefou@geo.uio.no"
+   },
+   "dateCreated": "2022-11-21 14:37:49.531319+00:00",
+   "dateModified": "2025-10-18 10:59:10.666977+00:00",
+   "datePublished": "2022-11-21 14:37:49.531319+00:00",
+   "description": "This presentation has been given at the Data Managers Network meeting on Tuesday 22 November 2022. The topic of the meeting was \"EOSC in practise\" where different speakers gave their perspectives and experience with involvement in EOSC.",
+   "encodingFormat": "application/ld+json",
+   "hasPart": [
+    {
+     "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/folders/47f23d7f-b246-4f04-989b-58c1426931d0"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/resources/5b55a0b1-1ceb-4820-aa4d-e304a88389c6"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/resources/dc0ead47-1b4b-4a63-ac04-da0580f77d8e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/resources/d93553c4-2435-46ff-a858-1e6afa5153ab"
+    }
+   ],
+   "identifier": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6",
+   "keywords": [
+    "c-scale",
+    "egi-ace",
+    "eosc",
+    "eosc-future",
+    "eosc-life",
+    "eosc-nordic",
+    "eosc-reliance",
+    "open science"
+   ],
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "mainEntity": "Presentation",
+   "name": "Experiences with involvement in EOSC",
+   "publisher": {
+    "@id": "https://ror.org/00vn06n10"
+   },
+   "community": {
+    "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9"
+   },
+   "creation_mode": "MANUAL",
+   "enrichmentSubject": [
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/090bcd3c-e05a-478b-97d3-8f87ebe089f4"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/14c8929d-ab1d-451f-be47-8903c94e5b11"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2265b3d1-2d53-46ad-8deb-5a266b4f590e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/24783362-22a1-46a4-91fb-07f142215546"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/264d0b61-23a0-49a2-8d76-35d46d65d2ec"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/3450870d-567e-47d2-9594-0e696d975d2c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/469a3b60-8168-4435-a36d-ba4b9c3c2780"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/515a10b2-16a3-464c-b89a-2088ce124fc5"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/565e8ba9-0e7b-429d-9e1e-7e1c4370c5bb"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/696a30e3-dddc-4033-a1e2-079fced4757b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/6f5b8cdb-7057-4b29-bb65-4c034baa0a0e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/724a52cd-50ea-4786-a565-3d077e1d9171"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/72f6ec16-4079-4bfc-a131-e1bb1dd1ed77"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/8137ca30-0524-45a9-9bd2-78dd618821c8"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/899ca5d5-02a0-4f8d-ba30-36957ec0c62e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/8b4f1184-9c03-4f16-b813-66125114dc5b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/9b89b7ea-4eab-4d0c-a0ae-72a8e3a3a456"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/ae41f4f1-1127-491e-aeb7-242302304803"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/aeed1242-9bdb-49f1-ba91-f26c03661b31"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/b04395e0-d9e0-4fc8-a88b-b266610a1233"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e0bdb43e-aa3c-4cdb-ad8c-fac2a03d09e5"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e144d2d1-ba03-49b6-b696-37503f78294b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e39a830e-17ca-477e-8eb1-d87a76997cfc"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e4d476e3-e46b-4841-b71c-76288328683c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e6f29a0c-dac6-48a3-9c6f-2c2f9f5ac9ce"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/731cfa08-177f-450a-859a-39e718914d1e"
+    }
+   ],
+   "hasGeometry": {
+    "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/002195f7-9561-4560-a21a-23ce2fa79a63"
+   },
+   "template": "https://w3id.org/ro/terms/earth-science#BibliographyCentricResearchObjectTemplate",
+   "cite-as": "Fouilloux, Anne, and admin NordicESMHub. \"Experiences with involvement in EOSC.\" ROHub. Nov 21 ,2022. https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6."
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/2919",
+   "@type": "s:DefinedTerm",
+   "description": "",
+   "name": "Environmental research"
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/3949",
+   "@type": "s:DefinedTerm",
+   "description": "",
+   "name": "Applied sciences"
+  },
+  {
+   "@id": "https://eoscfuture.eu/newsfuture/answering-research-questions-with-eosc/",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "CreativeWork"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://eoscfuture.eu/newsfuture/answering-research-questions-with-eosc/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2022-11-21 15:36:19.837234+00:00",
+   "dateModified": "2022-11-21 15:36:20.809677+00:00",
+   "description": "Answering research questions with EOSC,\nMarch 10, 2022.\n\nClimate Data Scientist Anne Fouilloux and her team were faced with a research question: In France, have there been changes in air quality over the course of the COVID-19 pandemic?\n\nWith the help of compute services available through EOSC, Anne was able to search for European air quality data analysis.\n\nNAVIGATING EOSC\n\nCheck our infographic and follow Anne as she:\n\n- searches for European air quality data via OpenAIRE|Explore;\n- selects a software (an EOSC Jupyter notebook);\n- orders the notebook on the EOSC marketplace;\n- accesses and aggregates research from the RELIANCE project;\n- performs data analysis with air quality data in France;\n- shares a new research object (via a B2Drop folder).",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Anne Fouilloux is answering research questions with EOSC.",
+   "sdDatePublished": "2022-11-21 15:36:19.837234+00:00"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-1784-2920",
+   "@type": "foaf:Agent",
+   "affiliation": "Simula Research Laboratory",
+   "email": "annef@simula.no",
+   "name": "Anne Fouilloux",
+   "orcid": "0000-0002-1784-2920"
+  },
+  {
+   "@id": "https://ror.org/00vn06n10",
+   "@type": [
+    "s:Organization",
+    "foaf:Agent"
+   ],
+   "email": "post@simula.no",
+   "identifier": "00vn06n10",
+   "name": "Simula Research Laboratory"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/73e65f3b-c8eb-4aca-b7dc-af81e4ec9b4a",
+   "@type": [
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "http://purl.org/wf4ever/roevo#SnapshotRO"
+   ],
+   "isFinalized": "False",
+   "isSnapshotOf": {
+    "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6"
+   },
+   "snapshotedAtTime": "2022-12-11 18:55:09.182089+00:00",
+   "snapshotedBy": {
+    "@id": "https://w3id.org/ro-id/users/annefou%40geo.uio.no"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9",
+   "@type": "community",
+   "description": "NICEST-2 - the second phase of the Nordic Collaboration on e-Infrastructures for Earth System Modeling focuses on strengthening the Nordic position within climate modeling by leveraging, reinforcing and complementing ongoing initiatives.",
+   "name": "Nordic Collaboration on e-Infrastructures for Earth System Modeling Tools",
+   "url": "https://w3id.org/ro-id/ed4e6aa2-9db8-452d-9301-ba1606361034"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/002195f7-9561-4560-a21a-23ce2fa79a63",
+   "@type": [
+    "http://www.opengis.net/ont/geosparql#Geometry",
+    "http://www.opengis.net/ont/sf#Point"
+   ],
+   "asWKT": "POINT (10.737304631620646 59.91051696907157)"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/folders/47f23d7f-b246-4f04-989b-58c1426931d0",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "hasPart": [
+    {
+     "@id": "https://youtu.be/tz0OqxHvnbw"
+    },
+    {
+     "@id": "https://eoscfuture.eu/newsfuture/answering-research-questions-with-eosc/"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/resources/34f5e089-6750-4384-a856-0e953fad8c80"
+    }
+   ],
+   "name": "biblio"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/resources/34f5e089-6750-4384-a856-0e953fad8c80",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "PresentationDigitalDocument"
+   ],
+   "dct:doi": "10.24424/c2da-wy27",
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentSize": 8713504,
+   "contentUrl": "https://api.rohub.org/api/resources/34f5e089-6750-4384-a856-0e953fad8c80/download/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2022-12-11 19:01:18.326585+00:00",
+   "dateModified": "2022-12-11 19:02:46.148213+00:00",
+   "description": "Presentation given at the French Institute on Thursday 1st December 2022.",
+   "keywords": "open science",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Open Science: why, what and how?",
+   "sdDatePublished": "2022-12-11 19:01:18.326585+00:00"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/resources/5b55a0b1-1ceb-4820-aa4d-e304a88389c6",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#Sketch"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentSize": 207682,
+   "contentUrl": "https://api.rohub.org/api/resources/5b55a0b1-1ceb-4820-aa4d-e304a88389c6/download/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2022-11-21 14:41:58.730765+00:00",
+   "dateModified": "2022-11-21 14:54:20.047557+00:00",
+   "description": "1st slide of Anne Fouilloux's presentation.",
+   "encodingFormat": "image/png",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "EOSC-experienceAF.png",
+   "sdDatePublished": "2022-11-21 14:41:58.730765+00:00"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/resources/9f35a698-fbec-45cb-a416-b5dc94d4fc85",
+   "@type": "http://purl.org/wf4ever/wf4ever#File"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/resources/d93553c4-2435-46ff-a858-1e6afa5153ab",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "PresentationDigitalDocument"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentSize": 7362418,
+   "contentUrl": "https://api.rohub.org/api/resources/d93553c4-2435-46ff-a858-1e6afa5153ab/download/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2022-11-21 14:44:35.309807+00:00",
+   "dateModified": "2022-11-21 14:46:40.004192+00:00",
+   "description": "Slides for Anne Fouilloux's presentation at UiO Data Manager Meeting on EOSC in practise.",
+   "encodingFormat": "application/pdf",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "My experience with EOSC (Slides, pdf)",
+   "sdDatePublished": "2022-11-21 14:44:35.309807+00:00"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e4bff7dc-eecc-4a4e-b32c-1c8afe18deb6/resources/dc0ead47-1b4b-4a63-ac04-da0580f77d8e",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#Sketch"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentSize": 79367,
+   "contentUrl": "https://api.rohub.org/api/resources/dc0ead47-1b4b-4a63-ac04-da0580f77d8e/download/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2022-11-21 14:42:56.411912+00:00",
+   "dateModified": "2022-11-21 14:54:55.486777+00:00",
+   "description": "Timeline with Anne Fouilloux's EOSC journey.",
+   "encodingFormat": "image/png",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "EOSC-journey.png",
+   "sdDatePublished": "2022-11-21 14:42:56.411912+00:00"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/090bcd3c-e05a-478b-97d3-8f87ebe089f4",
+   "@type": "Concept",
+   "name": "issue",
+   "normScore": "27.182866556836903",
+   "score": "16.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/14c8929d-ab1d-451f-be47-8903c94e5b11",
+   "@type": "Lemma",
+   "name": "Data Managers Network",
+   "normScore": "11.957671957671957",
+   "score": "11.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2265b3d1-2d53-46ad-8deb-5a266b4f590e",
+   "@type": "FieldOfResearch",
+   "name": "earth sciences",
+   "normScore": "100.0",
+   "score": "0.5002459287643433"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/24783362-22a1-46a4-91fb-07f142215546",
+   "@type": "Lemma",
+   "name": "experience",
+   "normScore": "14.074074074074074",
+   "score": "13.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/264d0b61-23a0-49a2-8d76-35d46d65d2ec",
+   "@type": "Concept",
+   "name": "speaker",
+   "normScore": "13.01482701812191",
+   "score": "7.9"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/3450870d-567e-47d2-9594-0e696d975d2c",
+   "@type": "Phrase",
+   "name": "EOSC in practise",
+   "normScore": "32.76553106212425",
+   "score": "32.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/469a3b60-8168-4435-a36d-ba4b9c3c2780",
+   "@type": "Lemma",
+   "name": "speaker",
+   "normScore": "8.148148148148149",
+   "score": "7.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/515a10b2-16a3-464c-b89a-2088ce124fc5",
+   "@type": "Phrase",
+   "name": "topic of the meeting",
+   "normScore": "31.86372745490982",
+   "score": "31.8"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/565e8ba9-0e7b-429d-9e1e-7e1c4370c5bb",
+   "@type": "Sentence",
+   "name": "The topic of the meeting was \"EOSC in practise\" where different speakers gave their perspectives and experience with involvement in EOSC.",
+   "normScore": "60.16016016016016",
+   "score": "60.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/696a30e3-dddc-4033-a1e2-079fced4757b",
+   "@type": "Lemma",
+   "name": "topic",
+   "normScore": "18.0952380952381",
+   "score": "17.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/6f5b8cdb-7057-4b29-bb65-4c034baa0a0e",
+   "@type": "Concept",
+   "name": "interest",
+   "normScore": "23.55848434925865",
+   "score": "14.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/724a52cd-50ea-4786-a565-3d077e1d9171",
+   "@type": "Sentence",
+   "name": "This presentation has been given at the Data Managers Network meeting on Tuesday 22 November 2022.",
+   "normScore": "14.314314314314313",
+   "score": "14.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/72f6ec16-4079-4bfc-a131-e1bb1dd1ed77",
+   "@type": "NASA",
+   "name": "engineering",
+   "normScore": "100.0",
+   "score": "0.74220210313797"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/731cfa08-177f-450a-859a-39e718914d1e",
+   "@type": "Lemma",
+   "name": "involvement",
+   "normScore": "14.39153439153439",
+   "score": "13.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8137ca30-0524-45a9-9bd2-78dd618821c8",
+   "@type": "Sentence",
+   "name": "Experiences with involvement in EOSC.",
+   "normScore": "25.525525525525524",
+   "score": "25.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/899ca5d5-02a0-4f8d-ba30-36957ec0c62e",
+   "@type": "Phrase",
+   "name": "Data Managers Network meeting",
+   "normScore": "19.43887775551102",
+   "score": "19.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8b4f1184-9c03-4f16-b813-66125114dc5b",
+   "@type": "Concept",
+   "name": "experience",
+   "normScore": "21.58154859967051",
+   "score": "13.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/9b89b7ea-4eab-4d0c-a0ae-72a8e3a3a456",
+   "@type": "TimeReference",
+   "name": "on Tue, Nov-22-2022"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ae41f4f1-1127-491e-aeb7-242302304803",
+   "@type": "Concept",
+   "name": "meeting",
+   "normScore": "14.662273476112025",
+   "score": "8.9"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/aeed1242-9bdb-49f1-ba91-f26c03661b31",
+   "@type": "IPTC",
+   "name": "Television",
+   "path": "Arts, culture and entertainment/Mass media/Television"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/b04395e0-d9e0-4fc8-a88b-b266610a1233",
+   "@type": "NASA",
+   "name": "communications and radar",
+   "normScore": "100.0",
+   "score": "0.74220210313797"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e0bdb43e-aa3c-4cdb-ad8c-fac2a03d09e5",
+   "@type": "Lemma",
+   "name": "EOSC",
+   "normScore": "24.973544973544975",
+   "score": "23.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e144d2d1-ba03-49b6-b696-37503f78294b",
+   "@type": "FieldOfResearch",
+   "name": "geology",
+   "normScore": "100.0",
+   "score": "0.5002459287643433"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e39a830e-17ca-477e-8eb1-d87a76997cfc",
+   "@type": "Lemma",
+   "name": "meeting",
+   "normScore": "8.359788359788359",
+   "score": "7.9"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e4d476e3-e46b-4841-b71c-76288328683c",
+   "@type": "Phrase",
+   "name": "different speaker",
+   "normScore": "7.615230460921844",
+   "score": "7.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e6f29a0c-dac6-48a3-9c6f-2c2f9f5ac9ce",
+   "@type": "Phrase",
+   "name": "experiences with involvement",
+   "normScore": "8.316633266533067",
+   "score": "8.3"
+  },
+  {
+   "@id": "https://youtu.be/tz0OqxHvnbw",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "VideoObject"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://youtu.be/tz0OqxHvnbw",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2022-11-21 14:52:01.754759+00:00",
+   "dateModified": "2022-11-21 14:52:03.474724+00:00",
+   "description": "Demo for EOSC-Future: Turning FAIR and Open Science into Reality. The example shown is about the \"impact of the Covid-19 Lockdown on Air quality over Europe using Copernicus and EOSC project services\".",
+   "keywords": "youtube",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Turning FAIR and Open Science into Reality (demo, video)",
+   "sdDatePublished": "2022-11-21 14:52:01.754759+00:00"
+  },
+  {
+   "@id": "mailto:annefou@geo.uio.no",
+   "@type": "foaf:Agent",
+   "name": "Anne Fouilloux"
+  },
+  {
+   "@id": "mailto:nordicesmhub@gmail.com",
+   "@type": "foaf:Agent",
+   "email": "nordicesmhub@gmail.com",
+   "name": "admin NordicESMHub"
+  },
+  {
+   "@id": "mailto:service-account-enrichment",
+   "@type": "foaf:Agent",
+   "name": "service-account-enrichment"
+  },
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.1"
+   },
+   "about": {
+    "@id": "./"
+   }
+  }
+ ]
+}

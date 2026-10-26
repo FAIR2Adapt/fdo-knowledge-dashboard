@@ -1,0 +1,7 @@
+# Runtime dependencies with exact versions (tested 2026-10-22); fdo-consume is installed from its release tag.
+PyYAML==6.0.3
+pydantic==2.14.1
+pydantic_core==2.50.1
+annotated-types==0.8.0
+typing_extensions==4.16.0
+typing-inspection==0.4.4

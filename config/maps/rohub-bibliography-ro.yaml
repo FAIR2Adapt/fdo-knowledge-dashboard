@@ -1,0 +1,35 @@
+# owner: WP4 Task 4.1. Consumer map for ROHub bibliography-centric research objects, which declare no profile; selected by reading.fallback_map only.
+# Reads the RO-Crate root and the nanopublications listed under hasPart as assertions (name = claim text, contentUrl = nanopublication PID).
+# Not read: the root's datePublished and author (ROHub registration time and depositing account, not the publication's).
+id: rohub-bibliography-ro
+status: draft
+source: "ROHub export of a Bibliography-centric Research Object (observed 21 October 2026 on the CS4 objects); RO-Crate 1.2 root data entity for the root fields"
+selects: []
+identity: identifier
+fields:
+  title: {iri: "https://schema.org/name", level: must}
+  description: {iri: "https://schema.org/description", level: must}
+  licence: {iri: "https://schema.org/license", level: should}
+  identifier: {iri: "https://schema.org/identifier", level: may}
+  profile: {iri: "http://purl.org/dc/terms/conformsTo", level: should}
+  keywords: {iri: "https://schema.org/keywords", level: may, many: true}
+  type: {iri: "https://schema.org/additionalType", level: may, many: true}
+entities:
+  File:
+    via: "https://schema.org/hasPart"
+    type: "https://schema.org/MediaObject"
+    role: resource
+    level: may
+    fields:
+      url: {iri: "https://schema.org/contentUrl", level: may}
+      media_type: {iri: "https://schema.org/encodingFormat", level: should}
+      size: {iri: "https://schema.org/contentSize", level: may}
+  Nanopublication:
+    via: "https://schema.org/hasPart"
+    type: "http://www.nanopub.org/nschema#Nanopublication"
+    provides: [Assertion]
+    level: may
+    fields:
+      text: {iri: "https://schema.org/name", level: must}
+      url: {iri: "https://schema.org/contentUrl", level: should}
+      author: {iri: "https://schema.org/author", level: may, many: true}

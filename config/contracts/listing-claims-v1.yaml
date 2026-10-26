@@ -1,0 +1,14 @@
+contract_id: listing-claims-v1
+version: 1
+consumer:
+  service: "fdo-knowledge-dashboard: a list of the FDOs of one collection and a page per resource"
+  capability: "list on a resource page the claims the object carries, each with the asserting record"
+source:
+  document: "Dashboard profile v1.0.0, Claim rows"
+  section: "owner: WP4 Task 4.1; the claims section is drawn only when the object carries at least one claim or statement"
+profile_additions: cca-dashboard-additions
+needs:
+  - term: Assertion
+    level: should
+    source: "Claim rows: hasClaim on the Data FDO, isReferencedBy to the asserting record"
+    reason: "the claims or statements of the object, each with the record that asserts it"

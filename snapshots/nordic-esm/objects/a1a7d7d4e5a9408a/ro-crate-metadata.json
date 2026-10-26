@@ -1,0 +1,930 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.1/context",
+  "https://w3id.org/ro/terms/earth-science#",
+  "https://w3id.org/ro/terms/workflow-run#",
+  "https://w3id.org/ro/terms/test#",
+  {
+   "citeAs": "https://www.w3.org/ns/iana/link-relations/relation#cite-as",
+   "community": "http://w3id.org/ro-id/rohub/model#community",
+   "cdesc": "https://reliance.expertcustomers.ai/vocabulary/cdesc/",
+   "creation_mode": "http://w3id.org/ro-id/rohub/model#creation_mode",
+   "prov": "http://www.w3.org/ns/prov#",
+   "archivedAtTime": "http://purl.org/wf4ever/roevo#archivedAtTime",
+   "archivedBy": "http://purl.org/wf4ever/roevo#archivedBy",
+   "hasArchive": "http://purl.org/wf4ever/roevo#hasArchive",
+   "hasSnapshot": "http://purl.org/wf4ever/roevo#hasSnapshot",
+   "isArchiveOf": "http://purl.org/wf4ever/roevo#isArchiveOf",
+   "isFinalized": "http://purl.org/wf4ever/roevo#isFinalized",
+   "isSnapshotOf": "http://purl.org/wf4ever/roevo#isSnapshotOf",
+   "snapshotedAtTime": "http://purl.org/wf4ever/roevo#snapshotedAtTime",
+   "snapshotedBy": "http://purl.org/wf4ever/roevo#snapshotedBy",
+   "forkedAtTime": "http://purl.org/wf4ever/roevo#forkedAtTime",
+   "forkedBy": "http://purl.org/wf4ever/roevo#forkedBy",
+   "hasFork": "http://purl.org/wf4ever/roevo#hasFork",
+   "asWKT": "http://www.opengis.net/ont/geosparql#asWKT",
+   "hasGeometry": "http://www.opengis.net/ont/geosparql#hasGeometry",
+   "Concept": "https://w3id.org/ro/terms/earth-science#Concept",
+   "FieldOfResearch": "https://w3id.org/ro/terms/earth-science#FieldOfResearch",
+   "IPTC": "https://w3id.org/ro/terms/earth-science#IPTC",
+   "Lemma": "https://w3id.org/ro/terms/earth-science#Lemma",
+   "NASA": "https://w3id.org/ro/terms/earth-science#NASA",
+   "Person1": "https://w3id.org/contentdesc#Person",
+   "Phrase": "https://w3id.org/ro/terms/earth-science#Phrase",
+   "Sentence": "https://w3id.org/ro/terms/earth-science#Sentence",
+   "TimeReference": "https://w3id.org/ro/terms/earth-science#TimeReference",
+   "Domain": "https://w3id.org/contentdesc#Domain",
+   "Organization1": "https://w3id.org/contentdesc#Organization",
+   "Place": "https://w3id.org/contentdesc#Place",
+   "normScore": "https://w3id.org/ro/terms/earth-science#normScore",
+   "path": "https://w3id.org/ro/terms/earth-science#path",
+   "score": "https://w3id.org/ro/terms/earth-science#score",
+   "wikidata": "https://w3id.org/ro/terms/earth-science#wikidata",
+   "doi": "http://purl.org/ontology/bibo/doi",
+   "orcid": "https://w3id.org/dingo#orcid",
+   "template": "https://w3id.org/ro/terms/earth-science#template",
+   "dataType": "https://w3id.org/ro/terms/earth-science#dataType",
+   "datasetManager": "https://w3id.org/ro/terms/earth-science#datasetManager",
+   "minValue": "https://w3id.org/ro/terms/earth-science#minValue",
+   "maxValue": "https://w3id.org/ro/terms/earth-science#maxValue",
+   "status": "https://w3id.org/ro/terms/earth-science#status",
+   "DataCubeCollection": "https://w3id.org/ro/terms/earth-science#DataCubeCollection",
+   "DataCubeProduct": "https://w3id.org/ro/terms/earth-science#DataCubeProduct",
+   "enrichmentSubject": "http://w3id.org/ro-id/rohub/model#enrichmentSubject",
+   "softwareRequirements": "https://schema.org/softwareRequirements"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "#b2c2ba8b-e077-4e64-9380-7c2705ffcb20",
+   "@type": "GeoCoordinates",
+   "latitude": "10.138547627793743",
+   "longitude": "61.47037998202813",
+   "name": "POINT (10.138547627793743 61.47037998202813)"
+  },
+  {
+   "@id": "#efa4f081-320e-4d59-980c-3446d5d4dcaf",
+   "@type": "s:Place",
+   "geo": {
+    "@id": "#b2c2ba8b-e077-4e64-9380-7c2705ffcb20"
+   },
+   "identifier": "efa4f081-320e-4d59-980c-3446d5d4dcaf",
+   "name": "POINT (10.138547627793743 61.47037998202813)"
+  },
+  {
+   "@id": "./",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "http://purl.org/wf4ever/roevo#LiveRO"
+   ],
+   "hasSnapshot": {
+    "@id": "https://w3id.org/ro-id/b62e5267-8fe1-4fe1-ada2-47e484c2b107"
+   },
+   "about": {
+    "@id": "http://eurovoc.europa.eu/3949"
+   },
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    },
+    {
+     "@id": "https://orcid.org/0000-0002-6264-8502"
+    },
+    {
+     "@id": "mailto:algu@norceresearch.no"
+    },
+    {
+     "@id": "mailto:pchengi@nsc.liu.se"
+    },
+    {
+     "@id": "https://orcid.org/0000-0002-1784-2920"
+    }
+   ],
+   "contentLocation": {
+    "@id": "#efa4f081-320e-4d59-980c-3446d5d4dcaf"
+   },
+   "contentSize": 768182,
+   "contentUrl": "https://api.rohub.org/api/ros/e7c5bfac-0e6a-4691-9e52-f86975732218/crate/download/",
+   "contributor": [
+    {
+     "@id": "https://orcid.org/0000-0002-6133-2231"
+    },
+    {
+     "@id": "mailto:tylo@norceresearch.no"
+    },
+    {
+     "@id": "https://orcid.org/0000-0002-5932-3627"
+    },
+    {
+     "@id": "mailto:maikenp@usit.uio.no"
+    },
+    {
+     "@id": "https://orcid.org/0000-0002-8961-3393"
+    },
+    {
+     "@id": "https://orcid.org/0000-0002-4214-2213"
+    },
+    {
+     "@id": "mailto:oyvind.seland@met.no"
+    },
+    {
+     "@id": "mailto:kimmo.ervasti@csc.fi"
+    },
+    {
+     "@id": "mailto:elina.miinalainen@csc.fi"
+    },
+    {
+     "@id": "https://orcid.org/0000-0002-0883-8161"
+    }
+   ],
+   "copyrightHolder": [
+    {
+     "@id": "https://ror.org/00vn06n10"
+    },
+    {
+     "@id": "https://ror.org/04jcwf484"
+    }
+   ],
+   "creator": {
+    "@id": "mailto:annefou@geo.uio.no"
+   },
+   "dateCreated": "2023-01-08 20:41:20.579173+00:00",
+   "dateModified": "2025-10-18 10:08:36.592470+00:00",
+   "datePublished": "2023-01-08 20:41:20.579173+00:00",
+   "description": "Overview of the NICEST2 project and reflection on the successes, failures and possible improvements for follow-up projects.",
+   "encodingFormat": "application/ld+json",
+   "hasPart": [
+    {
+     "@id": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218/folders/2181f5bc-d86a-49e1-ac55-7b26b3603b23"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218/folders/6dcf8f52-8b25-4ca0-8533-16b7b895cec0"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218/resources/1b39529d-2d71-40a1-a360-9dea10a65d72"
+    },
+    {
+     "@id": "https://docs.google.com/presentation/d/1jxxwEGLiyuqYRJlH5VswekPJVoe5oxjlxVQrEiOojfI/edit?usp=sharing"
+    },
+    {
+     "@id": "https://nordicesmhub.github.io/nicest2/2020/05/04/plan.html"
+    }
+   ],
+   "identifier": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218",
+   "keywords": [
+    "climate",
+    "e-infrastructure"
+   ],
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "mainEntity": "Poster",
+   "name": "Experience from the NeIC NICEST2 project",
+   "publisher": [
+    {
+     "@id": "https://ror.org/00vn06n10"
+    },
+    {
+     "@id": "https://ror.org/04jcwf484"
+    }
+   ],
+   "community": {
+    "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9"
+   },
+   "creation_mode": "MANUAL",
+   "enrichmentSubject": [
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/059eccd9-f4c1-4c1c-99c8-dff9a1917170"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2a3fbd49-4d41-4272-a50d-f545f74c9ba4"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/31a3b01e-f630-4c11-b2c1-820eb16b7b2e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/3e2cf4ee-cc5c-4c4d-a5aa-0b3f6b746689"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/4711ecaf-d051-4859-b524-199d4caeee46"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/56174e93-c9b7-4db8-8e8d-63b00b858071"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/58195033-e212-49ac-a1a6-fe34ecb6c66d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/683d78ff-3101-417c-a88d-546e3817d8ea"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/6eb172f0-009e-42c2-b340-a98238c07ad3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/705c074a-3077-4ed7-a87d-f54fbb41dcee"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/721ed672-1303-46fe-9d40-33f966a4eead"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/80ec9210-80ec-47df-88a6-a32b060128e3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/88a07694-2809-47c7-9bd8-47fd27466fda"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/89405dfd-73f7-4024-bdc7-85b8447badf2"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/8ef4e78a-9a14-4605-bbb5-b9295e03e2e9"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/9a35223c-6f6c-40b5-bc02-9b56f1ce54db"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a1af0136-e643-4bff-ae85-dcdd5e56475b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a2219ee9-05fb-4ea9-9da5-b819ead73c0e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a9e2d0c3-0ad0-481f-9760-9a50557976db"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/b5e6cb61-9db4-496f-88bb-aadc5215fb95"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/bd69e682-eec0-4520-af23-6f75347ecfcb"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c0725772-5fd3-4d26-828f-f5fb01a02f8f"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c24f2c07-a56c-4393-a8aa-94cf7ef48ac8"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e008b68b-de63-49e1-b649-4655ee4cc962"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e7e9c7d4-6d64-4d73-b70f-d5dc02919008"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/fcb6ccca-c33a-46a0-b9a6-8fba70b4dcda"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/369f45d3-4145-4d78-8e33-7ac378bef5a5"
+    }
+   ],
+   "hasGeometry": {
+    "@id": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218/4ac79849-4a76-40cd-9d4e-dda6efbce0e4"
+   },
+   "cite-as": "Iaquinta, Jean, Oskar Landgren, Alok Kumar Gupta, Prashanth Dwarakanath, Anne Fouilloux, Tommi Bergman, Tyge Løvseth, et al. \"Experience from the NeIC NICEST2 project.\" ROHub. Jan 08 ,2023. https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218."
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/3949",
+   "@type": "s:DefinedTerm",
+   "description": "",
+   "name": "Applied sciences"
+  },
+  {
+   "@id": "https://docs.google.com/presentation/d/1jxxwEGLiyuqYRJlH5VswekPJVoe5oxjlxVQrEiOojfI/edit?usp=sharing",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Poster"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://docs.google.com/presentation/d/1jxxwEGLiyuqYRJlH5VswekPJVoe5oxjlxVQrEiOojfI/edit?usp=sharing",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-01-08 20:47:05.281382+00:00",
+   "dateModified": "2023-01-09 08:27:38.876562+00:00",
+   "description": "Poster on experiences from the NICEST2 project for NeIC All hands meeting 2023.",
+   "keywords": "google-doc",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Poster on our experiences from the NICEST2 project",
+   "sdDatePublished": "2023-01-08 20:47:05.281382+00:00"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.4749515",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "https://w3id.org/ro/terms/earth-science#Deliverable"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://doi.org/10.5281/zenodo.4749515",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-01-08 21:06:32.125399+00:00",
+   "dateModified": "2023-01-08 21:06:53.419779+00:00",
+   "description": "Report on the bottlenecks that would hinder the efficient usage of Nordic ESMs on EuroHPC and possible remediation actions (I/Os, adding GPU support, etc.) with clear information on costs in terms of manpower.\n\n\nESMs used in the Nordic countries are clearly not ready for EuroHPC and very little dedicated funding from the scientific community is used for porting existing codes to future architectures. Providers have hired several specialists to support the scientific community but the commitment from the scientific community is not there.\nExchange of knowledge of involved staff (scientists, RSEs, technical support) would be very helpful. For instance, being able to organize meetings/hackathons (online or face to face) with both experts from NorESM and EC-EARTH has been highlighted as an important requirements by those involved in the GPU hackathon.\nCode refactoring and best software practices are the most important component for efficient usage of new architecture, including EuroHPC.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "NICEST2 - D4.5: First report on the identified bottlenecks for an efficient usage of Nordic ESMs on EuroHPC",
+   "sdDatePublished": "2023-01-08 21:06:32.125399+00:00"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.4944686",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "https://w3id.org/ro/terms/earth-science#Deliverable"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://doi.org/10.5281/zenodo.4944686",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-01-08 21:03:28.636733+00:00",
+   "dateModified": "2023-01-08 21:04:38.081313+00:00",
+   "description": "This report summarizes the first NICEST2 hackathon with FAIR experts and Earth System Model specialists to understand what needs to be done to make climate data FAIR. It will help us to define our roadmap for FAIR Climate in the Nordics.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "NICEST2 - D3.3: Report on NICEST2 FAIR climate data hackathon",
+   "sdDatePublished": "2023-01-08 21:03:28.636733+00:00"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.5571344",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "https://w3id.org/ro/terms/earth-science#Deliverable"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://doi.org/10.5281/zenodo.5571344",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-01-08 21:08:01.968412+00:00",
+   "dateModified": "2023-01-22 18:53:29.536647+00:00",
+   "description": "The Earth System Model Evaluation Tool (ESMValTool) is a community diagnostics and performance metrics tool for the evaluation of Earth system Models (ESMs) that is not widely used in the Nordics yet. A hackathon/workshop was held on March 12, 2021 as a joint event between the INES, NICEST2 and IS-ENES3 projects. During this hackathon, we identified the needs for specific diagnostics for the Nordics that could help researchers to diagnose strengths and deficiencies of current ESMs. We also discussed how to better organize access to data and share resources within the Nordics.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "NICEST2 - D2.1: Short report from the Nordic ESM diagnostics hackathon",
+   "sdDatePublished": "2023-01-08 21:08:01.968412+00:00"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.5571416",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "https://w3id.org/ro/terms/earth-science#Deliverable"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://doi.org/10.5281/zenodo.5571416",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-01-08 21:10:14.737755+00:00",
+   "dateModified": "2023-01-08 21:10:38.414650+00:00",
+   "description": "The Nordic climate modeling community consists of research groups at universities, national meteorological institutes and research institutes, and holds demonstrable world class excellence in the field. Several of these groups contribute to the development of both global and regional climate models (GCMs and RCMs,respectively) in international projects with collaborations within Europe and the US. However, many users, including PhDs and postdocs, are developing and/or running Earth System Models (ESMs) for more fundamental scientific research and sensitivity studies, and/or cross-disciplinary research (economy & climate, biodiversity, etc.) and they do not always benefit from the advances, technologies or resources leveraged by these large projects/consortiums. One concrete example is IS-ENES project (https://is.enes.org/) where only one university, namely Linköpings Universitet (not part of the NICEST2 consortium) from the Nordics is involved; Nordic contributions are mostly from Meteorological services and Research Institutes. From a practical point of view this translates in a lot of time/energy wasted “reinventing the wheel”, repeated simulations, lack of transparency, suboptimal use of the infrastructures, etc. In this context, supporting these researchers and realizing the benefits of Open Science and EOSC are our priorities within NICEST2 and WP4.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "NICEST2 - D4.1: Identification of the Nordic ESM community needs for ESM workflows",
+   "sdDatePublished": "2023-01-08 21:10:14.737755+00:00"
+  },
+  {
+   "@id": "https://nordicesmhub.github.io/NorESM_user_workshop_2021/intro.html",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/wf4ever#Document"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://nordicesmhub.github.io/NorESM_user_workshop_2021/intro.html",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-01-08 20:50:23.537300+00:00",
+   "dateModified": "2023-01-08 20:52:34.852357+00:00",
+   "description": "Training material on containers for ESM. This training material uses the Norwegian Earth System Model (NorESM) and has been delivered in 2021 as part of the NorESM user meeting.",
+   "encodingFormat": "text/html",
+   "keywords": "training",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Running NorESM in a container",
+   "sdDatePublished": "2023-01-08 20:50:23.537300+00:00"
+  },
+  {
+   "@id": "https://nordicesmhub.github.io/nicest2-fair-hackathon/",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/wf4ever#Document"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://nordicesmhub.github.io/nicest2-fair-hackathon/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-01-08 20:52:04.176203+00:00",
+   "dateModified": "2023-01-08 20:52:05.680880+00:00",
+   "description": "First NICEST2 hackathon to understand the FAIR concept and how they can apply to the Nordic Earth System Modelling Community.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "NICEST2 hackathon on FAIR climate data",
+   "sdDatePublished": "2023-01-08 20:52:04.176203+00:00"
+  },
+  {
+   "@id": "https://nordicesmhub.github.io/nicest2/2020/05/04/plan.html",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/wf4ever#Document"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://nordicesmhub.github.io/nicest2/2020/05/04/plan.html",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-01-09 08:28:36.495799+00:00",
+   "dateModified": "2023-01-09 08:28:37.877738+00:00",
+   "description": "Link to the NICEST2 project plan.",
+   "encodingFormat": "text/html",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Project plan",
+   "sdDatePublished": "2023-01-09 08:28:36.495799+00:00"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-0883-8161",
+   "@type": "foaf:Agent",
+   "affiliation": "Finnish Meteorological Institute (Finland)",
+   "email": "antti-ilari.partanen@fmi.fi",
+   "name": "Antti-Ilari Partanen",
+   "orcid": "0000-0002-0883-8161"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-1784-2920",
+   "@type": "foaf:Agent",
+   "affiliation": "Simula Research Laboratory",
+   "email": "annef@simula.no",
+   "name": "Anne Fouilloux",
+   "orcid": "0000-0002-1784-2920"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-4214-2213",
+   "@type": "foaf:Agent",
+   "affiliation": "NSC (Sweden)",
+   "email": "struthers@nsc.liu.se",
+   "name": "Hamish Struthers",
+   "orcid": "0000-0002-4214-2213"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-5932-3627",
+   "@type": "foaf:Agent",
+   "affiliation": "NERSC (Norway)",
+   "email": "yanchun.he@nersc.no",
+   "name": "Yanchun He",
+   "orcid": "0000-0002-5932-3627"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-6133-2231",
+   "@type": "foaf:Agent",
+   "affiliation": "Finnish Meteorological Institute (Finland)",
+   "email": "tommi.bergman@fmi.fi",
+   "name": "Tommi Bergman",
+   "orcid": "0000-0002-6133-2231"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-6264-8502",
+   "@type": "foaf:Agent",
+   "affiliation": "Norwegian Meteorological Institute (Norway)",
+   "email": "oskaral@met.no",
+   "name": "Oskar Landgren",
+   "orcid": "0000-0002-6264-8502"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-8763-1643",
+   "@type": "foaf:Agent",
+   "email": "jeani@uio.no",
+   "name": "Jean Iaquinta",
+   "orcid": "0000-0002-8763-1643"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-8961-3393",
+   "@type": "foaf:Agent",
+   "affiliation": "Finnish Meteorological Institute (Finland)",
+   "email": "risto.makkonen@fmi.fi",
+   "name": "Risto Makkonen",
+   "orcid": "0000-0002-8961-3393"
+  },
+  {
+   "@id": "https://ror.org/00vn06n10",
+   "@type": [
+    "s:Organization",
+    "foaf:Agent"
+   ],
+   "email": "post@simula.no",
+   "identifier": "00vn06n10",
+   "name": "Simula Research Laboratory"
+  },
+  {
+   "@id": "https://ror.org/04jcwf484",
+   "@type": [
+    "s:Organization",
+    "foaf:Agent"
+   ],
+   "identifier": "04jcwf484",
+   "name": "Nordic e-Infrastructure Collaboration"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/b62e5267-8fe1-4fe1-ada2-47e484c2b107",
+   "@type": [
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "http://purl.org/wf4ever/roevo#SnapshotRO"
+   ],
+   "isFinalized": "False",
+   "isSnapshotOf": {
+    "@id": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218"
+   },
+   "snapshotedAtTime": "2023-02-19 13:17:31.060596+00:00",
+   "snapshotedBy": {
+    "@id": "https://w3id.org/ro-id/users/annef%40simula.no"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9",
+   "@type": "community",
+   "description": "NICEST-2 - the second phase of the Nordic Collaboration on e-Infrastructures for Earth System Modeling focuses on strengthening the Nordic position within climate modeling by leveraging, reinforcing and complementing ongoing initiatives.",
+   "name": "Nordic Collaboration on e-Infrastructures for Earth System Modeling Tools",
+   "url": "https://w3id.org/ro-id/ed4e6aa2-9db8-452d-9301-ba1606361034"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218/4ac79849-4a76-40cd-9d4e-dda6efbce0e4",
+   "@type": [
+    "http://www.opengis.net/ont/sf#Point",
+    "http://www.opengis.net/ont/geosparql#Geometry"
+   ],
+   "asWKT": "POINT (10.138547627793743 61.47037998202813)"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218/folders/2181f5bc-d86a-49e1-ac55-7b26b3603b23",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "description": "Folder containing training material developed and delivered within the NICEST2 projects (either as training or hackathons).",
+   "hasPart": [
+    {
+     "@id": "https://nordicesmhub.github.io/NorESM_user_workshop_2021/intro.html"
+    },
+    {
+     "@id": "https://nordicesmhub.github.io/nicest2-fair-hackathon/"
+    }
+   ],
+   "name": "training"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218/folders/6dcf8f52-8b25-4ca0-8533-16b7b895cec0",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "description": "This folder contains NICEST2 deliverables.",
+   "hasPart": [
+    {
+     "@id": "https://doi.org/10.5281/zenodo.4944686"
+    },
+    {
+     "@id": "https://doi.org/10.5281/zenodo.4749515"
+    },
+    {
+     "@id": "https://doi.org/10.5281/zenodo.5571344"
+    },
+    {
+     "@id": "https://doi.org/10.5281/zenodo.5571416"
+    }
+   ],
+   "name": "deliverables"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218/resources/1b39529d-2d71-40a1-a360-9dea10a65d72",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#Sketch"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentSize": 771062,
+   "contentUrl": "https://api.rohub.org/api/resources/1b39529d-2d71-40a1-a360-9dea10a65d72/download/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-01-08 20:45:29.648781+00:00",
+   "dateModified": "2023-01-09 10:22:03.567943+00:00",
+   "description": "Overall view of the NICEST2 poster for the NeIC all-hands meeting. It is mostly used for the sketch.",
+   "encodingFormat": "image/png",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "NICEST2 poster for NeIC AHM2023.png",
+   "sdDatePublished": "2023-01-08 20:45:29.648781+00:00"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218/resources/7d81b89e-5899-4570-be67-8d9c6b57163a",
+   "@type": "http://purl.org/wf4ever/wf4ever#File"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e7c5bfac-0e6a-4691-9e52-f86975732218/resources/a8848ca1-f31a-48a4-b869-b9faf6bdf39d",
+   "@type": "http://purl.org/wf4ever/wf4ever#File"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/059eccd9-f4c1-4c1c-99c8-dff9a1917170",
+   "@type": "Concept",
+   "name": "improvement",
+   "normScore": "12.20472440944882",
+   "score": "9.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2a3fbd49-4d41-4272-a50d-f545f74c9ba4",
+   "@type": "Concept",
+   "name": "reflection",
+   "normScore": "4.8556430446194225",
+   "score": "3.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/31a3b01e-f630-4c11-b2c1-820eb16b7b2e",
+   "@type": "NASA",
+   "name": "geosciences",
+   "normScore": "100.0",
+   "score": "0.4508829712867737"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/369f45d3-4145-4d78-8e33-7ac378bef5a5",
+   "@type": "Lemma",
+   "name": "NeIC NICEST2",
+   "normScore": "25.24271844660194",
+   "score": "23.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/3e2cf4ee-cc5c-4c4d-a5aa-0b3f6b746689",
+   "@type": "Phrase",
+   "name": "overview of the NICEST2 project",
+   "normScore": "4.396728016359918",
+   "score": "4.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/4711ecaf-d051-4859-b524-199d4caeee46",
+   "@type": "Lemma",
+   "name": "improvement",
+   "normScore": "10.35598705501618",
+   "score": "9.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/56174e93-c9b7-4db8-8e8d-63b00b858071",
+   "@type": "FieldOfResearch",
+   "name": "oceanography",
+   "normScore": "100.0",
+   "score": "0.5115638375282288"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/58195033-e212-49ac-a1a6-fe34ecb6c66d",
+   "@type": "Concept",
+   "name": "overview",
+   "normScore": "13.38582677165354",
+   "score": "10.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/683d78ff-3101-417c-a88d-546e3817d8ea",
+   "@type": "Concept",
+   "name": "success",
+   "normScore": "13.123359580052494",
+   "score": "10.0"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/6eb172f0-009e-42c2-b340-a98238c07ad3",
+   "@type": "Lemma",
+   "name": "overview",
+   "normScore": "11.974110032362459",
+   "score": "11.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/705c074a-3077-4ed7-a87d-f54fbb41dcee",
+   "@type": "Phrase",
+   "name": "follow-up project",
+   "normScore": "28.425357873210636",
+   "score": "27.8"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/721ed672-1303-46fe-9d40-33f966a4eead",
+   "@type": "Lemma",
+   "name": "follow-up",
+   "normScore": "9.385113268608412",
+   "score": "8.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/80ec9210-80ec-47df-88a6-a32b060128e3",
+   "@type": "Sentence",
+   "name": "Experience from the NeIC NICEST2 project.",
+   "normScore": "34.33433433433433",
+   "score": "34.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/88a07694-2809-47c7-9bd8-47fd27466fda",
+   "@type": "Lemma",
+   "name": "experience",
+   "normScore": "14.13160733549083",
+   "score": "13.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/89405dfd-73f7-4024-bdc7-85b8447badf2",
+   "@type": "Concept",
+   "name": "follow-up",
+   "normScore": "10.498687664041995",
+   "score": "8.0"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8ef4e78a-9a14-4605-bbb5-b9295e03e2e9",
+   "@type": "Concept",
+   "name": "project",
+   "normScore": "23.884514435695536",
+   "score": "18.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/9a35223c-6f6c-40b5-bc02-9b56f1ce54db",
+   "@type": "FieldOfResearch",
+   "name": "earth sciences",
+   "normScore": "100.0",
+   "score": "0.5115638375282288"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a1af0136-e643-4bff-ae85-dcdd5e56475b",
+   "@type": "Sentence",
+   "name": "Overview of the NICEST2 project and reflection on the successes, failures and possible improvements for follow-up projects.",
+   "normScore": "65.66566566566566",
+   "score": "65.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a2219ee9-05fb-4ea9-9da5-b819ead73c0e",
+   "@type": "IPTC",
+   "name": "Accomplishment",
+   "path": "Human interest/Accomplishment"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a9e2d0c3-0ad0-481f-9760-9a50557976db",
+   "@type": "Phrase",
+   "name": "experience from the NeIC NICEST2 project",
+   "normScore": "1.2269938650306749",
+   "score": "1.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/b5e6cb61-9db4-496f-88bb-aadc5215fb95",
+   "@type": "Phrase",
+   "name": "improvements for follow-up project",
+   "normScore": "3.5787321063394684",
+   "score": "3.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/bd69e682-eec0-4520-af23-6f75347ecfcb",
+   "@type": "NASA",
+   "name": "geophysics",
+   "normScore": "100.0",
+   "score": "0.4508829712867737"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c0725772-5fd3-4d26-828f-f5fb01a02f8f",
+   "@type": "Concept",
+   "name": "fail",
+   "normScore": "5.511811023622047",
+   "score": "4.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c24f2c07-a56c-4393-a8aa-94cf7ef48ac8",
+   "@type": "Concept",
+   "name": "experience",
+   "normScore": "16.53543307086614",
+   "score": "12.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e008b68b-de63-49e1-b649-4655ee4cc962",
+   "@type": "Phrase",
+   "name": "NeIC NICEST2 project",
+   "normScore": "62.372188139059304",
+   "score": "61.0"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e7e9c7d4-6d64-4d73-b70f-d5dc02919008",
+   "@type": "Lemma",
+   "name": "success",
+   "normScore": "11.326860841423947",
+   "score": "10.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/fcb6ccca-c33a-46a0-b9a6-8fba70b4dcda",
+   "@type": "Lemma",
+   "name": "project",
+   "normScore": "17.583603020496223",
+   "score": "16.3"
+  },
+  {
+   "@id": "mailto:algu@norceresearch.no",
+   "@type": "foaf:Agent",
+   "affiliation": "NORCE (Norway)",
+   "email": "algu@norceresearch.no",
+   "name": "Alok Kumar Gupta"
+  },
+  {
+   "@id": "mailto:annefou@geo.uio.no",
+   "@type": "foaf:Agent",
+   "name": "Anne Fouilloux"
+  },
+  {
+   "@id": "mailto:elina.miinalainen@csc.fi",
+   "@type": "foaf:Agent",
+   "affiliation": "CSC (Finland)",
+   "email": "elina.miinalainen@csc.fi",
+   "name": "Elina Miinalainen"
+  },
+  {
+   "@id": "mailto:kimmo.ervasti@csc.fi",
+   "@type": "foaf:Agent",
+   "affiliation": "CSC (Finland)",
+   "email": "kimmo.ervasti@csc.fi",
+   "name": "Kimmo Ervasti"
+  },
+  {
+   "@id": "mailto:maikenp@usit.uio.no",
+   "@type": "foaf:Agent",
+   "affiliation": "USIT, University of Oslo (Norway)",
+   "email": "maikenp@usit.uio.no",
+   "name": "Maiken Pedersen"
+  },
+  {
+   "@id": "mailto:oyvind.seland@met.no",
+   "@type": "foaf:Agent",
+   "affiliation": "Norwegian Meteorological Institute (Norway)",
+   "email": "oyvind.seland@met.no",
+   "name": "Øyvind Seland"
+  },
+  {
+   "@id": "mailto:pchengi@nsc.liu.se",
+   "@type": "foaf:Agent",
+   "affiliation": "NSC (Sweden)",
+   "email": "pchengi@nsc.liu.se",
+   "name": "Prashanth Dwarakanath"
+  },
+  {
+   "@id": "mailto:service-account-enrichment",
+   "@type": "foaf:Agent",
+   "name": "service-account-enrichment"
+  },
+  {
+   "@id": "mailto:tylo@norceresearch.no",
+   "@type": "foaf:Agent",
+   "affiliation": "NORCE (Norway)",
+   "email": "tylo@norceresearch.no",
+   "name": "Tyge Løvseth"
+  },
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.1"
+   },
+   "about": {
+    "@id": "./"
+   }
+  }
+ ]
+}

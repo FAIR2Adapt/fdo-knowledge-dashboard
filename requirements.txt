@@ -1,0 +1,5 @@
+PyYAML>=6
+pydantic>=2.14,<3
+jsonschema>=4   # tests only: validates the catalog and the records against their schemas
+# fdo-consume 1.1 or later reads the FDOs (not on PyPI yet):
+#   pip install ../fdo-consume   or   pip install https://github.com/FAIR2Adapt/fdo-consume/archive/v1.1.0.tar.gz

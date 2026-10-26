@@ -1,0 +1,889 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://fair2adapt.github.io/fdo-knowledge-dashboard/schema/question-answering/provisional",
+ "title": "fdo-knowledge-dashboard question-answering and discovery contract, version 2 (provisional)",
+ "description": "The dashboard sends a QaRequest and shows a QaResponse only with cited resources; the provider (T4.3) performs retrieval and generation. Version 2 adds bounded prior turns (history) and a client-chosen conversation_id; a provider that ignores both behaves as in version 1 (one-shot). Capabilities are declared before the first request (QaCapabilities); unknown is unsupported.",
+ "$defs": {
+  "Citation": {
+   "additionalProperties": false,
+   "properties": {
+    "pid": {
+     "title": "Pid",
+     "type": "string"
+    },
+    "title": {
+     "anyOf": [
+      {
+       "maxLength": 500,
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Title"
+    },
+    "passage": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Passage"
+    },
+    "section": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Section"
+    },
+    "version": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Version"
+    },
+    "evidence": {
+     "items": {
+      "$ref": "#/$defs/Evidence"
+     },
+     "maxItems": 5,
+     "title": "Evidence",
+     "type": "array"
+    }
+   },
+   "required": [
+    "pid"
+   ],
+   "title": "Citation",
+   "type": "object"
+  },
+  "Conversation": {
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "title": "Id",
+     "type": "string"
+    },
+    "messages": {
+     "items": {
+      "$ref": "#/$defs/Message"
+     },
+     "maxItems": 40,
+     "title": "Messages",
+     "type": "array"
+    },
+    "created_at": {
+     "title": "Created At",
+     "type": "string"
+    },
+    "updated_at": {
+     "title": "Updated At",
+     "type": "string"
+    }
+   },
+   "required": [
+    "id",
+    "messages",
+    "created_at",
+    "updated_at"
+   ],
+   "title": "Conversation",
+   "type": "object"
+  },
+  "DashboardQaState": {
+   "additionalProperties": false,
+   "properties": {
+    "state": {
+     "description": "what the page shows; never an answer without cited resources",
+     "enum": [
+      "not_configured",
+      "ok",
+      "no_sources",
+      "no_answer",
+      "timeout",
+      "error"
+     ],
+     "title": "State",
+     "type": "string"
+    }
+   },
+   "required": [
+    "state"
+   ],
+   "title": "DashboardQaState",
+   "type": "object"
+  },
+  "DiscoveryCapabilities": {
+   "additionalProperties": false,
+   "properties": {
+    "schema": {
+     "const": "fdo-knowledge-dashboard/discovery-capabilities/1",
+     "title": "Schema",
+     "type": "string"
+    },
+    "supports": {
+     "$ref": "#/$defs/DiscoverySupports"
+    },
+    "provider": {
+     "anyOf": [
+      {
+       "maxLength": 200,
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Provider"
+    },
+    "mock": {
+     "default": false,
+     "title": "Mock",
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "schema",
+    "supports"
+   ],
+   "title": "DiscoveryCapabilities",
+   "type": "object"
+  },
+  "DiscoveryEntity": {
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "description": "the provider's identifier of the entity",
+     "maxLength": 2048,
+     "title": "Id",
+     "type": "string"
+    },
+    "pid": {
+     "anyOf": [
+      {
+       "maxLength": 2048,
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "a persistent identifier only when the provider states one",
+     "title": "Pid"
+    },
+    "title": {
+     "maxLength": 500,
+     "title": "Title",
+     "type": "string"
+    },
+    "type": {
+     "anyOf": [
+      {
+       "maxLength": 100,
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Type"
+    },
+    "relations": {
+     "items": {
+      "$ref": "#/$defs/DiscoveryRelation"
+     },
+     "maxItems": 50,
+     "title": "Relations",
+     "type": "array"
+    },
+    "membership": {
+     "const": "unverified",
+     "default": "unverified",
+     "description": "external results are never members of the dashboard's collection",
+     "title": "Membership",
+     "type": "string"
+    }
+   },
+   "required": [
+    "id",
+    "title"
+   ],
+   "title": "DiscoveryEntity",
+   "type": "object"
+  },
+  "DiscoveryItem": {
+   "additionalProperties": false,
+   "properties": {
+    "pid": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Pid"
+    },
+    "id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Id"
+    },
+    "title": {
+     "title": "Title",
+     "type": "string"
+    },
+    "description": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Description"
+    },
+    "access": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Access"
+    },
+    "type": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Type"
+    },
+    "modified": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Modified"
+    },
+    "relations": {
+     "items": {
+      "$ref": "#/$defs/DiscoveryRelation"
+     },
+     "title": "Relations",
+     "type": "array"
+    },
+    "membership": {
+     "const": "unverified",
+     "default": "unverified",
+     "title": "Membership",
+     "type": "string"
+    },
+    "in_dashboard": {
+     "title": "In Dashboard",
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "title",
+    "in_dashboard"
+   ],
+   "title": "DiscoveryItem",
+   "type": "object"
+  },
+  "DiscoveryRelation": {
+   "additionalProperties": false,
+   "properties": {
+    "type": {
+     "maxLength": 100,
+     "title": "Type",
+     "type": "string"
+    },
+    "target": {
+     "maxLength": 2048,
+     "title": "Target",
+     "type": "string"
+    }
+   },
+   "required": [
+    "type",
+    "target"
+   ],
+   "title": "DiscoveryRelation",
+   "type": "object"
+  },
+  "DiscoveryResponse": {
+   "additionalProperties": false,
+   "properties": {
+    "schema": {
+     "const": "fdo-knowledge-dashboard/discovery/1",
+     "title": "Schema",
+     "type": "string"
+    },
+    "status": {
+     "enum": [
+      "ok",
+      "error"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "provider": {
+     "maxLength": 200,
+     "title": "Provider",
+     "type": "string"
+    },
+    "mock": {
+     "default": false,
+     "title": "Mock",
+     "type": "boolean"
+    },
+    "query": {
+     "maxLength": 500,
+     "title": "Query",
+     "type": "string"
+    },
+    "offset": {
+     "minimum": 0,
+     "title": "Offset",
+     "type": "integer"
+    },
+    "limit": {
+     "maximum": 50,
+     "minimum": 1,
+     "title": "Limit",
+     "type": "integer"
+    },
+    "total": {
+     "minimum": 0,
+     "title": "Total",
+     "type": "integer"
+    },
+    "items": {
+     "items": {
+      "$ref": "#/$defs/DiscoveryEntity"
+     },
+     "maxItems": 50,
+     "title": "Items",
+     "type": "array"
+    }
+   },
+   "required": [
+    "schema",
+    "status",
+    "provider",
+    "query",
+    "offset",
+    "limit",
+    "total",
+    "items"
+   ],
+   "title": "DiscoveryResponse",
+   "type": "object"
+  },
+  "DiscoveryResult": {
+   "additionalProperties": false,
+   "properties": {
+    "status": {
+     "enum": [
+      "not_configured",
+      "ok",
+      "timeout",
+      "error"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "items": {
+     "items": {
+      "$ref": "#/$defs/DiscoveryItem"
+     },
+     "title": "Items",
+     "type": "array"
+    },
+    "total": {
+     "default": 0,
+     "title": "Total",
+     "type": "integer"
+    },
+    "source": {
+     "title": "Source",
+     "type": "string"
+    }
+   },
+   "required": [
+    "status",
+    "items",
+    "source"
+   ],
+   "title": "DiscoveryResult",
+   "type": "object"
+  },
+  "DiscoverySupports": {
+   "additionalProperties": false,
+   "properties": {
+    "paging": {
+     "default": false,
+     "title": "Paging",
+     "type": "boolean"
+    },
+    "relations": {
+     "default": false,
+     "title": "Relations",
+     "type": "boolean"
+    },
+    "pids": {
+     "default": false,
+     "title": "Pids",
+     "type": "boolean"
+    }
+   },
+   "title": "DiscoverySupports",
+   "type": "object"
+  },
+  "Evidence": {
+   "additionalProperties": false,
+   "properties": {
+    "url": {
+     "maxLength": 2048,
+     "pattern": "^https://\\S+$",
+     "title": "Url",
+     "type": "string"
+    },
+    "kind": {
+     "maxLength": 40,
+     "title": "Kind",
+     "type": "string"
+    }
+   },
+   "required": [
+    "url",
+    "kind"
+   ],
+   "title": "Evidence",
+   "type": "object"
+  },
+  "Message": {
+   "additionalProperties": true,
+   "properties": {
+    "role": {
+     "enum": [
+      "user",
+      "assistant"
+     ],
+     "title": "Role",
+     "type": "string"
+    },
+    "content": {
+     "maxLength": 2000,
+     "title": "Content",
+     "type": "string"
+    },
+    "at": {
+     "title": "At",
+     "type": "string"
+    }
+   },
+   "required": [
+    "role",
+    "content",
+    "at"
+   ],
+   "title": "Message",
+   "type": "object"
+  },
+  "MockResponse": {
+   "additionalProperties": false,
+   "properties": {
+    "status": {
+     "enum": [
+      "no_answer",
+      "timeout",
+      "error"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "mock": {
+     "const": true,
+     "title": "Mock",
+     "type": "boolean"
+    },
+    "answer": {
+     "default": null,
+     "title": "Answer",
+     "type": "null"
+    },
+    "citations": {
+     "items": {},
+     "maxItems": 0,
+     "title": "Citations",
+     "type": "array"
+    },
+    "related": {
+     "description": "local search matches, shown as such; never citations",
+     "items": {
+      "$ref": "#/$defs/Citation"
+     },
+     "title": "Related",
+     "type": "array"
+    }
+   },
+   "required": [
+    "status",
+    "mock"
+   ],
+   "title": "MockResponse",
+   "type": "object"
+  },
+  "QaCapabilities": {
+   "additionalProperties": false,
+   "properties": {
+    "schema": {
+     "const": "fdo-knowledge-dashboard/qa-capabilities/1",
+     "title": "Schema",
+     "type": "string"
+    },
+    "supports": {
+     "$ref": "#/$defs/Supports",
+     "description": "declared by the host configuration (site.qa.capabilities) or by the provider's metadata endpoint, established before the first request; a capability counts only when every source that declares it says true; unknown is unsupported"
+    },
+    "provider": {
+     "anyOf": [
+      {
+       "maxLength": 200,
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Provider"
+    },
+    "mock": {
+     "default": false,
+     "description": "true for a mock service; its answers are labelled as such",
+     "title": "Mock",
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "schema",
+    "supports"
+   ],
+   "title": "QaCapabilities",
+   "type": "object"
+  },
+  "QaRequest": {
+   "additionalProperties": false,
+   "properties": {
+    "schema": {
+     "const": "fdo-knowledge-dashboard/qa/2",
+     "title": "Schema",
+     "type": "string"
+    },
+    "question": {
+     "maxLength": 2000,
+     "minLength": 1,
+     "title": "Question",
+     "type": "string"
+    },
+    "lang": {
+     "anyOf": [
+      {
+       "maxLength": 35,
+       "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$",
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Lang"
+    },
+    "history": {
+     "description": "the previous turns of this conversation, text only, oldest first; never the catalog or browser storage",
+     "items": {
+      "$ref": "#/$defs/Turn"
+     },
+     "maxItems": 12,
+     "title": "History",
+     "type": "array"
+    },
+    "conversation_id": {
+     "anyOf": [
+      {
+       "maxLength": 64,
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "chosen by the browser; not a session, not authenticated",
+     "title": "Conversation Id"
+    },
+    "scope": {
+     "$ref": "#/$defs/QaScope"
+    },
+    "generation_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "the data generation the dashboard shows; the answer should name the one it used",
+     "title": "Generation Id"
+    }
+   },
+   "required": [
+    "schema",
+    "question",
+    "scope"
+   ],
+   "title": "QaRequest",
+   "type": "object"
+  },
+  "QaResponse": {
+   "additionalProperties": true,
+   "properties": {
+    "status": {
+     "enum": [
+      "ok",
+      "no_answer",
+      "error"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "answer": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Answer"
+    },
+    "citations": {
+     "items": {
+      "$ref": "#/$defs/Citation"
+     },
+     "title": "Citations",
+     "type": "array"
+    },
+    "generation_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Generation Id"
+    },
+    "reason": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Reason"
+    },
+    "provider": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Provider"
+    },
+    "conversation_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "echoed or chosen by the provider; the dashboard keeps its own id either way",
+     "title": "Conversation Id"
+    },
+    "supports": {
+     "anyOf": [
+      {
+       "$ref": "#/$defs/Supports"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "confirmation only, never a grant"
+    }
+   },
+   "required": [
+    "status"
+   ],
+   "title": "QaResponse",
+   "type": "object"
+  },
+  "QaScope": {
+   "additionalProperties": false,
+   "properties": {
+    "collection": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Collection"
+    },
+    "pids": {
+     "anyOf": [
+      {
+       "items": {
+        "type": "string"
+       },
+       "type": "array"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Pids"
+    }
+   },
+   "title": "QaScope",
+   "type": "object"
+  },
+  "Supports": {
+   "additionalProperties": false,
+   "properties": {
+    "single_turn": {
+     "default": false,
+     "title": "Single Turn",
+     "type": "boolean"
+    },
+    "history": {
+     "default": false,
+     "title": "History",
+     "type": "boolean"
+    },
+    "citations": {
+     "default": false,
+     "title": "Citations",
+     "type": "boolean"
+    },
+    "scope": {
+     "default": false,
+     "title": "Scope",
+     "type": "boolean"
+    },
+    "generation": {
+     "default": false,
+     "title": "Generation",
+     "type": "boolean"
+    }
+   },
+   "title": "Supports",
+   "type": "object"
+  },
+  "Turn": {
+   "additionalProperties": false,
+   "properties": {
+    "role": {
+     "enum": [
+      "user",
+      "assistant"
+     ],
+     "title": "Role",
+     "type": "string"
+    },
+    "content": {
+     "maxLength": 1000,
+     "title": "Content",
+     "type": "string"
+    }
+   },
+   "required": [
+    "role",
+    "content"
+   ],
+   "title": "Turn",
+   "type": "object"
+  }
+ }
+}

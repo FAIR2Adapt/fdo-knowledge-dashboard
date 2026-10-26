@@ -1,0 +1,109 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://fair2adapt.github.io/fdo-knowledge-dashboard/schema/capabilities/1",
+ "title": "fdo-knowledge-dashboard capabilities declaration, version 1",
+ "description": "Generated at build time from the code's constants, the contract files, the maps fdo-consume knows and the deployment configuration. 'implemented' = code exists; 'configured' = this deployment's choice; 'experimental' = not an agreed profile term; 'normative' only for published maps.",
+ "type": "object",
+ "required": [
+  "schema",
+  "software",
+  "reader",
+  "generation",
+  "data_origins",
+  "source_kinds",
+  "profile_maps",
+  "consumer_contracts",
+  "record",
+  "views",
+  "facets",
+  "search",
+  "resource_detail",
+  "qa",
+  "discovery",
+  "deployment",
+  "unsupported"
+ ],
+ "properties": {
+  "schema": {
+   "const": "fdo-knowledge-dashboard/capabilities/1"
+  },
+  "software": {
+   "type": "object",
+   "required": [
+    "name",
+    "version"
+   ]
+  },
+  "reader": {
+   "type": "string"
+  },
+  "generation": {
+   "type": "object",
+   "required": [
+    "id",
+    "data_origin"
+   ]
+  },
+  "profile_maps": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "status",
+     "selects",
+     "owner",
+     "implemented",
+     "normative"
+    ]
+   }
+  },
+  "consumer_contracts": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "required",
+     "optional"
+    ]
+   }
+  },
+  "views": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "kind",
+     "version",
+     "plugin_pid",
+     "implemented",
+     "experimental"
+    ]
+   }
+  },
+  "search": {
+   "type": "object",
+   "required": [
+    "providers",
+    "configured",
+    "limits"
+   ]
+  },
+  "qa": {
+   "type": "object",
+   "required": [
+    "contract",
+    "modes",
+    "configured",
+    "capability_keys"
+   ]
+  },
+  "unsupported": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ }
+}

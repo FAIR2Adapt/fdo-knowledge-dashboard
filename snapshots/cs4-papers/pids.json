@@ -1,0 +1,20 @@
+{
+ "https://w3id.org/ro-id/c594948e-cf4f-44ce-b96e-097e6ba5cd8e": {
+  "fixture": "fe245c74ea015927",
+  "fetched_from": "https://api.rohub.org/api/ros/c594948e-cf4f-44ce-b96e-097e6ba5cd8e/crate/download/",
+  "sha256": "bea1dde1a9d2726ae0de16f81d78e3f0565e6e84f595d406a37c4f709c590dbd",
+  "taken": "2026-10-25T16:34:47+00:00"
+ },
+ "https://w3id.org/ro-id/10f2756e-a221-4754-8b90-d088ab4409e5": {
+  "fixture": "bb33e31876e4281d",
+  "fetched_from": "https://api.rohub.org/api/ros/10f2756e-a221-4754-8b90-d088ab4409e5/crate/download/",
+  "sha256": "48e00965aeec4fcf4077d41f44396e0acf49884c31661af37be528d2b865c2f6",
+  "taken": "2026-10-25T16:34:47+00:00"
+ },
+ "https://w3id.org/ro-id/1bffc87b-d080-41ec-96b5-5f46ecbd76db": {
+  "fixture": "5337528d3c6bc660",
+  "fetched_from": "https://api.rohub.org/api/ros/1bffc87b-d080-41ec-96b5-5f46ecbd76db/crate/download/",
+  "sha256": "ba66694b8ce8684deeab84920e273303ba48bec6a4137c4dabe9adff2ef1c76f",
+  "taken": "2026-10-25T16:34:47+00:00"
+ }
+}

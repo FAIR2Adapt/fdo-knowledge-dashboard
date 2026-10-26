@@ -1,0 +1,241 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://w3id.org/fair2adapt/fdo-knowledge-dashboard/catalog/1",
+ "title": "Catalog, schema fdo-knowledge-dashboard/catalog/1",
+ "description": "The list page's data: the collection, counts, facets and one compact row per usable member. The full record of a member is at the `records` path with its key.",
+ "type": "object",
+ "required": [
+  "schema",
+  "generator",
+  "reader",
+  "built_at",
+  "site",
+  "collection",
+  "source_kind",
+  "counts",
+  "facets",
+  "facets_without_source",
+  "diagnostics_open",
+  "rows",
+  "not_usable",
+  "records",
+  "type_facet",
+  "not_stated"
+ ],
+ "properties": {
+  "schema": {
+   "const": "fdo-knowledge-dashboard/catalog/1"
+  },
+  "generator": {
+   "type": "string"
+  },
+  "reader": {
+   "type": "string"
+  },
+  "built_at": {
+   "type": "string"
+  },
+  "site": {
+   "type": "object",
+   "properties": {
+    "project": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "maxLength": 300
+    },
+    "funding": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "maxLength": 300
+    },
+    "map_notes": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "string",
+      "maxLength": 300
+     },
+     "description": "map id -> one sentence on what that map does not read, from reading.map_notes"
+    },
+    "footer": {
+     "type": "object",
+     "properties": {
+      "partners_confirmed": {
+       "type": "boolean"
+      },
+      "partners": {
+       "type": "array"
+      }
+     }
+    }
+   }
+  },
+  "collection": {
+   "type": "object",
+   "required": [
+    "pid",
+    "usable",
+    "title",
+    "description",
+    "members_total",
+    "members_skipped",
+    "stopped",
+    "explanation",
+    "console"
+   ],
+   "properties": {
+    "usable": {
+     "type": [
+      "boolean",
+      "null"
+     ]
+    },
+    "members_skipped": {
+     "type": "integer"
+    }
+   }
+  },
+  "source_kind": {
+   "enum": [
+    "collection",
+    "pids",
+    "community",
+    "dashboard"
+   ]
+  },
+  "counts": {
+   "type": "object",
+   "required": [
+    "listed",
+    "usable",
+    "not_usable",
+    "by_type"
+   ],
+   "properties": {
+    "listed": {
+     "type": "integer"
+    },
+    "usable": {
+     "type": "integer"
+    },
+    "not_usable": {
+     "type": "integer"
+    },
+    "by_type": {
+     "type": "object"
+    },
+    "multi_typed": {
+     "type": "integer",
+     "description": "usable records that declare more than one resource type; such a record is counted in each type group"
+    }
+   }
+  },
+  "facets": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "label",
+     "concept",
+     "group",
+     "values"
+    ],
+    "properties": {
+     "values": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "required": [
+        "value",
+        "count"
+       ]
+      }
+     }
+    }
+   }
+  },
+  "facets_without_source": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "label",
+     "why"
+    ]
+   }
+  },
+  "diagnostics_open": {
+   "type": "boolean"
+  },
+  "rows": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "key",
+     "pid",
+     "title",
+     "duplicate_title",
+     "description",
+     "resource_type",
+     "keywords",
+     "authors",
+     "date",
+     "year",
+     "status",
+     "claims",
+     "claim_texts",
+     "incomplete",
+     "facet_values"
+    ]
+   }
+  },
+  "not_usable": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "key",
+     "pid",
+     "explanation",
+     "reason"
+    ]
+   }
+  },
+  "records": {
+   "const": "data/records/{key}.json"
+  },
+  "type_facet": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "not_stated": {
+   "type": "string"
+  },
+  "composition": {
+   "type": "object",
+   "required": [
+    "pid",
+    "keys_from_fdo"
+   ],
+   "properties": {
+    "pid": {
+     "type": "string"
+    },
+    "keys_from_fdo": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "description": "present when the site was composed from a Dashboard FDO: its PID and the configuration keys it set"
+  }
+ }
+}

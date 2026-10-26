@@ -1,0 +1,788 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://fair2adapt.github.io/fdo-knowledge-dashboard/schema/search/1",
+ "title": "fdo-knowledge-dashboard search and delivery contract, version 1",
+ "description": "Additive to catalog/1 and record/1. States readiness (usable, not_usable) and delivery (public metadata, file access) only; scientific validity is out of scope and no field asserts it. Static and HTTP modes return the same members, the same order (title and type by folded text in code-point order, ties by the raw title; date newest first) and the same facet counts. Text lengths are Unicode code points.",
+ "$defs": {
+  "CommunityRecord": {
+   "additionalProperties": false,
+   "properties": {
+    "community": {
+     "title": "Community",
+     "type": "string"
+    },
+    "search": {
+     "items": {
+      "type": "string"
+     },
+     "title": "Search",
+     "type": "array"
+    },
+    "taken": {
+     "title": "Taken",
+     "type": "string"
+    },
+    "hits": {
+     "title": "Hits",
+     "type": "integer"
+    },
+    "members_found": {
+     "title": "Members Found",
+     "type": "integer"
+    },
+    "members_kept": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Members Kept"
+    }
+   },
+   "required": [
+    "community",
+    "search",
+    "taken",
+    "hits",
+    "members_found"
+   ],
+   "title": "CommunityRecord",
+   "type": "object"
+  },
+  "Distribution": {
+   "additionalProperties": false,
+   "properties": {
+    "metadata": {
+     "const": "public",
+     "default": "public",
+     "title": "Metadata",
+     "type": "string"
+    },
+    "files": {
+     "enum": [
+      "open",
+      "restricted",
+      "unknown"
+     ],
+     "title": "Files",
+     "type": "string"
+    }
+   },
+   "required": [
+    "files"
+   ],
+   "title": "Distribution",
+   "type": "object"
+  },
+  "Error": {
+   "additionalProperties": false,
+   "properties": {
+    "error": {
+     "$ref": "#/$defs/ErrorBody"
+    }
+   },
+   "required": [
+    "error"
+   ],
+   "title": "Error",
+   "type": "object"
+  },
+  "ErrorBody": {
+   "additionalProperties": false,
+   "properties": {
+    "code": {
+     "enum": [
+      "bad_request",
+      "not_found",
+      "uri_too_long",
+      "unavailable",
+      "rate_limited"
+     ],
+     "title": "Code",
+     "type": "string"
+    },
+    "message": {
+     "title": "Message",
+     "type": "string"
+    }
+   },
+   "required": [
+    "code",
+    "message"
+   ],
+   "title": "ErrorBody",
+   "type": "object"
+  },
+  "Facet": {
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "title": "Id",
+     "type": "string"
+    },
+    "label": {
+     "title": "Label",
+     "type": "string"
+    },
+    "concept": {
+     "title": "Concept",
+     "type": "string"
+    },
+    "values": {
+     "description": "counts over the current result with this facet's own selection removed, most frequent first, 'type not stated' last",
+     "items": {
+      "$ref": "#/$defs/FacetValue"
+     },
+     "title": "Values",
+     "type": "array"
+    }
+   },
+   "required": [
+    "id",
+    "label",
+    "concept",
+    "values"
+   ],
+   "title": "Facet",
+   "type": "object"
+  },
+  "FacetValue": {
+   "additionalProperties": false,
+   "properties": {
+    "value": {
+     "title": "Value",
+     "type": "string"
+    },
+    "count": {
+     "minimum": 0,
+     "title": "Count",
+     "type": "integer"
+    }
+   },
+   "required": [
+    "value",
+    "count"
+   ],
+   "title": "FacetValue",
+   "type": "object"
+  },
+  "Members": {
+   "additionalProperties": false,
+   "properties": {
+    "listed": {
+     "title": "Listed",
+     "type": "integer"
+    },
+    "usable": {
+     "title": "Usable",
+     "type": "integer"
+    },
+    "not_usable": {
+     "title": "Not Usable",
+     "type": "integer"
+    }
+   },
+   "required": [
+    "listed",
+    "usable",
+    "not_usable"
+   ],
+   "title": "Members",
+   "type": "object"
+  },
+  "Omissions": {
+   "additionalProperties": false,
+   "properties": {
+    "not_usable": {
+     "title": "Not Usable",
+     "type": "integer"
+    },
+    "not_searchable": {
+     "title": "Not Searchable",
+     "type": "string"
+    }
+   },
+   "required": [
+    "not_usable",
+    "not_searchable"
+   ],
+   "title": "Omissions",
+   "type": "object"
+  },
+  "ResourceDetail": {
+   "additionalProperties": false,
+   "properties": {
+    "schema": {
+     "const": "fdo-knowledge-dashboard/resource-detail/1",
+     "title": "Schema",
+     "type": "string"
+    },
+    "generation_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Generation Id"
+    },
+    "pid": {
+     "title": "Pid",
+     "type": "string"
+    },
+    "canonical_pid": {
+     "title": "Canonical Pid",
+     "type": "string"
+    },
+    "readiness": {
+     "enum": [
+      "usable",
+      "not_usable"
+     ],
+     "title": "Readiness",
+     "type": "string"
+    },
+    "data_origin": {
+     "enum": [
+      "real",
+      "synthetic",
+      "experimental",
+      "unknown"
+     ],
+     "title": "Data Origin",
+     "type": "string"
+    },
+    "distribution": {
+     "$ref": "#/$defs/Distribution"
+    },
+    "record": {
+     "additionalProperties": true,
+     "description": "the ResourceRecord, record/1, unchanged",
+     "title": "Record",
+     "type": "object"
+    }
+   },
+   "required": [
+    "schema",
+    "pid",
+    "canonical_pid",
+    "readiness",
+    "data_origin",
+    "distribution",
+    "record"
+   ],
+   "title": "ResourceDetail",
+   "type": "object"
+  },
+  "ResourceSummary": {
+   "additionalProperties": false,
+   "properties": {
+    "pid": {
+     "title": "Pid",
+     "type": "string"
+    },
+    "canonical_pid": {
+     "title": "Canonical Pid",
+     "type": "string"
+    },
+    "key": {
+     "title": "Key",
+     "type": "string"
+    },
+    "title": {
+     "title": "Title",
+     "type": "string"
+    },
+    "description": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Description"
+    },
+    "resource_type": {
+     "items": {
+      "type": "string"
+     },
+     "title": "Resource Type",
+     "type": "array"
+    },
+    "keywords": {
+     "items": {
+      "type": "string"
+     },
+     "title": "Keywords",
+     "type": "array"
+    },
+    "authors": {
+     "items": {
+      "type": "string"
+     },
+     "title": "Authors",
+     "type": "array"
+    },
+    "date": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Date"
+    },
+    "year": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Year"
+    },
+    "status": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Status"
+    },
+    "claims": {
+     "title": "Claims",
+     "type": "integer"
+    },
+    "claim_texts": {
+     "items": {
+      "type": "string"
+     },
+     "title": "Claim Texts",
+     "type": "array"
+    },
+    "claim_kinds": {
+     "items": {
+      "type": "string"
+     },
+     "title": "Claim Kinds",
+     "type": "array"
+    },
+    "duplicate_title": {
+     "default": false,
+     "title": "Duplicate Title",
+     "type": "boolean"
+    },
+    "incomplete": {
+     "default": false,
+     "title": "Incomplete",
+     "type": "boolean"
+    },
+    "readiness": {
+     "const": "usable",
+     "default": "usable",
+     "title": "Readiness",
+     "type": "string"
+    },
+    "generation_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Generation Id"
+    },
+    "record": {
+     "description": "relative path of the ResourceRecord",
+     "title": "Record",
+     "type": "string"
+    }
+   },
+   "required": [
+    "pid",
+    "canonical_pid",
+    "key",
+    "title",
+    "resource_type",
+    "keywords",
+    "authors",
+    "claims",
+    "record"
+   ],
+   "title": "ResourceSummary",
+   "type": "object"
+  },
+  "Scope": {
+   "additionalProperties": false,
+   "properties": {
+    "collection": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Collection"
+    },
+    "source_kind": {
+     "enum": [
+      "collection",
+      "pids",
+      "community",
+      "dashboard"
+     ],
+     "title": "Source Kind",
+     "type": "string"
+    }
+   },
+   "required": [
+    "source_kind"
+   ],
+   "title": "Scope",
+   "type": "object"
+  },
+  "SearchRequest": {
+   "additionalProperties": false,
+   "properties": {
+    "q": {
+     "default": "",
+     "description": "at most 500 Unicode code points; every whitespace-separated word must occur, accent-insensitive, in title, description, date, keywords, authors or claim texts",
+     "title": "Q",
+     "type": "string"
+    },
+    "filters": {
+     "additionalProperties": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "description": "facet id -> values; OR within a facet, AND across facets; unknown facet -> bad_request",
+     "title": "Filters",
+     "type": "object"
+    },
+    "sort": {
+     "default": "title",
+     "enum": [
+      "title",
+      "date",
+      "type"
+     ],
+     "title": "Sort",
+     "type": "string"
+    },
+    "offset": {
+     "default": 0,
+     "maximum": 10000000,
+     "minimum": 0,
+     "title": "Offset",
+     "type": "integer"
+    },
+    "limit": {
+     "default": 24,
+     "maximum": 200,
+     "minimum": 1,
+     "title": "Limit",
+     "type": "integer"
+    },
+    "lang": {
+     "anyOf": [
+      {
+       "maxLength": 35,
+       "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$",
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "stored and echoed; records are not translated",
+     "title": "Lang"
+    }
+   },
+   "title": "SearchRequest",
+   "type": "object"
+  },
+  "SearchResponse": {
+   "additionalProperties": false,
+   "properties": {
+    "schema": {
+     "const": "fdo-knowledge-dashboard/search/1",
+     "title": "Schema",
+     "type": "string"
+    },
+    "generation_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Generation Id"
+    },
+    "scope": {
+     "$ref": "#/$defs/Scope"
+    },
+    "request": {
+     "$ref": "#/$defs/SearchRequest"
+    },
+    "status": {
+     "enum": [
+      "ok",
+      "empty"
+     ],
+     "title": "Status",
+     "type": "string"
+    },
+    "total": {
+     "minimum": 0,
+     "title": "Total",
+     "type": "integer"
+    },
+    "offset": {
+     "title": "Offset",
+     "type": "integer"
+    },
+    "limit": {
+     "title": "Limit",
+     "type": "integer"
+    },
+    "items": {
+     "items": {
+      "$ref": "#/$defs/ResourceSummary"
+     },
+     "title": "Items",
+     "type": "array"
+    },
+    "facets": {
+     "items": {
+      "$ref": "#/$defs/Facet"
+     },
+     "title": "Facets",
+     "type": "array"
+    },
+    "omissions": {
+     "$ref": "#/$defs/Omissions"
+    }
+   },
+   "required": [
+    "schema",
+    "scope",
+    "request",
+    "status",
+    "total",
+    "offset",
+    "limit",
+    "items",
+    "facets",
+    "omissions"
+   ],
+   "title": "SearchResponse",
+   "type": "object"
+  },
+  "SnapshotItem": {
+   "additionalProperties": false,
+   "properties": {
+    "pid": {
+     "title": "Pid",
+     "type": "string"
+    },
+    "canonical_pid": {
+     "title": "Canonical Pid",
+     "type": "string"
+    },
+    "source_uri": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Source Uri"
+    },
+    "retrieved_at": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Retrieved At"
+    },
+    "hash": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "SHA-256 of the recorded crate bytes",
+     "title": "Hash"
+    },
+    "status": {
+     "description": "unknown: a manifest is present but does not describe this snapshot",
+     "enum": [
+      "recorded",
+      "kept",
+      "carried_forward",
+      "gone",
+      "restricted",
+      "failed",
+      "unknown"
+     ],
+     "title": "Status",
+     "type": "string"
+    }
+   },
+   "required": [
+    "pid",
+    "canonical_pid",
+    "status"
+   ],
+   "title": "SnapshotItem",
+   "type": "object"
+  },
+  "SourceSnapshot": {
+   "additionalProperties": false,
+   "properties": {
+    "schema": {
+     "const": "fdo-knowledge-dashboard/source-snapshot/1",
+     "title": "Schema",
+     "type": "string"
+    },
+    "generation_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Generation Id"
+    },
+    "built_at": {
+     "title": "Built At",
+     "type": "string"
+    },
+    "retrieved_at": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "latest retrieval time of the snapshot; null for live reads and folders without times",
+     "title": "Retrieved At"
+    },
+    "source_kind": {
+     "enum": [
+      "collection",
+      "pids",
+      "community",
+      "dashboard"
+     ],
+     "title": "Source Kind",
+     "type": "string"
+    },
+    "data_origin": {
+     "enum": [
+      "real",
+      "synthetic",
+      "experimental",
+      "unknown"
+     ],
+     "title": "Data Origin",
+     "type": "string"
+    },
+    "recorded": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Recorded"
+    },
+    "members": {
+     "$ref": "#/$defs/Members"
+    },
+    "items": {
+     "items": {
+      "$ref": "#/$defs/SnapshotItem"
+     },
+     "title": "Items",
+     "type": "array"
+    },
+    "community": {
+     "anyOf": [
+      {
+       "$ref": "#/$defs/CommunityRecord"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "for a community source: what was searched and how many members were found and kept"
+    }
+   },
+   "required": [
+    "schema",
+    "built_at",
+    "source_kind",
+    "data_origin",
+    "members",
+    "items"
+   ],
+   "title": "SourceSnapshot",
+   "type": "object"
+  }
+ }
+}

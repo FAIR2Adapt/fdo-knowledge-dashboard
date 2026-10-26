@@ -1,0 +1,1087 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  "https://w3id.org/ro/terms/earth-science#",
+  "https://w3id.org/ro/terms/workflow-run#",
+  "https://w3id.org/ro/terms/test#",
+  {
+   "citeAs": "https://www.w3.org/ns/iana/link-relations/relation#cite-as",
+   "citeAs2": "http://www.iana.org/assignments/relation/cite-as",
+   "community": "http://w3id.org/ro-id/rohub/model#community",
+   "cdesc": "https://reliance.expertcustomers.ai/vocabulary/cdesc/",
+   "creation_mode": "http://w3id.org/ro-id/rohub/model#creation_mode",
+   "prov": "http://www.w3.org/ns/prov#",
+   "archivedAtTime": "http://purl.org/wf4ever/roevo#archivedAtTime",
+   "archivedBy": "http://purl.org/wf4ever/roevo#archivedBy",
+   "hasArchive": "http://purl.org/wf4ever/roevo#hasArchive",
+   "hasSnapshot": "http://purl.org/wf4ever/roevo#hasSnapshot",
+   "isArchiveOf": "http://purl.org/wf4ever/roevo#isArchiveOf",
+   "isFinalized": "http://purl.org/wf4ever/roevo#isFinalized",
+   "isSnapshotOf": "http://purl.org/wf4ever/roevo#isSnapshotOf",
+   "snapshotedAtTime": "http://purl.org/wf4ever/roevo#snapshotedAtTime",
+   "snapshotedBy": "http://purl.org/wf4ever/roevo#snapshotedBy",
+   "forkedAtTime": "http://purl.org/wf4ever/roevo#forkedAtTime",
+   "forkedBy": "http://purl.org/wf4ever/roevo#forkedBy",
+   "hasFork": "http://purl.org/wf4ever/roevo#hasFork",
+   "asWKT": "http://www.opengis.net/ont/geosparql#asWKT",
+   "hasGeometry": "http://www.opengis.net/ont/geosparql#hasGeometry",
+   "Concept": "https://w3id.org/ro/terms/earth-science#Concept",
+   "FieldOfResearch": "https://w3id.org/ro/terms/earth-science#FieldOfResearch",
+   "IPTC": "https://w3id.org/ro/terms/earth-science#IPTC",
+   "Lemma": "https://w3id.org/ro/terms/earth-science#Lemma",
+   "NASA": "https://w3id.org/ro/terms/earth-science#NASA",
+   "Person1": "https://w3id.org/contentdesc#Person",
+   "Phrase": "https://w3id.org/ro/terms/earth-science#Phrase",
+   "Sentence": "https://w3id.org/ro/terms/earth-science#Sentence",
+   "TimeReference": "https://w3id.org/ro/terms/earth-science#TimeReference",
+   "Domain": "https://w3id.org/contentdesc#Domain",
+   "Organization1": "https://w3id.org/contentdesc#Organization",
+   "Place": "https://w3id.org/contentdesc#Place",
+   "normScore": "https://w3id.org/ro/terms/earth-science#normScore",
+   "path": "https://w3id.org/ro/terms/earth-science#path",
+   "score": "https://w3id.org/ro/terms/earth-science#score",
+   "wikidata": "https://w3id.org/ro/terms/earth-science#wikidata",
+   "doi": "http://purl.org/ontology/bibo/doi",
+   "orcid": "https://w3id.org/dingo#orcid",
+   "template": "https://w3id.org/ro/terms/earth-science#template",
+   "dataType": "https://w3id.org/ro/terms/earth-science#dataType",
+   "datasetManager": "https://w3id.org/ro/terms/earth-science#datasetManager",
+   "minValue": "https://w3id.org/ro/terms/earth-science#minValue",
+   "maxValue": "https://w3id.org/ro/terms/earth-science#maxValue",
+   "status": "https://w3id.org/ro/terms/earth-science#status",
+   "DataCubeCollection": "https://w3id.org/ro/terms/earth-science#DataCubeCollection",
+   "DataCubeProduct": "https://w3id.org/ro/terms/earth-science#DataCubeProduct",
+   "enrichmentSubject": "http://w3id.org/ro-id/rohub/model#enrichmentSubject",
+   "softwareRequirements": "https://schema.org/softwareRequirements",
+   "geonames": "https://w3id.org/ro/terms/earth-science#geonames",
+   "value": "https://w3id.org/ro/terms/earth-science#value",
+   "accountablePerson": "https://schema.org/accountablePerson"
+  }
+ ],
+ "@graph": [
+  {
+   "@type": "CreativeWork",
+   "@id": "ro-crate-metadata.json",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "identifier": "https://w3id.org/ro-id/10f2756e-a221-4754-8b90-d088ab4409e5",
+   "hasPart": [
+    {
+     "@id": "https://doi.org/10.1016/j.cities.2023.104295",
+     "@type": "File"
+    },
+    {
+     "@id": "https://w3id.org/sciencelive/np/RAPnlRzYagjvCtRVtyyCmqkuzrv8Nyor5H-HKZFRTNf20",
+     "@type": "File"
+    }
+   ],
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "https://w3id.org/ro/terms/earth-science#BibliographyResearchObject",
+    "http://purl.org/wf4ever/roevo#LiveRO"
+   ],
+   "creator": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "author": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "datePublished": "2026-10-21 13:56:20.882246+00:00",
+   "dateCreated": "2026-10-21 13:56:20.882246+00:00",
+   "dateModified": "2026-10-22 21:47:46.426116+00:00",
+   "contributor": [],
+   "name": "Assessing financial subsidies for green roofs: A micro-scale analysis of Lisbon (Portugal)",
+   "description": "Green roofs (GR) provide ecological, economic, and socio-environmental benefits reducing the negative effects of urbanization and improving cities' resilience to tackle climate change. However, from the private investors' perspective, GR are economic unfeasible making necessary the development of public incentive policies. The study aims to assess adequate methodologies to design GR financial subsidies at the city scale, considering the influence of green roofs' ecosystem services (ES). The initial hypothesis is that constant financial subsidies are suboptimal, and it is necessary to develop more granular approaches. A cumulative and incremental 3-level cost-benefit analysis (CBA) was performed at an urban micro-scale to allow the incorporation of environmental features in the monetary conversion of ES. Results confirm that positive ES provided by green roofs vary across the city. Consequently, constant values of financial subsidies at the city scale do not optimize public financial resources management, confirming the initial hypothesis. Moreover, findings reinforce the need to review the procedures for developing and granting public incentives at the municipal and/or macro-scale level for GR, especially as these solutions provide ES that are strongly influenced by environmental surrounding characteristics.",
+   "contentSize": 23776,
+   "encodingFormat": "application/ld+json",
+   "contentUrl": "https://api.rohub.org/api/ros/10f2756e-a221-4754-8b90-d088ab4409e5/crate/download/",
+   "citeAs": "Gonzalez, Esteban. \"Assessing financial subsidies for green roofs: A micro-scale analysis of Lisbon (Portugal).\" ROHub. Oct 21 ,2026. https://w3id.org/ro-id/10f2756e-a221-4754-8b90-d088ab4409e5.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "about": {
+    "@id": "http://eurovoc.europa.eu/2919"
+   },
+   "https://schema.org/isRelatedTo": {
+    "@id": "https://w3id.org/ro-id/10f2756e-a221-4754-8b90-d088ab4409e5/product/1"
+   },
+   "http://w3id.org/ro-id/rohub/model#enrichmentSubject": [
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/071a2880-2d8b-4c8a-b8e6-1543d79c3d52"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/079fa1b0-0c24-4184-a445-1f391c1ae46c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/10000469-de10-4bc0-b21d-545f52b4b191"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/164bf436-396a-4979-89bc-cdce4a8b9c44"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1759e23e-b964-4294-acdd-8ed1b2d9b846"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/19990bc8-4032-4230-91de-b2b8ccb7c276"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/1b8aa735-440c-4480-9f79-0346b4ad4071"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/206b8ab0-d7f3-45fb-b329-0143d1e9154d"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/234e429f-4a37-4c7e-adcb-42edc4c3e580"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2a1ede6b-03e7-4100-b8d9-b75137af1058"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2adec59a-e7e3-439c-8bc5-c18a1c5f0c68"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/2c660dd7-11d3-4dad-8bca-ff5b7a2a203c"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/304f3d68-92ad-43cd-a82a-f9119ce6ca7b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/4496475d-fc09-4c20-bd69-3550d01791ea"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/4f72b5cc-b904-43a6-8557-0902420888eb"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/50cee81f-8b3f-4f1f-9dd4-7dd491da3a8a"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/543eb785-b8f2-43a6-a616-970afa243183"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/59dcd97a-61cd-4e17-8817-d01ce08e284a"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/5caac22b-2312-41dd-a1e8-1c4b138445f9"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/61a31771-e93f-4ef7-bfb0-6fc5270bf4d8"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/62d79ebf-31d3-43f2-a14d-ef1ab4658186"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/6449af4b-4d1f-444d-a519-b0e44dd99ee0"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/658c8f7c-27b3-490f-b81e-30884b315328"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/6794d4a0-5317-4eef-a96f-4632f87685e8"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/6ade64f9-5526-4fdc-9252-f18611d06438"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/6edd11b3-81c4-47ed-8702-fa7920791c04"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/705b130a-e7aa-4a83-8788-e82b35d54789"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/7253ecd8-f1d8-49f9-9d05-09fb8b97bd37"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/76b64f12-8f86-4f62-8f14-58672b826c55"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/79131509-4325-4441-85d9-55f6d58a6c77"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/8739e439-3b43-4ce8-b6d2-f4ffeceb6d8e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/88c81ed3-35b9-497c-a4f7-e3e9756dc6f8"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/8ad6daf8-0050-4df2-907b-92334744809b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/8ed047a0-d5e2-4b0b-9dd5-c38268322dcd"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/91ee31a9-9c01-4481-8c5e-fc84c5da4716"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a11d6af1-97ec-40a2-8384-31ee186eb046"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a52ded80-20db-4ebc-852d-35e9986b7bc0"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a72d9f9f-e426-46fc-9029-ed39cc80a1d3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/a784fd3c-eb84-4e44-9391-6b45a6301739"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/ad86a3d2-1c09-47ca-9521-2d7337aebb9e"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/b35676e9-70fa-47cc-b89c-6e2fe008493f"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/b8dd0ec6-6f26-4a96-b99c-0b0b620c0939"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/bb116af7-9e07-42d0-9241-297256025a63"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/be4f89f8-c890-4b0c-959a-12ba8ce8208b"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c3b14d08-db0a-448f-b3a6-0b63f93923c8"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c52bebb5-1b17-42bb-b6b5-fe9d38aa5234"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/c6638907-b614-4ef8-b600-869b853cbac5"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/ca0a36d8-3c0b-4355-a912-bda2569367f9"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/d26d7a13-b698-40af-a54d-eb60c34600d8"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/d6d8b997-2aca-43b2-9bc4-f11d5db11078"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/d74b7454-d7ef-44dd-882f-ba58cb8fc578"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/d86210c5-9740-4126-8840-091a66c55512"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/da1969f6-68af-4d11-8fb4-fb9756b4d466"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/dca22734-39b1-43d9-9e55-e9593bb29a25"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/e444850e-7774-4627-9e03-e7044884d368"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/eaa9c0e0-b34a-4f9a-95a1-c8cbeb20f136"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/ee04759f-c0ab-4e0e-9a6b-e4c9b6c01023"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/fbe77670-0bda-4886-a669-20a3cb8531c3"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/fcd95d7f-b995-421e-be3c-f10097036cd6"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/fdb5dd04-24de-403a-880c-3260f5fab113"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/enrichment/fdf05c9c-a793-43a3-9c57-3ec64cc2603e"
+    }
+   ],
+   "http://w3id.org/ro-id/rohub/model#creation_mode": "MANUAL"
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/2919",
+   "@type": "http://schema.org/DefinedTerm",
+   "name": "Environmental research",
+   "description": ""
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.cities.2023.104295",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Publication"
+   ],
+   "name": "Assessing financial subsidies for green roofs: A micro-scale analysis of Lisbon (Portugal)",
+   "creator": [
+    {
+     "@id": "https://id.crossref.org/contributor/carlos-oliveira-cruz-1jvhgbb50hqhd"
+    }
+   ],
+   "author": [
+    {
+     "@id": "https://id.crossref.org/contributor/carlos-oliveira-cruz-1jvhgbb50hqhd"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2026-10-21 13:56:25.405051+00:00",
+   "dateCreated": "2026-10-21 13:56:25.405051+00:00",
+   "dateModified": "2026-10-21 13:56:35.110506+00:00",
+   "contentUrl": "https://doi.org/10.1016/j.cities.2023.104295",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "description": "Green roofs (GR) provide ecological, economic, and socio-environmental benefits reducing the negative effects of urbanization and improving cities' resilience to tackle climate change. However, from the private investors' perspective, GR are economic unfeasible making necessary the development of public incentive policies. The study aims to assess adequate methodologies to design GR financial subsidies at the city scale, considering the influence of green roofs' ecosystem services (ES). The initial hypothesis is that constant financial subsidies are suboptimal, and it is necessary to develop more granular approaches. A cumulative and incremental 3-level cost-benefit analysis (CBA) was performed at an urban micro-scale to allow the incorporation of environmental features in the monetary conversion of ES. Results confirm that positive ES provided by green roofs vary across the city. Consequently, constant values of financial subsidies at the city scale do not optimize public financial resources management, confirming the initial hypothesis. Moreover, findings reinforce the need to review the procedures for developing and granting public incentives at the municipal and/or macro-scale level for GR, especially as these solutions provide ES that are strongly influenced by environmental surrounding characteristics."
+  },
+  {
+   "@id": "https://id.crossref.org/contributor/tiago-liberalesso-1jvhgbb50hqhd",
+   "foaf:familyName": "Liberalesso",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Person"
+   ],
+   "name": "Tiago Liberalesso",
+   "foaf:givenName": "Tiago"
+  },
+  {
+   "@id": "https://id.crossref.org/contributor/carlos-oliveira-cruz-1jvhgbb50hqhd",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Person"
+   ],
+   "foaf:givenName": "Carlos Oliveira",
+   "name": "Carlos Oliveira Cruz",
+   "foaf:familyName": "Cruz"
+  },
+  {
+   "@id": "https://id.crossref.org/issn/0264-2751",
+   "bibo:issn": "0264-2751",
+   "@type": [
+    "http://purl.org/ontology/bibo/Journal"
+   ],
+   "name": "Cities",
+   "http://prismstandard.org/namespaces/basic/2.1/issn": "0264-2751",
+   "http://www.w3.org/2002/07/owl#sameAs": "urn:issn:0264-2751"
+  },
+  {
+   "@id": "https://id.crossref.org/contributor/cristina-matos-silva-1jvhgbb50hqhd",
+   "foaf:givenName": "Cristina Matos",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Person"
+   ],
+   "foaf:familyName": "Silva",
+   "name": "Cristina Matos Silva"
+  },
+  {
+   "@id": "https://w3id.org/sciencelive/np/RAPnlRzYagjvCtRVtyyCmqkuzrv8Nyor5H-HKZFRTNf20",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "Publication"
+   ],
+   "name": "AIDA sentence: Constant financial subsidies for green roofs at the city scale fail to optimize public resource mana...",
+   "creator": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "author": [
+    {
+     "@id": "mailto:eg.guardia@gmail.com"
+    }
+   ],
+   "contributor": [],
+   "sdDatePublished": "2026-10-21 13:56:33.810581+00:00",
+   "dateCreated": "2026-10-21 13:56:33.810581+00:00",
+   "dateModified": "2026-10-21 13:56:34.193024+00:00",
+   "contentUrl": "https://w3id.org/sciencelive/np/RAPnlRzYagjvCtRVtyyCmqkuzrv8Nyor5H-HKZFRTNf20",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/10f2756e-a221-4754-8b90-d088ab4409e5/spatial/2",
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/2267057"
+   },
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/name": "Lisbon"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/10f2756e-a221-4754-8b90-d088ab4409e5/product/1",
+   "https://schema.org/spatialCoverage": {
+    "@id": "https://w3id.org/ro-id/10f2756e-a221-4754-8b90-d088ab4409e5/spatial/4"
+   },
+   "@type": [
+    "https://schema.org/Product"
+   ],
+   "https://schema.org/keywords": "Gr thermal insulation capacity, money perspective, Gr adoption rate, Gr project, Gi solution, Gr benefit, incentive policy, cost- benefit analysis, green roof, design alternative, biodiversity value, water runoff management, avoided cost, costs and benefits, roof contribution, contribution to enhancing biodiversity, NPV outcome, NPV value, disposal cost, CBA outcome, GR project outflow, CBA model, installation cost"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/10f2756e-a221-4754-8b90-d088ab4409e5/spatial/1",
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/2264397"
+   },
+   "https://schema.org/name": "Portugal"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/10f2756e-a221-4754-8b90-d088ab4409e5/spatial/3",
+   "https://schema.org/name": "Tagus River",
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/2262787"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/10f2756e-a221-4754-8b90-d088ab4409e5/spatial/4",
+   "https://schema.org/name": "Italy",
+   "@type": [
+    "https://schema.org/Place"
+   ],
+   "https://schema.org/url": {
+    "@id": "https://www.geonames.org/3175395"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2c660dd7-11d3-4dad-8bca-ff5b7a2a203c",
+   "name": "law",
+   "@type": [
+    "https://w3id.org/contentdesc#Domain"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "49.99999999999999",
+   "https://w3id.org/ro/terms/earth-science#score": "0.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/4baece1b-6c1c-405e-8a3a-44b07ccfd2fe",
+   "name": "Regional/ Local government",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/6ade64f9-5526-4fdc-9252-f18611d06438",
+   "name": "micro",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "7.8",
+   "https://w3id.org/ro/terms/earth-science#normScore": "14.417744916820702"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2adec59a-e7e3-439c-8bc5-c18a1c5f0c68",
+   "https://w3id.org/ro/terms/earth-science#normScore": "24.399260628465804",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "13.2",
+   "name": "Green roofs"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/206b8ab0-d7f3-45fb-b329-0143d1e9154d",
+   "name": "analysis of Lisbon",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "22.6",
+   "https://w3id.org/ro/terms/earth-science#normScore": "48.91774891774892"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/705b130a-e7aa-4a83-8788-e82b35d54789",
+   "https://w3id.org/ro/terms/earth-science#normScore": "16.666666666666668",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "7.7",
+   "name": "incentive policy"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/658c8f7c-27b3-490f-b81e-30884b315328",
+   "https://w3id.org/ro/terms/earth-science#normScore": "17.005545286506468",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "name": "subsidy",
+   "https://w3id.org/ro/terms/earth-science#score": "9.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/dca22734-39b1-43d9-9e55-e9593bb29a25",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FieldOfResearch"
+   ],
+   "name": "Economics"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d26d7a13-b698-40af-a54d-eb60c34600d8",
+   "name": "CBA",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "7.8",
+   "https://w3id.org/ro/terms/earth-science#normScore": "14.417744916820702"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d74b7454-d7ef-44dd-882f-ba58cb8fc578",
+   "name": "A cumulative and incremental 3-level cost-benefit analysis (CBA) was performed at an urban micro-scale to allow the incorporation of environmental features in the monetary conversion of ES.",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "23.37042925278219",
+   "https://w3id.org/ro/terms/earth-science#score": "14.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/6edd11b3-81c4-47ed-8702-fa7920791c04",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "benefit-cost analysis",
+   "https://w3id.org/ro/terms/earth-science#normScore": "13.774834437086092",
+   "https://w3id.org/ro/terms/earth-science#score": "10.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ca0a36d8-3c0b-4355-a912-bda2569367f9",
+   "name": "Knowledge Sector (EEA)",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/7a103776-b322-4152-883a-083ea329b8ec"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/79131509-4325-4441-85d9-55f6d58a6c77",
+   "name": "Ecological Applications",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/88c81ed3-35b9-497c-a4f7-e3e9756dc6f8",
+   "@type": [
+    "https://w3id.org/contentdesc#Organization"
+   ],
+   "name": "ecosystem service"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/079fa1b0-0c24-4184-a445-1f391c1ae46c",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "subsidy",
+   "https://w3id.org/ro/terms/earth-science#score": "11.1",
+   "https://w3id.org/ro/terms/earth-science#normScore": "14.701986754966887"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/fdf05c9c-a793-43a3-9c57-3ec64cc2603e",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "4.635761589403973",
+   "name": "Portugal",
+   "https://w3id.org/ro/terms/earth-science#score": "3.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c6638907-b614-4ef8-b600-869b853cbac5",
+   "name": "Portugal",
+   "@type": [
+    "https://w3id.org/contentdesc#Place"
+   ],
+   "https://w3id.org/ro/terms/earth-science#geonames": {
+    "@id": "https://www.geonames.org/2264397"
+   },
+   "https://w3id.org/ro/terms/earth-science#wikidata": {
+    "@id": "https://www.wikidata.org/wiki/Q45"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d6d8b997-2aca-43b2-9bc4-f11d5db11078",
+   "name": "finding",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "4.105960264900662",
+   "https://w3id.org/ro/terms/earth-science#score": "3.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2c1eda11-13a8-4027-8fe7-b852aafdddc0",
+   "name": "Funding",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/4baece1b-6c1c-405e-8a3a-44b07ccfd2fe"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/62d79ebf-31d3-43f2-a14d-ef1ab4658186",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FieldOfResearch"
+   ],
+   "name": "Environmental Sciences"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/59dcd97a-61cd-4e17-8817-d01ce08e284a",
+   "name": "incentive",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "5.0",
+   "https://w3id.org/ro/terms/earth-science#normScore": "9.242144177449168"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7253ecd8-f1d8-49f9-9d05-09fb8b97bd37",
+   "name": "city scale",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "15.151515151515152",
+   "https://w3id.org/ro/terms/earth-science#score": "7.0"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/234e429f-4a37-4c7e-adcb-42edc4c3e580",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Environment pollution"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/25f1137d-f93e-4967-95dd-cb4cc3e04b86",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Economic and Finance"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ee04759f-c0ab-4e0e-9a6b-e4c9b6c01023",
+   "name": "Meteorology and climatology",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/304f3d68-92ad-43cd-a82a-f9119ce6ca7b",
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.960264900662252",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "4.5",
+   "name": "policy"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1759e23e-b964-4294-acdd-8ed1b2d9b846",
+   "https://w3id.org/ro/terms/earth-science#score": "4.5",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "8.317929759704251",
+   "name": "city"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/f66c60d2-cc61-48b8-96ce-f759d105934d",
+   "name": "City in Portugal",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8ad6daf8-0050-4df2-907b-92334744809b",
+   "https://w3id.org/ro/terms/earth-science#score": "8.6",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "city",
+   "https://w3id.org/ro/terms/earth-science#normScore": "11.390728476821192"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/fcd95d7f-b995-421e-be3c-f10097036cd6",
+   "name": "Government aid",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "https://w3id.org/ro/terms/earth-science#path": "Economy, business and finance/Economy/Macro economics/Government aid"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/4f72b5cc-b904-43a6-8557-0902420888eb",
+   "@type": [
+    "https://w3id.org/contentdesc#Place"
+   ],
+   "name": "Lisbon",
+   "https://w3id.org/ro/terms/earth-science#wikidata": {
+    "@id": "https://www.wikidata.org/wiki/Q597"
+   },
+   "https://w3id.org/ro/terms/earth-science#geonames": {
+    "@id": "https://www.geonames.org/2267057"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/9fd6c02c-501a-46c4-b746-c2cc6823f529",
+   "name": "Non specific",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/776c5b88-970a-4c0e-a977-7e16fa47a93a",
+   "name": "Government/ Public Sector",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/6794d4a0-5317-4eef-a96f-4632f87685e8",
+   "https://w3id.org/ro/terms/earth-science#normScore": "3.9735099337748343",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "3.0",
+   "name": "want"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/4496475d-fc09-4c20-bd69-3550d01791ea",
+   "https://w3id.org/ro/terms/earth-science#score": "5.1",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "process",
+   "https://w3id.org/ro/terms/earth-science#normScore": "6.7549668874172175"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c52bebb5-1b17-42bb-b6b5-fe9d38aa5234",
+   "https://w3id.org/ro/terms/earth-science#score": "6.0",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "7.947019867549669",
+   "name": "incentive"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/79d4fcdf-9d4f-419a-8302-53a39c9fb4f8",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Identification of adaptation options"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/91ee31a9-9c01-4481-8c5e-fc84c5da4716",
+   "name": "resource management",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "4.900662251655629",
+   "https://w3id.org/ro/terms/earth-science#score": "3.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/10000469-de10-4bc0-b21d-545f52b4b191",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Geographical Scope",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/f66c60d2-cc61-48b8-96ce-f759d105934d"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/bb116af7-9e07-42d0-9241-297256025a63",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "43.7201907790143",
+   "name": "Assessing financial subsidies for green roofs: A micro-scale analysis of Lisbon (Portugal) Green roofs (GR) provide ecological, economic, and socio-environmental benefits reducing the negative effects of urbanization and improving cities' resilience to tackle climate change.",
+   "https://w3id.org/ro/terms/earth-science#score": "27.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/164bf436-396a-4979-89bc-cdce4a8b9c44",
+   "https://w3id.org/ro/terms/earth-science#score": "9.2",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "name": "microprocessor",
+   "https://w3id.org/ro/terms/earth-science#normScore": "12.185430463576157"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a11d6af1-97ec-40a2-8384-31ee186eb046",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#NASA"
+   ],
+   "name": "Geosciences"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/c3b14d08-db0a-448f-b3a6-0b63f93923c8",
+   "name": "Built Environment and Design",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FieldOfResearch"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/ad86a3d2-1c09-47ca-9521-2d7337aebb9e",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Lemma"
+   ],
+   "name": "ecosystem service",
+   "https://w3id.org/ro/terms/earth-science#score": "6.6",
+   "https://w3id.org/ro/terms/earth-science#normScore": "12.199630314232902"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/7a103776-b322-4152-883a-083ea329b8ec",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Urban sustainability"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a784fd3c-eb84-4e44-9391-6b45a6301739",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "IPCC",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/913fcfad-175f-421b-b3fb-78fc1145dee1"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a72d9f9f-e426-46fc-9029-ed39cc80a1d3",
+   "name": "Economy, business and finance",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "https://w3id.org/ro/terms/earth-science#path": "Economy, business and finance"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/543eb785-b8f2-43a6-a616-970afa243183",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/15b47b7e-4d59-4a02-b8c9-3725ad328e46"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Methodology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/af87915f-849d-403e-81de-92e4807df12d",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Urban"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/b8dd0ec6-6f26-4a96-b99c-0b0b620c0939",
+   "https://w3id.org/ro/terms/earth-science#normScore": "8.441558441558442",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "name": "cities' resilience",
+   "https://w3id.org/ro/terms/earth-science#score": "3.9"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/eaa9c0e0-b34a-4f9a-95a1-c8cbeb20f136",
+   "https://w3id.org/ro/terms/earth-science#path": "Environment/Conservation/Parks",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "name": "Parks"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/15b47b7e-4d59-4a02-b8c9-3725ad328e46",
+   "name": "Case Study",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/a52ded80-20db-4ebc-852d-35e9986b7bc0",
+   "https://w3id.org/ro/terms/earth-science#normScore": "8.333333333333332",
+   "@type": [
+    "https://w3id.org/contentdesc#Domain"
+   ],
+   "name": "ecology",
+   "https://w3id.org/ro/terms/earth-science#score": "0.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1dcb71df-b503-43f0-8363-5b39a352147f",
+   "name": "Local policy",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/61a31771-e93f-4ef7-bfb0-6fc5270bf4d8",
+   "name": "Applied Economics",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/50cee81f-8b3f-4f1f-9dd4-7dd491da3a8a",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/1dcb71df-b503-43f0-8363-5b39a352147f"
+   },
+   "name": "Policy Scale"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/913fcfad-175f-421b-b3fb-78fc1145dee1",
+   "name": "Institutional: Economic",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/071a2880-2d8b-4c8a-b8e6-1543d79c3d52",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/af87915f-849d-403e-81de-92e4807df12d"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Climate-ADAPT Adaptation Sectors"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/fdb5dd04-24de-403a-880c-3260f5fab113",
+   "name": "Climate Hazard",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/9fd6c02c-501a-46c4-b746-c2cc6823f529"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/19990bc8-4032-4230-91de-b2b8ccb7c276",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/25f1137d-f93e-4967-95dd-cb4cc3e04b86"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "Key Type Measures"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/6449af4b-4d1f-444d-a519-b0e44dd99ee0",
+   "https://w3id.org/ro/terms/earth-science#score": "3.0",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#normScore": "3.9735099337748343",
+   "name": "result"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/76b64f12-8f86-4f62-8f14-58672b826c55",
+   "https://w3id.org/ro/terms/earth-science#normScore": "10.822510822510823",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Phrase"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "5.0",
+   "name": "roofs' ecosystem services"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/b35676e9-70fa-47cc-b89c-6e2fe008493f",
+   "name": "Stakeholders",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/776c5b88-970a-4c0e-a977-7e16fa47a93a"
+   }
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/be4f89f8-c890-4b0c-959a-12ba8ce8208b",
+   "name": "Environment",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#IPTC"
+   ],
+   "https://w3id.org/ro/terms/earth-science#path": "Environment"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8739e439-3b43-4ce8-b6d2-f4ffeceb6d8e",
+   "name": "Environmental Science and Management",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ]
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/da1969f6-68af-4d11-8fb4-fb9756b4d466",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ],
+   "name": "Economics and cost analysis"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/fbe77670-0bda-4886-a669-20a3cb8531c3",
+   "name": "roof",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Concept"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "4.3",
+   "https://w3id.org/ro/terms/earth-science#normScore": "5.695364238410596"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/8ed047a0-d5e2-4b0b-9dd5-c38268322dcd",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#NASA"
+   ],
+   "name": "Social and information sciences"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/1b8aa735-440c-4480-9f79-0346b4ad4071",
+   "https://w3id.org/ro/terms/earth-science#normScore": "41.66666666666666",
+   "@type": [
+    "https://w3id.org/contentdesc#Domain"
+   ],
+   "https://w3id.org/ro/terms/earth-science#score": "0.5",
+   "name": "politics"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/e444850e-7774-4627-9e03-e7044884d368",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#Sentence"
+   ],
+   "name": "However, from the private investors' perspective, GR are economic unfeasible making necessary the development of public incentive policies.",
+   "https://w3id.org/ro/terms/earth-science#score": "20.7",
+   "https://w3id.org/ro/terms/earth-science#normScore": "32.909379968203496"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/2a1ede6b-03e7-4100-b8d9-b75137af1058",
+   "@type": [
+    "https://w3id.org/contentdesc#Place"
+   ],
+   "name": "Green roofs"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/d86210c5-9740-4126-8840-091a66c55512",
+   "https://w3id.org/ro/terms/earth-science#value": {
+    "@id": "https://w3id.org/ro-id/enrichment/79d4fcdf-9d4f-419a-8302-53a39c9fb4f8"
+   },
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#FCID"
+   ],
+   "name": "User Needs (RAST)"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/enrichment/5caac22b-2312-41dd-a1e8-1c4b138445f9",
+   "name": "Urban and Regional Planning",
+   "@type": [
+    "https://w3id.org/ro/terms/earth-science#SUBTOPIC"
+   ]
+  },
+  {
+   "@id": "mailto:eg.guardia@gmail.com",
+   "name": "Esteban Gonzalez",
+   "@type": [
+    "http://xmlns.com/foaf/0.1/Agent"
+   ]
+  }
+ ]
+}

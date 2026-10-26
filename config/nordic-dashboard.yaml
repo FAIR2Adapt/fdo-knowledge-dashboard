@@ -1,0 +1,74 @@
+# Transfer deployment: the public research objects of the ROHub community "Nordic Collaboration on e-Infrastructures for Earth
+# System Modeling Tools" (NeIC NICEST2). Site texts, the members, how they are read and how the facets are presented; every member fact comes through fdo-consume.
+site:
+  title: "Nordic Climate Science Knowledge Dashboard (transfer demo)"
+  brand:                                             # the round mark and the lines of the brand; glyphs only, no logo files
+    lines: ["Nordic ESM", "Knowledge Dashboard"]
+    mark: "❄"
+    gear: "⚙"
+  hero:
+    heading: "A second collection on the same software: climate science with Galaxy and Earth system models"
+    highlight: "same software"                       # the words of the heading shown in the theme colour
+    lead: "Public research objects of the Nordic e-infrastructure collaboration for Earth System Modeling (NeIC NICEST2), as published in ROHub and as their records state them."
+  qa:                                                # question answering: a preview layout only, no service is connected
+    preview: true
+    preview_notice: "Question answering is under development and will be integrated later."
+  discovery:                                         # external discovery (NKUA, T4.4); not connected
+    mode: disabled
+    label: "NKUA graph discovery"
+    note: "The NKUA graph discovery service is not connected yet; when it is, its results will be shown here, apart from this dashboard's resources."
+  categories:                                        # count cards over the stated resource types; none stated counts 0
+    - {label: "Scientific articles", types: ["scientific article", "journal article", "scholarly article"], icon: "▤", tone: orange}
+    - {label: "Posters and talks", types: ["poster", "presentation", "slides", "talk"], icon: "▧", tone: green}
+    - {label: "Datasets", types: ["dataset"], icon: "▤", tone: blue}
+    - {label: "Workflows and software", types: ["workflow", "software", "software application", "notebook", "tool"], icon: "◎", tone: purple}
+    - {label: "Reports", types: ["report"], icon: "▣", tone: green}
+  theme: {primary: "#1d4e89", deep: "#0f2f5b", sage: "#eef3f8"}                     # a blue theme for the transfer site
+  background: {image: assets/demo-coast.png, alt: "Generated blue-green gradient, a placeholder for a regional image"}
+  footer:
+    trust:                                           # three short statements; keep them true for this deployment
+      - {icon: "♢", title: "Knowledge from records", text: "Every value is what a record states"}
+      - {icon: "♧", title: "FAIR by design", text: "Each resource is listed under its own identifier"}
+      - {icon: "↻", title: "Snapshot-based", text: "Built {date} from the snapshot of {taken}"}
+    partners: ["FAIR2Adapt"]                         # names only, no logos
+    partners_confirmed: false
+  source_notice: "Transfer prototype: public objects of the ROHub community 'Nordic Collaboration on e-Infrastructures for Earth System Modeling Tools', snapshot of {taken}."
+  pages:
+    how: {enabled: false}
+  about: |
+    This site is the transfer case of the FDO Knowledge Dashboard: the same software as the Portugal Adaptation Knowledge
+    Dashboard, deployed by configuration only over another collection of FAIR Digital Objects.
+
+    This deployment shows the public research objects of the ROHub community "Nordic Collaboration on e-Infrastructures
+    for Earth System Modeling Tools" (NeIC NICEST2): posters, talks, bibliography objects and executable objects about
+    climate science with Galaxy and Earth system model containers. The members are whatever ROHub's search API reports as
+    public objects of that community for the configured search terms, recorded as a reproducible snapshot; the selection
+    is outside the FAIR2Adapt case studies and is neither confirmed by its authors nor complete.
+source:
+  kind: community                                    # the public objects of a ROHub community, found by its search API at snapshot time and recorded
+  data_origin: real                                  # real | synthetic | experimental; stated in every build output
+  community: "Nordic Collaboration on e-Infrastructures for Earth System Modeling Tools"   # the name exactly as ROHub states it
+  search: ["Nordic", "NICEST", "Galaxy climate"]     # the search terms; a hit is kept when it is public and belongs to the community
+  max_members: 50
+  crate_url: "https://api.rohub.org/api/ros/{uuid}/crate/download/"   # ROHub's RO-Crate export; used by scripts/snapshot.py and build_site.py --refresh
+  recorded: "snapshots/nordic-esm"                   # the snapshot read at build time; --refresh records it again from crate_url
+reading:
+  contracts: {collection: listing-collection-v1, record: listing-record-v1, claims: listing-claims-v1}   # config/contracts/
+  profile_overlay: cca-dashboard-additions           # Dashboard profile v1.0.0 additions read on top of the CCA map, config/maps/
+  fallback_map: rohub-bibliography-ro                # map for objects that declare no profile (ROHub exports)
+  max_members: 5000
+  map_notes:
+    rohub-bibliography-ro: "The root's datePublished and author are the ROHub registration time and the depositing account; this site does not read them."
+  profile_labels:
+    "https://w3id.org/cca-crate-profile/0.9": "CCA-Crate profile 0.9"
+    "https://w3id.org/cc-crate-profile/0.9": "CCA-Crate profile 0.9"
+facets:                                              # presentation: which record field a facet reads, in which order, under which label
+  - {id: type, label: "Resource type", concept: resource_type, icon: "▤", panel: main, description: "As the records state it (additionalType); a record that states none is listed as 'type not stated'"}
+  - {id: topic, label: "Topics", concept: keywords, icon: "♧", home: true, description: "Keywords as the records state them"}
+  - {id: year, label: "Year", concept: year, icon: "◷", description: "Year of the date the record states, where this site reads one"}
+  - {id: profile, label: "Profile", concept: profile, group: technical, description: "The metadata profile each record declares"}
+facets_without_source:
+  - {label: "Climate hazards", icon: "♨", why: "No hazard vocabulary is read yet"}
+  - {label: "Adaptation sector", icon: "♧", why: "No sector vocabulary is read yet"}
+  - {label: "Geographical scope", icon: "♙", why: "No place is read at record level yet"}
+diagnostics_open: false                              # technical details collapsed by default

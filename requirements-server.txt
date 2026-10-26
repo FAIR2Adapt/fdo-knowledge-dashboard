@@ -1,0 +1,4 @@
+# Optional: `server.py --fastapi` (the standard-library server needs nothing). Pin with:
+# pip freeze | grep -iE 'fastapi|uvicorn|starlette|pydantic' >> requirements.lock.txt
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1

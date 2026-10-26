@@ -1,0 +1,540 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.1/context",
+  "https://w3id.org/ro/terms/earth-science#",
+  "https://w3id.org/ro/terms/workflow-run#",
+  "https://w3id.org/ro/terms/test#",
+  {
+   "citeAs": "https://www.w3.org/ns/iana/link-relations/relation#cite-as",
+   "community": "http://w3id.org/ro-id/rohub/model#community",
+   "cdesc": "https://reliance.expertcustomers.ai/vocabulary/cdesc/",
+   "creation_mode": "http://w3id.org/ro-id/rohub/model#creation_mode",
+   "prov": "http://www.w3.org/ns/prov#",
+   "archivedAtTime": "http://purl.org/wf4ever/roevo#archivedAtTime",
+   "archivedBy": "http://purl.org/wf4ever/roevo#archivedBy",
+   "hasArchive": "http://purl.org/wf4ever/roevo#hasArchive",
+   "hasSnapshot": "http://purl.org/wf4ever/roevo#hasSnapshot",
+   "isArchiveOf": "http://purl.org/wf4ever/roevo#isArchiveOf",
+   "isFinalized": "http://purl.org/wf4ever/roevo#isFinalized",
+   "isSnapshotOf": "http://purl.org/wf4ever/roevo#isSnapshotOf",
+   "snapshotedAtTime": "http://purl.org/wf4ever/roevo#snapshotedAtTime",
+   "snapshotedBy": "http://purl.org/wf4ever/roevo#snapshotedBy",
+   "forkedAtTime": "http://purl.org/wf4ever/roevo#forkedAtTime",
+   "forkedBy": "http://purl.org/wf4ever/roevo#forkedBy",
+   "hasFork": "http://purl.org/wf4ever/roevo#hasFork",
+   "asWKT": "http://www.opengis.net/ont/geosparql#asWKT",
+   "hasGeometry": "http://www.opengis.net/ont/geosparql#hasGeometry",
+   "Concept": "https://w3id.org/ro/terms/earth-science#Concept",
+   "FieldOfResearch": "https://w3id.org/ro/terms/earth-science#FieldOfResearch",
+   "IPTC": "https://w3id.org/ro/terms/earth-science#IPTC",
+   "Lemma": "https://w3id.org/ro/terms/earth-science#Lemma",
+   "NASA": "https://w3id.org/ro/terms/earth-science#NASA",
+   "Person1": "https://w3id.org/contentdesc#Person",
+   "Phrase": "https://w3id.org/ro/terms/earth-science#Phrase",
+   "Sentence": "https://w3id.org/ro/terms/earth-science#Sentence",
+   "TimeReference": "https://w3id.org/ro/terms/earth-science#TimeReference",
+   "Domain": "https://w3id.org/contentdesc#Domain",
+   "Organization1": "https://w3id.org/contentdesc#Organization",
+   "Place": "https://w3id.org/contentdesc#Place",
+   "normScore": "https://w3id.org/ro/terms/earth-science#normScore",
+   "path": "https://w3id.org/ro/terms/earth-science#path",
+   "score": "https://w3id.org/ro/terms/earth-science#score",
+   "wikidata": "https://w3id.org/ro/terms/earth-science#wikidata",
+   "doi": "http://purl.org/ontology/bibo/doi",
+   "orcid": "https://w3id.org/dingo#orcid",
+   "template": "https://w3id.org/ro/terms/earth-science#template",
+   "dataType": "https://w3id.org/ro/terms/earth-science#dataType",
+   "datasetManager": "https://w3id.org/ro/terms/earth-science#datasetManager",
+   "minValue": "https://w3id.org/ro/terms/earth-science#minValue",
+   "maxValue": "https://w3id.org/ro/terms/earth-science#maxValue",
+   "status": "https://w3id.org/ro/terms/earth-science#status",
+   "DataCubeCollection": "https://w3id.org/ro/terms/earth-science#DataCubeCollection",
+   "DataCubeProduct": "https://w3id.org/ro/terms/earth-science#DataCubeProduct",
+   "enrichmentSubject": "http://w3id.org/ro-id/rohub/model#enrichmentSubject",
+   "softwareRequirements": "https://schema.org/softwareRequirements"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "./",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "http://purl.org/wf4ever/roevo#LiveRO"
+   ],
+   "about": {
+    "@id": "http://eurovoc.europa.eu/3949"
+   },
+   "author": [
+    {
+     "@id": "https://orcid.org/0000-0002-1784-2920"
+    },
+    {
+     "@id": "https://orcid.org/0000-0002-8763-1643"
+    },
+    {
+     "@id": "mailto:acoca@turing.ac.uk"
+    }
+   ],
+   "contentSize": 13438128,
+   "contentUrl": "https://api.rohub.org/api/ros/1cbd78cb-3300-45d0-9fcd-9f9323b0b14e/crate/download/",
+   "contributor": {
+    "@id": "mailto:environmental.ds.book@gmail.com"
+   },
+   "copyrightHolder": {
+    "@id": "https://ror.org/04jcwf484"
+   },
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-07-11 18:12:02.433153+00:00",
+   "dateModified": "2025-03-05 01:14:14.108835+00:00",
+   "datePublished": "2023-07-11 18:12:02.433153+00:00",
+   "description": "Poster and associated video on Climate Science with Galaxy. It provides a short information about the status and roadmap. The goal is to demonstrate we are shifting from using Galaxy for answering scientific question to using Galaxy for answering societal issues. In particular, we are aiming at providing a way to monitor the progress of a given climate action undertaking at local, national or international levels.",
+   "encodingFormat": "application/ld+json",
+   "hasPart": [
+    {
+     "@id": "https://w3id.org/ro-id/1cbd78cb-3300-45d0-9fcd-9f9323b0b14e/resources/7e61ed84-af9a-4be0-a566-2558e993b400"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/1cbd78cb-3300-45d0-9fcd-9f9323b0b14e/resources/04df9d4c-35e0-408b-a15b-a38b91ff4a56"
+    },
+    {
+     "@id": "https://youtu.be/WVRR5HyTzXE"
+    }
+   ],
+   "identifier": "https://w3id.org/ro-id/1cbd78cb-3300-45d0-9fcd-9f9323b0b14e",
+   "keywords": [
+    "FAIR",
+    "reproducible",
+    "climate"
+   ],
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "mainEntity": "Video",
+   "name": "Poster GCC2023 - 3.3 Climate Science with Galaxy: Status and Roadmap",
+   "publisher": {
+    "@id": "https://ror.org/04jcwf484"
+   },
+   "community": [
+    {
+     "@id": "https://w3id.org/ro-id/communities/379a4687-de50-44c7-b7bd-37125ebd4ff7"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9"
+    }
+   ],
+   "creation_mode": "MANUAL",
+   "Concept": [
+    "https://w3id.org/ro-id/075078de-dc76-47c5-98fb-aad877fc21a6",
+    "https://w3id.org/ro-id/16e14cea-5936-4a8d-84d2-8e08c55e2b08",
+    "https://w3id.org/ro-id/229fe47f-df82-4e82-b51d-2d2394430172",
+    "https://w3id.org/ro-id/3a51e855-1a98-445a-a446-eb97e24ceeeb",
+    "https://w3id.org/ro-id/577c43ce-17b6-4476-9b91-d4eb63e73677",
+    "https://w3id.org/ro-id/8c624829-634a-4446-b67a-47c6aa9b7462",
+    "https://w3id.org/ro-id/d96d3bc8-6fb6-468e-a544-965da8e2aa93",
+    "https://w3id.org/ro-id/e77ec794-cf1b-459c-847b-e75aa1fc377a",
+    "https://w3id.org/ro-id/67c3b827-c691-4e67-be0b-05b5e9673183"
+   ],
+   "FieldOfResearch": [
+    "https://w3id.org/ro-id/a8a24b7f-eebb-40b5-9e4a-6130d1697c24",
+    "https://w3id.org/ro-id/5912911c-cded-40f9-9db6-a2a6c8195c79"
+   ],
+   "IPTC": [
+    "https://w3id.org/ro-id/30c9765f-1db9-4ad0-917b-aa9814727e81",
+    "https://w3id.org/ro-id/b11ea75b-769e-498e-872d-2e29b0174a93",
+    "https://w3id.org/ro-id/b01a60e3-8a66-482b-b174-bd6a66efc84e"
+   ],
+   "Lemma": [
+    "https://w3id.org/ro-id/00228d5f-4d76-4513-9fae-c1b325dd4f30",
+    "https://w3id.org/ro-id/1f08b9b5-470c-4489-90de-b1ab4f4abcb5",
+    "https://w3id.org/ro-id/5cb01cfc-b49b-4c4e-97cf-3eec76b23f5c",
+    "https://w3id.org/ro-id/985b22cf-faae-4fae-b178-d04d93317e3a",
+    "https://w3id.org/ro-id/9d23f0f3-a160-42fa-ba62-cb119d3a2a1c",
+    "https://w3id.org/ro-id/ddc011e2-c970-4341-84f5-99452ddf4cb8",
+    "https://w3id.org/ro-id/99a33ca1-9f89-4157-ac3e-82ad22290638"
+   ],
+   "NASA": [
+    "https://w3id.org/ro-id/1acc59f4-928d-4dce-9439-e279d8ccf604",
+    "https://w3id.org/ro-id/16e4afb1-b7c8-48c4-9a15-afcb99ab16e3"
+   ],
+   "Phrase": [
+    "https://w3id.org/ro-id/06d501ad-f7ef-452c-a937-f172a3c65159",
+    "https://w3id.org/ro-id/3c07862a-a0f6-47e3-8415-6f8631d254c2",
+    "https://w3id.org/ro-id/6f8b1470-41c9-46da-b750-1011af76c1bc",
+    "https://w3id.org/ro-id/94564102-6c0f-43b6-885d-0af48db67761",
+    "https://w3id.org/ro-id/d0498dae-9979-4ad0-8815-71e731ebdf04"
+   ],
+   "Sentence": [
+    "https://w3id.org/ro-id/0bc65376-f8e8-4cfb-aafa-2eab5f58ba19",
+    "https://w3id.org/ro-id/28d536c5-5094-42c8-9a0d-ccd2764e6ff3",
+    "https://w3id.org/ro-id/43d3fe5d-17b9-4525-a005-cb74bb5aa68c"
+   ],
+   "cite-as": "Fouilloux, Anne, Jean Iaquinta, Alejandro Coca-Castro, and Environmental Data Science Book Community. \"Poster GCC2023 - 3.3 Climate Science with Galaxy: Status and Roadmap.\" ROHub. Jul 11 ,2023. https://w3id.org/ro-id/1cbd78cb-3300-45d0-9fcd-9f9323b0b14e."
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/3949",
+   "@type": "s:DefinedTerm",
+   "description": "",
+   "name": "Applied sciences"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-1784-2920",
+   "@type": "foaf:Agent",
+   "affiliation": "Simula Research Laboratory",
+   "email": "annef@simula.no",
+   "name": "Anne Fouilloux",
+   "orcid": "0000-0002-1784-2920"
+  },
+  {
+   "@id": "https://orcid.org/0000-0002-8763-1643",
+   "@type": "foaf:Agent",
+   "email": "jeani@uio.no",
+   "name": "Jean Iaquinta",
+   "orcid": "0000-0002-8763-1643"
+  },
+  {
+   "@id": "https://ror.org/04jcwf484",
+   "@type": [
+    "s:Organization",
+    "foaf:Agent"
+   ],
+   "identifier": "04jcwf484",
+   "name": "Nordic e-Infrastructure Collaboration"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/00228d5f-4d76-4513-9fae-c1b325dd4f30",
+   "@type": "Lemma",
+   "name": "Poster GCC2023",
+   "normScore": "12.27830832196453",
+   "score": "9.0"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/06d501ad-f7ef-452c-a937-f172a3c65159",
+   "@type": "Phrase",
+   "name": "action undertaking",
+   "normScore": "40.74074074074074",
+   "score": "29.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/075078de-dc76-47c5-98fb-aad877fc21a6",
+   "@type": "Concept",
+   "name": "Samsung Galaxy",
+   "normScore": "26.068376068376068",
+   "score": "18.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/0bc65376-f8e8-4cfb-aafa-2eab5f58ba19",
+   "@type": "Sentence",
+   "name": "Poster GCC2023 - 3.3 Climate Science with Galaxy: Status and Roadmap.",
+   "normScore": "36.0613810741688",
+   "score": "28.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/16e14cea-5936-4a8d-84d2-8e08c55e2b08",
+   "@type": "Concept",
+   "name": "information",
+   "normScore": "4.5584045584045585",
+   "score": "3.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/16e4afb1-b7c8-48c4-9a15-afcb99ab16e3",
+   "@type": "NASA",
+   "name": "meteorology and climatology",
+   "normScore": "100.0",
+   "score": "0.5768373608589172"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/1acc59f4-928d-4dce-9439-e279d8ccf604",
+   "@type": "NASA",
+   "name": "geosciences",
+   "normScore": "100.0",
+   "score": "0.5768373608589172"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/1cbd78cb-3300-45d0-9fcd-9f9323b0b14e/resources/04df9d4c-35e0-408b-a15b-a38b91ff4a56",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "VideoObject"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentSize": 13236925,
+   "contentUrl": "https://api.rohub.org/api/resources/04df9d4c-35e0-408b-a15b-a38b91ff4a56/download/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-07-11 18:15:43.180485+00:00",
+   "dateModified": "2023-07-11 18:15:44.222250+00:00",
+   "encodingFormat": "video/mp4",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "GCC2023_poster.mp4",
+   "sdDatePublished": "2023-07-11 18:15:43.180485+00:00"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/1cbd78cb-3300-45d0-9fcd-9f9323b0b14e/resources/7e61ed84-af9a-4be0-a566-2558e993b400",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#Sketch"
+   ],
+   "dct:doi": "10.24424/gpv9-he64",
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentSize": 629600,
+   "contentUrl": "https://api.rohub.org/api/resources/7e61ed84-af9a-4be0-a566-2558e993b400/download/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-07-11 18:15:27.512661+00:00",
+   "dateModified": "2023-07-12 18:42:04.823614+00:00",
+   "encodingFormat": "image/png",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "3.3. - Climate_Science_with_Galaxy-status_and_roadmap_GCC2023.png",
+   "sdDatePublished": "2023-07-11 18:15:27.512661+00:00"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/1f08b9b5-470c-4489-90de-b1ab4f4abcb5",
+   "@type": "Lemma",
+   "name": "Samsung Galaxy",
+   "normScore": "24.965893587994543",
+   "score": "18.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/229fe47f-df82-4e82-b51d-2d2394430172",
+   "@type": "Concept",
+   "name": "climate",
+   "normScore": "5.128205128205128",
+   "score": "3.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/28d536c5-5094-42c8-9a0d-ccd2764e6ff3",
+   "@type": "Sentence",
+   "name": "Poster and associated video on Climate Science with Galaxy.",
+   "normScore": "29.923273657289002",
+   "score": "23.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/30c9765f-1db9-4ad0-917b-aa9814727e81",
+   "@type": "IPTC",
+   "name": "Science and technology",
+   "path": "Science and technology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/3a51e855-1a98-445a-a446-eb97e24ceeeb",
+   "@type": "Concept",
+   "name": "progress",
+   "normScore": "7.264957264957264",
+   "score": "5.1"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/3c07862a-a0f6-47e3-8415-6f8631d254c2",
+   "@type": "Phrase",
+   "name": "using Galaxy",
+   "normScore": "16.049382716049383",
+   "score": "11.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/43d3fe5d-17b9-4525-a005-cb74bb5aa68c",
+   "@type": "Sentence",
+   "name": "The goal is to demonstrate we are shifting from using Galaxy for answering scientific question to using Galaxy for answering societal issues.",
+   "normScore": "34.0153452685422",
+   "score": "26.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/577c43ce-17b6-4476-9b91-d4eb63e73677",
+   "@type": "Concept",
+   "name": "goal",
+   "normScore": "7.407407407407407",
+   "score": "5.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/5912911c-cded-40f9-9db6-a2a6c8195c79",
+   "@type": "FieldOfResearch",
+   "name": "atmospheric sciences",
+   "normScore": "100.0",
+   "score": "0.9693865776062012"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/5cb01cfc-b49b-4c4e-97cf-3eec76b23f5c",
+   "@type": "Lemma",
+   "name": "Climate Science",
+   "normScore": "15.416098226466577",
+   "score": "11.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/67c3b827-c691-4e67-be0b-05b5e9673183",
+   "@type": "Concept",
+   "name": "status",
+   "normScore": "9.401709401709402",
+   "score": "6.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/6f8b1470-41c9-46da-b750-1011af76c1bc",
+   "@type": "Phrase",
+   "name": "use Galaxy",
+   "normScore": "7.270233196159121",
+   "score": "5.3"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/8c624829-634a-4446-b67a-47c6aa9b7462",
+   "@type": "Concept",
+   "name": "roadmap",
+   "normScore": "17.94871794871795",
+   "score": "12.6"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/94564102-6c0f-43b6-885d-0af48db67761",
+   "@type": "Phrase",
+   "name": "societal issue",
+   "normScore": "9.876543209876543",
+   "score": "7.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/985b22cf-faae-4fae-b178-d04d93317e3a",
+   "@type": "Lemma",
+   "name": "undertaking",
+   "normScore": "8.731241473396999",
+   "score": "6.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/99a33ca1-9f89-4157-ac3e-82ad22290638",
+   "@type": "Lemma",
+   "name": "roadmap",
+   "normScore": "17.32605729877217",
+   "score": "12.7"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/9d23f0f3-a160-42fa-ba62-cb119d3a2a1c",
+   "@type": "Lemma",
+   "name": "status",
+   "normScore": "8.731241473396999",
+   "score": "6.4"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/a8a24b7f-eebb-40b5-9e4a-6130d1697c24",
+   "@type": "FieldOfResearch",
+   "name": "earth sciences",
+   "normScore": "100.0",
+   "score": "0.9693865776062012"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/b01a60e3-8a66-482b-b174-bd6a66efc84e",
+   "@type": "IPTC",
+   "name": "Wireless technology",
+   "path": "Economy, business and finance/Economic sector/Computing and information technology/Wireless technology"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/b11ea75b-769e-498e-872d-2e29b0174a93",
+   "@type": "IPTC",
+   "name": "Weather",
+   "path": "Weather"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/communities/379a4687-de50-44c7-b7bd-37125ebd4ff7",
+   "@type": "community",
+   "description": "Computational notebooks community focused on Environmental Data Science",
+   "email": "environmental.ds.book@gmail.com",
+   "name": "Environmental Data Science Book Community",
+   "url": "https://github.com/alan-turing-institute/environmental-ds-book/issues/new/choose"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9",
+   "@type": "community",
+   "description": "NICEST-2 - the second phase of the Nordic Collaboration on e-Infrastructures for Earth System Modeling focuses on strengthening the Nordic position within climate modeling by leveraging, reinforcing and complementing ongoing initiatives.",
+   "name": "Nordic Collaboration on e-Infrastructures for Earth System Modeling Tools",
+   "url": "https://w3id.org/ro-id/ed4e6aa2-9db8-452d-9301-ba1606361034"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/d0498dae-9979-4ad0-8815-71e731ebdf04",
+   "@type": "Phrase",
+   "name": "Climate Science with Galaxy",
+   "normScore": "26.06310013717421",
+   "score": "19.0"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/d96d3bc8-6fb6-468e-a544-965da8e2aa93",
+   "@type": "Concept",
+   "name": "television system",
+   "normScore": "13.532763532763532",
+   "score": "9.5"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/ddc011e2-c970-4341-84f5-99452ddf4cb8",
+   "@type": "Lemma",
+   "name": "video",
+   "normScore": "12.551159618008185",
+   "score": "9.2"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/e77ec794-cf1b-459c-847b-e75aa1fc377a",
+   "@type": "Concept",
+   "name": "project",
+   "normScore": "8.68945868945869",
+   "score": "6.1"
+  },
+  {
+   "@id": "https://youtu.be/WVRR5HyTzXE",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "VideoObject"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://youtu.be/WVRR5HyTzXE",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2023-07-11 18:21:00.991553+00:00",
+   "dateModified": "2023-07-11 18:21:02.209057+00:00",
+   "description": "Youtube video explaining the poster. Poster and associated video on Climate Science with Galaxy. It provides a short information about the status and roadmap. The goal is to demonstrate we are shifting from using Galaxy for answering scientific question to using Galaxy for answering societal issues. In particular, we are aiming at providing a way to monitor the progress of a given climate action undertaking at local, national or international levels.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Youtube video  \"Climate Science with Galaxy: Status and Roadmap\"",
+   "sdDatePublished": "2023-07-11 18:21:00.991553+00:00"
+  },
+  {
+   "@id": "mailto:acoca@turing.ac.uk",
+   "@type": "foaf:Agent",
+   "affiliation": "The Alan Turing Institute",
+   "email": "acoca@turing.ac.uk",
+   "name": "Alejandro Coca-Castro"
+  },
+  {
+   "@id": "mailto:environmental.ds.book@gmail.com",
+   "@type": "foaf:Agent",
+   "affiliation": "Global",
+   "email": "environmental.ds.book@gmail.com",
+   "name": "Environmental Data Science Book Community"
+  },
+  {
+   "@id": "mailto:service-account-enrichment",
+   "@type": "foaf:Agent",
+   "name": "service-account-enrichment"
+  },
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.1"
+   },
+   "about": {
+    "@id": "./"
+   }
+  }
+ ]
+}

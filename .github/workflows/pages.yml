@@ -1,0 +1,65 @@
+name: site
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["**.md"]
+  workflow_dispatch:
+    inputs:
+      config:
+        description: "configuration to publish (config/*.yaml); otherwise the repository variable LISTING_CONFIG, otherwise config/portugal-dashboard.yaml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # fdo-consume from the source the Dockerfile pins (one commit for the site and the image)
+      - name: Install
+        run: |
+          source=$(grep -oE 'ARG FDO_CONSUME_SOURCE=\S+' Dockerfile | cut -d= -f2)
+          pip install -r requirements.lock.txt jsonschema==4.26.0 "fdo-consume @ $source"
+
+      - name: Tests
+        if: ${{ hashFiles('tests/test_*.py') != '' }}
+        env:
+          CI: "1"
+        run: python -m unittest discover -s tests
+
+      - name: Build the site from the recorded snapshot
+        env:
+          LISTING_CONFIG: ${{ inputs.config || vars.LISTING_CONFIG || 'config/portugal-dashboard.yaml' }}
+        run: python scripts/build_site.py --out dist --config "$LISTING_CONFIG" --require-data-origin real
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

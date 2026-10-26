@@ -1,0 +1,82 @@
+# dashboard: the served site and API. build: the site from the recorded snapshot (offline). refresh: records the members
+# again from ROHub. caddy: optional TLS proxy.
+#   docker compose --profile ops run --rm build && docker compose up -d dashboard
+#   LISTING_CONFIG=config/portugal-dashboard.yaml docker compose --profile ops run --rm refresh
+#   DASHBOARD_DOMAIN=dashboard.example.org docker compose --profile proxy up -d
+services:
+  dashboard:
+    image: ${DASHBOARD_IMAGE:-ghcr.io/fair2adapt/fdo-knowledge-dashboard:local}
+    build:
+      context: .
+      args:
+        FDO_CONSUME_SOURCE: ${FDO_CONSUME_SOURCE:-https://github.com/FAIR2Adapt/fdo-consume/archive/6a65ac6a31a03204e063fcb7a8945d3c34550998.tar.gz}   # the commit behind tag v1.1.0
+    environment:
+      DASHBOARD_RATE: ${DASHBOARD_RATE:-120}
+      DASHBOARD_ORIGINS: ${DASHBOARD_ORIGINS:-}
+      DASHBOARD_FRAME_ANCESTORS: ${DASHBOARD_FRAME_ANCESTORS:-}
+      DASHBOARD_BEHIND_PROXY: ${DASHBOARD_BEHIND_PROXY:-0}      # 1 with the proxy profile, when 8020 is reachable through caddy only
+    volumes:
+      - site:/data/site
+    ports:
+      - "127.0.0.1:${DASHBOARD_PORT:-8020}:8020"
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys, urllib.request; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8020/api/v1/health', timeout=3).status == 200 else 1)"]
+      interval: 15s
+      timeout: 5s
+      retries: 2
+      start_period: 5s
+
+  build:
+    image: ${DASHBOARD_IMAGE:-ghcr.io/fair2adapt/fdo-knowledge-dashboard:local}
+    profiles: ["ops"]
+    command: ["python", "scripts/build_site.py", "--config", "${LISTING_CONFIG:-config/portugal-dashboard.yaml}", "--require-data-origin", "real", "--out", "/data/site"]
+    volumes:
+      - site:/data/site
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+  refresh:
+    image: ${DASHBOARD_IMAGE:-ghcr.io/fair2adapt/fdo-knowledge-dashboard:local}
+    profiles: ["ops"]
+    environment:
+      LISTING_CONFIG: ${LISTING_CONFIG:-}
+    command: ["sh", "-c", "[ -n \"$$LISTING_CONFIG\" ] || { echo 'set LISTING_CONFIG to the approved configuration (for the Portugal dashboard: config/portugal-dashboard.yaml)' >&2; exit 2; }; exec python scripts/build_site.py --config \"$$LISTING_CONFIG\" --refresh --require-data-origin real --out /data/site"]
+    volumes:
+      - site:/data/site
+      - snapshots:/app/snapshots
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+  caddy:
+    image: caddy:2
+    profiles: ["proxy"]
+    depends_on:
+      - dashboard
+    environment:
+      DASHBOARD_DOMAIN: ${DASHBOARD_DOMAIN:-localhost}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: unless-stopped
+
+volumes:
+  site:
+  snapshots:
+  caddy_data:
+  caddy_config:

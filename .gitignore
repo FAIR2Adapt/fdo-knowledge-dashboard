@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+node_modules/
+.env
+dist/
+dist.staging/
+tests-local/
+*.lock
+snapshots/.*.previous/
+snapshots/.*.staging/

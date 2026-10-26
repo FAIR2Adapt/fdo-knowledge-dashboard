@@ -1,0 +1,465 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.1/context",
+  "https://w3id.org/ro/terms/earth-science#",
+  "https://w3id.org/ro/terms/workflow-run#",
+  "https://w3id.org/ro/terms/test#",
+  {
+   "citeAs": "https://www.w3.org/ns/iana/link-relations/relation#cite-as",
+   "community": "http://w3id.org/ro-id/rohub/model#community",
+   "cdesc": "https://reliance.expertcustomers.ai/vocabulary/cdesc/",
+   "creation_mode": "http://w3id.org/ro-id/rohub/model#creation_mode",
+   "prov": "http://www.w3.org/ns/prov#",
+   "archivedAtTime": "http://purl.org/wf4ever/roevo#archivedAtTime",
+   "archivedBy": "http://purl.org/wf4ever/roevo#archivedBy",
+   "hasArchive": "http://purl.org/wf4ever/roevo#hasArchive",
+   "hasSnapshot": "http://purl.org/wf4ever/roevo#hasSnapshot",
+   "isArchiveOf": "http://purl.org/wf4ever/roevo#isArchiveOf",
+   "isFinalized": "http://purl.org/wf4ever/roevo#isFinalized",
+   "isSnapshotOf": "http://purl.org/wf4ever/roevo#isSnapshotOf",
+   "snapshotedAtTime": "http://purl.org/wf4ever/roevo#snapshotedAtTime",
+   "snapshotedBy": "http://purl.org/wf4ever/roevo#snapshotedBy",
+   "forkedAtTime": "http://purl.org/wf4ever/roevo#forkedAtTime",
+   "forkedBy": "http://purl.org/wf4ever/roevo#forkedBy",
+   "hasFork": "http://purl.org/wf4ever/roevo#hasFork",
+   "asWKT": "http://www.opengis.net/ont/geosparql#asWKT",
+   "hasGeometry": "http://www.opengis.net/ont/geosparql#hasGeometry",
+   "Concept": "https://w3id.org/ro/terms/earth-science#Concept",
+   "FieldOfResearch": "https://w3id.org/ro/terms/earth-science#FieldOfResearch",
+   "IPTC": "https://w3id.org/ro/terms/earth-science#IPTC",
+   "Lemma": "https://w3id.org/ro/terms/earth-science#Lemma",
+   "NASA": "https://w3id.org/ro/terms/earth-science#NASA",
+   "Person1": "https://w3id.org/contentdesc#Person",
+   "Phrase": "https://w3id.org/ro/terms/earth-science#Phrase",
+   "Sentence": "https://w3id.org/ro/terms/earth-science#Sentence",
+   "TimeReference": "https://w3id.org/ro/terms/earth-science#TimeReference",
+   "Domain": "https://w3id.org/contentdesc#Domain",
+   "Organization1": "https://w3id.org/contentdesc#Organization",
+   "Place": "https://w3id.org/contentdesc#Place",
+   "normScore": "https://w3id.org/ro/terms/earth-science#normScore",
+   "path": "https://w3id.org/ro/terms/earth-science#path",
+   "score": "https://w3id.org/ro/terms/earth-science#score",
+   "wikidata": "https://w3id.org/ro/terms/earth-science#wikidata",
+   "doi": "http://purl.org/ontology/bibo/doi",
+   "orcid": "https://w3id.org/dingo#orcid",
+   "template": "https://w3id.org/ro/terms/earth-science#template",
+   "dataType": "https://w3id.org/ro/terms/earth-science#dataType",
+   "datasetManager": "https://w3id.org/ro/terms/earth-science#datasetManager",
+   "minValue": "https://w3id.org/ro/terms/earth-science#minValue",
+   "maxValue": "https://w3id.org/ro/terms/earth-science#maxValue",
+   "status": "https://w3id.org/ro/terms/earth-science#status",
+   "DataCubeCollection": "https://w3id.org/ro/terms/earth-science#DataCubeCollection",
+   "DataCubeProduct": "https://w3id.org/ro/terms/earth-science#DataCubeProduct",
+   "enrichmentSubject": "http://w3id.org/ro-id/rohub/model#enrichmentSubject",
+   "softwareRequirements": "https://schema.org/softwareRequirements"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "#0ba8f85f-159e-4961-8c51-827ee8fd8f44",
+   "@type": "s:Place",
+   "geo": {
+    "@id": "#21b68f11-c58a-416e-a2c2-eca5a74eccda"
+   },
+   "identifier": "0ba8f85f-159e-4961-8c51-827ee8fd8f44",
+   "name": "POLYGON ((-86.95313930511475 55.24571958471975, -86.95313930511475 83.9298925297312, 288.98437500000006 83.9298925297312, 288.98437500000006 55.24571958471975, -86.95313930511475 55.24571958471975))"
+  },
+  {
+   "@id": "#21b68f11-c58a-416e-a2c2-eca5a74eccda",
+   "@type": "GeoShape",
+   "name": "POLYGON ((-86.95313930511475 55.24571958471975, -86.95313930511475 83.9298925297312, 288.98437500000006 83.9298925297312, 288.98437500000006 55.24571958471975, -86.95313930511475 55.24571958471975))",
+   "polygon": "-86.95313930511475 55.24571958471975, -86.95313930511475 83.9298925297312, 288.98437500000006 83.9298925297312, 288.98437500000006 55.24571958471975, -86.95313930511475 55.24571958471975"
+  },
+  {
+   "@id": "./",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/ro#ResearchObject",
+    "https://w3id.org/ro/terms/earth-science#ExecutableResearchObject",
+    "http://w3id.org/ro/earth-scienceExecutableResearchObject",
+    "http://purl.org/wf4ever/roevo#LiveRO"
+   ],
+   "about": {
+    "@id": "http://eurovoc.europa.eu/3949"
+   },
+   "author": {
+    "@id": "mailto:jean.iaquinta@geo.uio.no"
+   },
+   "contentLocation": {
+    "@id": "#0ba8f85f-159e-4961-8c51-827ee8fd8f44"
+   },
+   "contentSize": 14644035,
+   "contentUrl": "https://api.rohub.org/api/ros/8134efb1-581c-4425-9b5d-7d2003b901b9/crate/download/",
+   "contributor": {
+    "@id": "mailto:annefou@geo.uio.no"
+   },
+   "copyrightHolder": {
+    "@id": "https://ror.org/01xtthb56"
+   },
+   "creator": {
+    "@id": "mailto:annefou@geo.uio.no"
+   },
+   "dateCreated": "2022-02-24 12:26:50.925509+00:00",
+   "dateModified": "2025-03-05 01:14:06.953448+00:00",
+   "datePublished": "2022-02-24 12:26:50.925509+00:00",
+   "description": "Earth System Models used in the Nordics such as CESM and NorESM are difficult to port on new architecture. We have worked on the packaging of ESMs and created containers (docker and singularity) to ease porting and improve the reproducibility of ESM simulations. In this Research Objects we aggregate all the timings we made with containers (and on bare metal) on HPC such as Betzy, Fram (Norwegian national HPC) and Lumi (EuroHPC). We show that ESM containers as as efficient as their bare metal counter parts (or even outperform bare metal simulation) with the advantage to be bit-reproducible.",
+   "encodingFormat": "application/ld+json",
+   "funder": {
+    "@id": "http://w3id.org/ro-id/rohub/model#funder/e00bda06-b51c-4c07-8b31-2c8ed4540521"
+   },
+   "funding": {
+    "@id": "https://ror.org/857652"
+   },
+   "hasPart": [
+    {
+     "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/folders/209defda-e350-440b-b8dd-c0d035f70749"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/folders/200aa441-6021-4f63-8a26-d59c9cb4ee93"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/folders/53a4e61e-95e6-49b4-97c4-e4a4800e67ae"
+    },
+    {
+     "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/folders/e505fcf0-5836-4cbf-a9d7-b7dec217d961"
+    }
+   ],
+   "identifier": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9",
+   "keywords": [
+    "climate",
+    "container",
+    "docker",
+    "esm",
+    "hpc",
+    "singularity",
+    "lumi"
+   ],
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "mainEntity": "Jupyter Notebook",
+   "name": "Performance of ESM containers",
+   "publisher": [
+    {
+     "@id": "mailto:jean.iaquinta@geo.uio.no"
+    },
+    {
+     "@id": "mailto:annefou@geo.uio.no"
+    },
+    {
+     "@id": "https://ror.org/04jcwf484"
+    },
+    {
+     "@id": "https://ror.org/01xtthb56"
+    }
+   ],
+   "community": {
+    "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9"
+   },
+   "creation_mode": "MANUAL",
+   "http://w3id.org/ro-id/rohub/model#golden": "False",
+   "hasGeometry": {
+    "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/cfedc2a7-174a-4f07-9338-ec457ceafd6d"
+   },
+   "cite-as": "Iaquinta, Jean, and Anne Foilloux. \"Performance of ESM containers.\" ROHub. Feb 24 ,2022. https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9."
+  },
+  {
+   "@id": "http://eurovoc.europa.eu/3949",
+   "@type": "s:DefinedTerm",
+   "description": "",
+   "name": "Applied sciences"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#funder/e00bda06-b51c-4c07-8b31-2c8ed4540521",
+   "@type": "Organization",
+   "doi": "10.13039/501100000781",
+   "name": "European Commission"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/-1809762574",
+   "@type": "https://w3id.org/contentdesc#Expression",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "ESM simulation"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/-1977874508",
+   "@type": "https://w3id.org/contentdesc#Expression",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "Earth system model"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/-2073397056",
+   "@type": "https://w3id.org/contentdesc#Expression",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "metal simulation"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/-365522103",
+   "@type": "https://w3id.org/contentdesc#Expression",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "packaging of ESM"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/100012302",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "architecture"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/100037787",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "alloy"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/100044813",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "harbor"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/100045076",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "simulation"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/100106116",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "Scandinavian"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/100987798",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "container"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/101425656",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "reproducibility"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/105082159",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "handheld"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/110621028",
+   "@type": "Domain",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "trade"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/152474",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "packaging"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/153600",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "timing"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/159541",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "simulation"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/4078",
+   "@type": "https://w3id.org/contentdesc#Concept",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "electronic warfare-support measures"
+  },
+  {
+   "@id": "http://w3id.org/ro-id/rohub/model#subject/964001143",
+   "@type": "Domain",
+   "http://www.w3.org/2004/02/skos/core#prefLabel": "electronics"
+  },
+  {
+   "@id": "https://github.com/NordicESMhub/esm-container-timings.git",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://w3id.org/ro/earth-scienceJupyterNotebook"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://github.com/NordicESMhub/esm-container-timings.git",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2022-02-24 12:40:15.254333+00:00",
+   "dateModified": "2022-02-24 12:40:15.939391+00:00",
+   "description": "This github repository contains all the timings we made with CESM, NorESM (for different grids, resolution, etc.) on different HPCs (betzy, Fram and Lumi).",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Github repository for analyzing timings",
+   "sdDatePublished": "2022-02-24 12:40:15.254333+00:00"
+  },
+  {
+   "@id": "https://ror.org/01xtthb56",
+   "@type": [
+    "s:Organization",
+    "foaf:Agent"
+   ],
+   "identifier": "01xtthb56",
+   "name": "University of Oslo"
+  },
+  {
+   "@id": "https://ror.org/04jcwf484",
+   "@type": [
+    "s:Organization",
+    "foaf:Agent"
+   ],
+   "identifier": "04jcwf484",
+   "name": "Nordic e-Infrastructure Collaboration"
+  },
+  {
+   "@id": "https://ror.org/857652",
+   "@type": "Grant",
+   "funder": {
+    "@id": "http://w3id.org/ro-id/rohub/model#funder/e00bda06-b51c-4c07-8b31-2c8ed4540521"
+   },
+   "identifier": "857652",
+   "name": "EOSC-Nordic",
+   "title": "EOSC-Nordic"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/cfedc2a7-174a-4f07-9338-ec457ceafd6d",
+   "@type": [
+    "http://www.opengis.net/ont/sf#Polygon",
+    "http://www.opengis.net/ont/geosparql#Geometry"
+   ],
+   "asWKT": "POLYGON ((-86.95313930511475 55.24571958471975, -86.95313930511475 83.9298925297312, 288.98437500000006 83.9298925297312, 288.98437500000006 55.24571958471975, -86.95313930511475 55.24571958471975))"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/folders/200aa441-6021-4f63-8a26-d59c9cb4ee93",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "name": "input"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/folders/209defda-e350-440b-b8dd-c0d035f70749",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "hasPart": {
+    "@id": "https://w3id.org/ro-id/ea6140c8-cecd-4173-8e42-231c72aafce7"
+   },
+   "name": "biblio"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/folders/53a4e61e-95e6-49b4-97c4-e4a4800e67ae",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "hasPart": {
+    "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/resources/9b3910ce-fe73-4578-9e07-662f389acb05"
+   },
+   "name": "output"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/folders/e505fcf0-5836-4cbf-a9d7-b7dec217d961",
+   "@type": [
+    "Dataset",
+    "http://purl.org/wf4ever/wf4ever#Folder"
+   ],
+   "hasPart": {
+    "@id": "https://github.com/NordicESMhub/esm-container-timings.git"
+   },
+   "name": "tool"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/8134efb1-581c-4425-9b5d-7d2003b901b9/resources/9b3910ce-fe73-4578-9e07-662f389acb05",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/roterms#Sketch"
+   ],
+   "dct:doi": "10.24424/c35p-w536",
+   "doi": "10.24424/c35p-w536",
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentSize": 20660468,
+   "contentUrl": "https://api.rohub.org/api/resources/9b3910ce-fe73-4578-9e07-662f389acb05/download/",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2022-03-23 13:21:05.273877+00:00",
+   "dateModified": "2022-03-23 13:25:50.168582+00:00",
+   "description": "CESM F2000climo Singularity container running on LUMI (1 month) with Artic grid.",
+   "encodingFormat": "image/gif",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "artic-precip-1month-cesm.gif",
+   "sdDatePublished": "2022-03-23 13:21:05.273877+00:00"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/communities/8dbdc420-0063-452d-ada6-2679c3137cd9",
+   "@type": "community",
+   "description": "NICEST-2 - the second phase of the Nordic Collaboration on e-Infrastructures for Earth System Modeling focuses on strengthening the Nordic position within climate modeling by leveraging, reinforcing and complementing ongoing initiatives.",
+   "name": "Nordic Collaboration on e-Infrastructures for Earth System Modeling Tools",
+   "url": "https://w3id.org/ro-id/ed4e6aa2-9db8-452d-9301-ba1606361034"
+  },
+  {
+   "@id": "https://w3id.org/ro-id/ea6140c8-cecd-4173-8e42-231c72aafce7",
+   "@type": [
+    "File",
+    "http://purl.org/wf4ever/wf4ever#Resource",
+    "http://purl.org/wf4ever/ro#ResearchObject"
+   ],
+   "author": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "contentUrl": "https://w3id.org/ro-id/ea6140c8-cecd-4173-8e42-231c72aafce7",
+   "contributor": [],
+   "creator": {
+    "@id": "https://orcid.org/0000-0002-1784-2920"
+   },
+   "dateCreated": "2022-04-01 12:49:19.606921+00:00",
+   "dateModified": "2022-04-01 12:49:22.893373+00:00",
+   "description": "This is the link to a private RO where we aggregate all the resources we use/need for writing the paper.",
+   "license": {
+    "@id": "https://choosealicense.com/no-permission/"
+   },
+   "name": "Link to RO for paper in preparation",
+   "sdDatePublished": "2022-04-01 12:49:19.606921+00:00"
+  },
+  {
+   "@id": "mailto:annefou@geo.uio.no",
+   "@type": [
+    "s:Person",
+    "foaf:Agent"
+   ],
+   "affiliation": "Nordic e-Infrastructure Collaboration (NeIC)",
+   "email": "annefou@geo.uio.no",
+   "name": "Anne Fouilloux",
+   "orcid": "0000-0002-1784-2920"
+  },
+  {
+   "@id": "mailto:jean.iaquinta@geo.uio.no",
+   "@type": [
+    "s:Person",
+    "foaf:Agent"
+   ],
+   "affiliation": "UiO",
+   "email": "jean.iaquinta@geo.uio.no",
+   "name": "Jean Iaquinta"
+  },
+  {
+   "@id": "mailto:service-account-enrichment",
+   "@type": "foaf:Agent",
+   "name": "service-account-enrichment"
+  },
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.1"
+   },
+   "about": {
+    "@id": "./"
+   }
+  }
+ ]
+}

@@ -57,7 +57,7 @@ jobs:
           git add snapshots
           git diff --cached --quiet || git commit -m "Record the snapshot again ($(date -u +%Y-%m-%d))"
           git push
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
       - id: deployment

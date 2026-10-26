@@ -1,11 +1,9 @@
 # Site texts, the members, how they are read and how the facets are presented; every member fact comes through fdo-consume.
 site:
   title: "Portugal Adaptation Knowledge Dashboard"
-  brand:                                             # the round mark and the lines of the brand; glyphs only, no logo files
+  brand:
     lines: ["Portugal Adaptation", "Knowledge Dashboard"]
-    flag: "🇵🇹"
-    mark: "♧"
-    gear: "⚙"
+    logo: {image: assets/icons/brand-symbol.png, alt: ""}
   case_study: "CS4"                                  # the FAIR2Adapt case study this deployment belongs to; metadata, not the site's name
   hero:
     heading: "Your guide to climate adaptation in Portugal"
@@ -19,20 +17,23 @@ site:
     label: "NKUA graph discovery"
     note: "The NKUA graph discovery service is not connected yet; when it is, its results will be shown here, apart from this dashboard's resources."
   categories:                                        # count cards over the stated resource types; none stated counts 0
-    - {label: "Scientific articles", types: ["scientific article", "journal article", "scholarly article"], icon: "▤", tone: orange}
-    - {label: "Policy documents", types: ["policy document"], icon: "▧", tone: green}
-    - {label: "Datasets", types: ["dataset"], icon: "▤", tone: blue}
-    - {label: "Web platforms", types: ["web platform", "web application", "software application"], icon: "◎", tone: purple}
-    - {label: "Reports", types: ["report"], icon: "▣", tone: green}
+    - {label: "Scientific Articles", types: ["scientific article", "journal article", "scholarly article"], icon: assets/icons/resource-articles.png, tone: orange}
+    - {label: "Policy Documents", types: ["policy document"], icon: assets/icons/resource-policy.png, tone: green}
+    - {label: "Datasets", types: ["dataset"], icon: assets/icons/resource-datasets.png, tone: blue}
+    - {label: "Web Platforms", types: ["web platform", "web application", "software application"], icon: assets/icons/resource-web.png, tone: purple}
+    - {label: "Reports", types: ["report"], icon: assets/icons/resource-reports.png, tone: green}
   theme: {primary: "#286d32", deep: "#0b4930", sage: "#eff4eb"}                     # the dashboard's green; the software's default is grey and dark blue
   background: {image: assets/portugal-landscape.png, alt: "Watercolor landscape of a Portuguese river valley"}
   footer:
     trust:                                           # three short statements; keep them true for this deployment
-      - {icon: "♢", title: "Knowledge from records", text: "Every value is what a record states"}
-      - {icon: "♧", title: "FAIR by design", text: "Each resource is listed under its own identifier"}
-      - {icon: "↻", title: "Snapshot-based", text: "Built {date} from the snapshot of {taken}"}
-    partners: ["CE3C", "FAIR2Adapt", "Adaptation Hubs"]   # names only, no logos
-    partners_confirmed: false                        # real data shows the names only once CS4 has confirmed them
+      - {icon: assets/icons/trust-shield.png, title: "Knowledge from Records", text: "Every value is what a record states"}
+      - {icon: assets/icons/trust-hands.png, title: "FAIR by Design", text: "Findable, accessible, interoperable, reusable"}
+      - {icon: assets/icons/trust-refresh.png, title: "Snapshot-based", text: "Built {date} from the snapshot of {taken}"}
+    partners:
+      - {name: "CE3C", logo: assets/icons/partner-ce3c.png}
+      - {name: "FAIR2Adapt", logo: assets/icons/partner-fair2adapt.png}
+      - {name: "Adaptation Hubs", logo: assets/icons/partner-adaptation-hubs.png}
+    partners_confirmed: true
   source_notice: "Prototype under development based on CS4 designed pages: metadata of selected research objects from ROHub."
   pages:
     how: {enabled: false}
@@ -60,12 +61,12 @@ reading:
     "https://w3id.org/cc-crate-profile/0.9": "CCA-Crate profile 0.9"
 facets:                                              # presentation: which record field a facet reads, in which order, under which label
   - {id: type, label: "Resource type", concept: resource_type, icon: "▤", panel: main, description: "As the records state it (additionalType); a record that states none is listed as 'type not stated'"}
-  - {id: topic, label: "Topics", concept: keywords, icon: "♧", home: true, description: "Keywords as the records state them"}   # home: a topic card on the home page
+  - {id: topic, label: "Topics", concept: keywords, icon: assets/icons/topic-globe.png, home: true, description: "Keywords as the records state them"}   # home: a topic card on the home page
   - {id: year, label: "Year", concept: year, icon: "◷", description: "Year of the date the record states, where this site reads one"}
   - {id: profile, label: "Profile", concept: profile, group: technical, description: "The metadata profile each record declares"}
 # Profile attribute TBD: hazard, sector and place facets; no profile term gives them, keywords are free text
 facets_without_source:
-  - {label: "Climate hazards", icon: "♨", why: "No hazard vocabulary is read yet"}
-  - {label: "Adaptation sector", icon: "♧", why: "No sector vocabulary is read yet"}
-  - {label: "Geographical scope", icon: "♙", why: "No place is read at record level yet"}
+  - {label: "Climate hazards", icon: assets/icons/topic-hazards.png, why: "Hazard vocabulary not available yet"}
+  - {label: "Adaptation sector", icon: assets/icons/topic-sector.png, why: "Sector vocabulary not available yet"}
+  - {label: "Geographical scope", icon: assets/icons/topic-scope.png, why: "Geographical scope not available yet"}
 diagnostics_open: false                              # technical details collapsed by default

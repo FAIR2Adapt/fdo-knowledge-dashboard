@@ -13,6 +13,9 @@ const ICONS = { resource_type: "▤", keywords: "♧", year: "◷", authors: "�
 const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
 const isHttp = (s) => /^https?:\/\//i.test(String(s || ""));
 const isHttps = (s) => /^https:\/\//i.test(String(s || ""));
+const ICON_FILE = /^assets\/[A-Za-z0-9_-]+(?:\/[A-Za-z0-9_-]+)*\.(?:png|svg)$/;
+const iconHtml = (icon, fallback = "") => ICON_FILE.test(String(icon || "")) ? `<img class="icon-img" src="${esc(icon)}" alt="">` : esc(icon || fallback);
+const arrowHtml = (tone) => `<span class="card-arrow" aria-hidden="true"><img class="icon-img" src="assets/icons/arrow-${esc(tone)}.png" alt=""></span>`;
 const link = (url) => isHttp(url) ? `<a href="${esc(url)}" rel="noopener noreferrer" target="_blank">${esc(url)}</a>` : esc(url);
 const paragraphs = (text) => String(text || "").trim().split(/\n\s*\n/).map((p) => `<p>${esc(p.trim())}</p>`).join("");
 // A stated description, whitespace collapsed; a heading word the export left at its start ("Abstract", "Resumo", "Summary")
@@ -34,7 +37,7 @@ const highlight = (heading, word) => {
 
 // ---- chrome ------------------------------------------------------------------------
 // Pages a deployment may hide or relabel (site.pages); the list and the record pages are always there.
-export const PAGE_DEFAULTS = { about: { label: "About", hash: "#/about", icon: "i" }, how: { label: "How it works", hash: "#/how-it-works", icon: "?" }, resources: { label: "Resources", hash: "#/resources", icon: null }, ask: { label: "Ask a question", hash: null, icon: null } };
+export const PAGE_DEFAULTS = { about: { label: "About", hash: "#/about", icon: "assets/icons/nav-about.png" }, how: { label: "How it works", hash: "#/how-it-works", icon: "assets/icons/nav-how.png" }, resources: { label: "Resources", hash: "#/resources", icon: null }, ask: { label: "Ask a question", hash: null, icon: null } };
 export const pageOn = (site, page) => (site.pages || {})[page]?.enabled !== false;
 export const pageLabel = (site, page) => (site.pages || {})[page]?.label || PAGE_DEFAULTS[page].label;
 
@@ -50,7 +53,7 @@ export function brandHtml(site) {
 export function navHtml(site) {
   const fairify = site.links?.fairify;
   const item = (page, dataPage) => pageOn(site, page)
-    ? `<a class="nav-link" href="${PAGE_DEFAULTS[page].hash}" data-page="${dataPage}">${PAGE_DEFAULTS[page].icon ? `<span class="nav-ico" aria-hidden="true">${PAGE_DEFAULTS[page].icon}</span>` : ""}${esc(pageLabel(site, page))}</a>` : "";
+    ? `<a class="nav-link" href="${PAGE_DEFAULTS[page].hash}" data-page="${dataPage}">${PAGE_DEFAULTS[page].icon ? `<span class="nav-ico" aria-hidden="true">${iconHtml(PAGE_DEFAULTS[page].icon)}</span>` : ""}${esc(pageLabel(site, page))}</a>` : "";
   return `${isHttp(fairify?.url) ? `<a class="nav-link nav-cta" href="${esc(fairify.url)}" rel="noopener noreferrer" target="_blank"><span class="nav-ico" aria-hidden="true">✓</span>${esc(fairify.label || "FAIRify your resources")}</a>` : ""}
     ${item("about", "about")}
     ${item("how", "how")}
@@ -67,8 +70,8 @@ export function footerHtml(cat) {
   const partners = site.footer?.partners || [];
   const credit = site.background?.attribution;
   const trustText = (text) => !cat.source_taken && text.includes("{taken}") ? `Built ${(cat.built_at || "").slice(0, 10)}; no snapshot time recorded` : fillDates(text, cat);
-  return `${items.map((t) => `<div class="trust"><span class="trust-icon" aria-hidden="true">${esc(t.icon || "♢")}</span><div><strong>${esc(t.title)}</strong><small>${esc(trustText(t.text || ""))}</small></div></div>`).join("")}
-    ${partners.length ? `<div class="partners"><small>In collaboration with</small>${partners.map((p) => `<strong>${esc(p)}</strong>`).join("")}</div>` : ""}
+  return `${items.map((t) => `<div class="trust"><span class="trust-icon" aria-hidden="true">${iconHtml(t.icon, "♢")}</span><div><strong>${esc(t.title)}</strong><small>${esc(trustText(t.text || ""))}</small></div></div>`).join("")}
+    ${partners.length ? `<div class="partners"><small>In collaboration with</small>${partners.map((p) => typeof p === "object" && p && ICON_FILE.test(String(p.logo || "")) ? `<img class="partner-logo" src="${esc(p.logo)}" alt="${esc(p.name || "")}">` : `<strong>${esc(typeof p === "object" && p ? p.name : p)}</strong>`).join("")}</div>` : ""}
     ${site.project || site.funding ? `<small class="credit project">${[site.project, site.funding].filter(Boolean).map(esc).join(" · ")}</small>` : ""}
     ${credit ? `<small class="credit">${esc(credit)}</small>` : ""}`;
 }
@@ -113,15 +116,15 @@ export function homeHtml(cat) {
   const outside = cards.length ? Object.entries(byType).filter(([t]) => !covered.has(t) && t !== cat.not_stated).reduce((s, [, n]) => s + n, 0) : 0;   // "outside these groups" needs groups
   const topics = [...(cat.facets_without_source || []).map((m) => ({ label: m.label, icon: m.icon || "♨", why: m.why })),
                   ...visibleFacets(cat).filter((f) => f.home).map((f) => ({ facet: f }))];
-  const values = (f) => f.values.length ? f.values.slice(0, 4).map((v) => v.value).join(", ") + (f.values.length > 4 ? ` and ${f.values.length - 4} more` : "") : "no values stated";
+  const values = (f) => f.values.length ? f.values.slice(0, 4).map((v) => v.value).join(", ") + (f.values.length > 4 ? ` and ${f.values.length - 4} more` : "") : "No values stated";
   const topicCard = (t, i) => t.facet
-    ? `<a class="topic-card ${TONES[i % TONES.length]}" href="#/resources"><span class="bubble" aria-hidden="true">${esc(t.facet.icon || ICONS[t.facet.concept] || "♧")}</span>
-        <span class="topic-body"><strong>${esc(t.facet.label)}</strong><small>${esc(values(t.facet))}</small></span><span class="card-arrow" aria-hidden="true">›</span></a>`
-    : `<a class="topic-card ${TONES[i % TONES.length]} unavailable" href="#/"><span class="bubble" aria-hidden="true">${esc(t.icon)}</span><span class="topic-body"><strong>${esc(t.label)}</strong><small>${esc(t.why)}</small></span><span class="sr">(not available yet)</span><span class="card-arrow" aria-hidden="true">›</span></a>`;
+    ? `<a class="topic-card ${TONES[i % TONES.length]}" href="#/resources"><span class="bubble" aria-hidden="true">${iconHtml(t.facet.icon || ICONS[t.facet.concept], "♧")}</span>
+        <span class="topic-body"><strong>${esc(t.facet.label)}</strong><small>${esc(values(t.facet))}</small></span>${arrowHtml(TONES[i % TONES.length])}</a>`
+    : `<a class="topic-card ${TONES[i % TONES.length]} unavailable" href="#/"><span class="bubble" aria-hidden="true">${iconHtml(t.icon)}</span><span class="topic-body"><strong>${esc(t.label)}</strong><small>${esc(t.why)}</small></span><span class="sr">(not available yet)</span>${arrowHtml(TONES[i % TONES.length])}</a>`;
   const metricCard = (c) => c.n
-    ? `<a class="metric ${esc(c.tone)}" href="${typesHref(c.types)}"><span class="bubble" aria-hidden="true">${esc(c.icon)}</span><b>${c.n}</b><span class="label">${esc(c.label)}</span></a>`
-    : `<span class="metric ${esc(c.tone)} zero" aria-disabled="true" title="no resource states this type"><span class="bubble" aria-hidden="true">${esc(c.icon)}</span><b>0</b><span class="label">${esc(c.label)}</span></span>`;
-  const from = coll.title || coll.pid ? `From the collection <b>${esc(coll.title || tail(coll.pid))}</b>${isHttp(coll.pid) ? ` (${link(coll.pid)})` : ""}: ` : "";
+    ? `<a class="metric ${esc(c.tone)}" href="${typesHref(c.types)}"><span class="bubble" aria-hidden="true">${iconHtml(c.icon)}</span><b>${c.n}</b><span class="label">${esc(c.label)}</span></a>`
+    : `<span class="metric ${esc(c.tone)} zero" aria-disabled="true" title="no resource states this type"><span class="bubble" aria-hidden="true">${iconHtml(c.icon)}</span><b>0</b><span class="label">${esc(c.label)}</span></span>`;
+  const from = (coll.title || coll.pid) && coll.title !== site.title ? `From the collection <b>${esc(coll.title || tail(coll.pid))}</b>${isHttp(coll.pid) ? ` (${link(coll.pid)})` : ""}: ` : "";
   const countLine = [`<a href="#/resources">${plural(cat.counts.usable, "resource")} in all</a>`,
                      notStated ? `<a href="${typesHref([cat.not_stated])}">${notStated} state no resource type</a>` : "",
                      outside ? `<a href="#/resources">${outside} state a type outside these groups</a>` : "",
@@ -129,8 +132,9 @@ export function homeHtml(cat) {
                      cat.counts.not_usable ? `${plural(cat.counts.not_usable, "resource")} of the collection cannot be shown; the list says why` : ""].filter(Boolean);
   const declared = cat.counts.usable - notStated;
   const filled = cards.filter((c) => c.n), empties = cards.filter((c) => !c.n);
-  const browse = declared > 0
-    ? `${filled.length ? `<div class="metric-grid">${filled.map(metricCard).join("")}</div>` : ""}<p class="count-line">${from}${countLine.join(" · ")}</p>${empties.length ? `<p class="count-line">No resource states the type: ${empties.map((c) => esc(c.label)).join(", ")}.</p>` : ""}`
+  const shown = declared > 0 ? filled : cat.counts.usable ? cards : [];
+  const browse = declared > 0 || shown.length
+    ? `${shown.length ? `<div class="metric-grid">${shown.map(metricCard).join("")}</div>` : ""}<p class="count-line">${from}${countLine.join(" · ")}</p>${declared > 0 && empties.length ? `<p class="count-line">No resource states the type: ${empties.map((c) => esc(c.label)).join(", ")}.</p>` : ""}`
     : `<div class="summary-box"><p class="summary"><b>${plural(cat.counts.usable, "resource")}</b>${cat.counts.usable ? ` · <a href="${typesHref([cat.not_stated])}">${notStated} without a declared type</a>` : ""}${cat.counts.not_usable ? ` · ${plural(cat.counts.not_usable, "resource")} cannot be shown` : ""}</p>
         <p class="dim small">${cat.counts.usable ? `No resource declares a resource type, so there are no counts by type: ${cards.length ? `the categories (${cards.map((c) => esc(c.label.toLowerCase())).join(", ")})` : "the count cards"} stay empty until a resource states one.` : esc(coll.explanation || "No resource of this collection can be shown.")}</p>
         ${cat.counts.usable ? `<a class="pill-btn" href="#/resources">Browse the resources</a>` : ""}</div>`;
@@ -139,16 +143,16 @@ export function homeHtml(cat) {
       <h1>${highlight(hero.heading || site.title || "FDO Knowledge Dashboard", hero.highlight)}</h1>
       ${hero.lead ? `<p class="lead">${esc(hero.lead)}</p>` : ""}
       <form class="ask-form" id="homeSearch" role="search">
-        <span class="ask-spark" aria-hidden="true">✦</span>
+        <span class="ask-spark" aria-hidden="true"><img class="icon-img" src="assets/icons/ask-sparkle.png" alt=""></span>
         <label class="sr" for="homeQ">${asks ? "Ask a question or search the resources" : "Search the resources"}</label>
         <input id="homeQ" type="search" placeholder="${esc(asks ? (qa.placeholder || "Ask a question…") : "Search the resources…")}" autocomplete="off"/>
-        <button type="submit" aria-label="${asks ? "Ask" : "Search"}">→</button>
+        <button type="submit" aria-label="${asks ? "Ask" : "Search"}"><img class="icon-img" src="assets/icons/ask-send.png" alt=""></button>
       </form>
     </section>
-    <section class="home-section"><h2><span class="section-symbol" aria-hidden="true">♧</span>Explore resources by topic</h2>
+    <section class="home-section"><h2><span class="section-symbol" aria-hidden="true"><img class="icon-img" src="assets/icons/explore.png" alt=""></span>Explore resources by topic</h2>
       <div class="topic-grid">${topics.map(topicCard).join("")}</div>
     </section>
-    <section class="home-section"><h2><span class="section-symbol" aria-hidden="true">▥</span>Browse our resources</h2>
+    <section class="home-section"><h2><span class="section-symbol" aria-hidden="true"><img class="icon-img" src="assets/icons/browse.png" alt=""></span>Browse our resources</h2>
       ${browse}
       ${coll.explanation && declared > 0 ? `<p class="state">${esc(coll.explanation)}</p>` : ""}
     </section>`;
@@ -284,7 +288,7 @@ export function listHtml(cat, st, shown, counts, openFacet, moreOpen, found = nu
     ${found?.refreshed ? `<p class="notice">${REFRESHED_NOTE}</p>` : ""}
     ${cat.rows.length && cat.collection.explanation ? `<p class="notice">${esc(cat.collection.explanation)}</p>` : ""}
     <div class="box filter-box" role="region" aria-label="Filters">
-      <h2><span class="section-symbol" aria-hidden="true">♧</span>Filter</h2>
+      <h2><span class="section-symbol" aria-hidden="true"><img class="icon-img" src="assets/icons/explore.png" alt=""></span>Filter by topic</h2>
       <form class="search" id="searchForm" role="search">
         <label class="sr" for="q">Search the collection</label>
         <input id="q" type="search" value="${esc(st.q)}" placeholder="Search titles, descriptions, keywords, authors and claims…" autocomplete="off"/>
@@ -414,14 +418,14 @@ function facetHtml(f, st, counts, openFacet, tone) {
     return `<li><button type="button" class="facet-value${on ? " on" : ""}${dead ? " dim" : ""}" id="f-${esc(f.id)}-${vi}" data-facet="${esc(f.id)}" data-value="${esc(v.value)}" aria-pressed="${on}"${dead ? ' aria-disabled="true"' : ""}>
       <span>${esc(v.value)}</span><i aria-hidden="true">${on ? "✕" : n}</i><span class="sr">${on ? ", selected, remove" : `, ${plural(n, "resource")}`}</span></button></li>`;
   }).join("");
-  return `<details class="facet ${tone}" data-facet="${esc(f.id)}"${openFacet === f.id ? " open" : ""}><summary>${f.icon ? `<span class="pill-ico" aria-hidden="true">${esc(f.icon)}</span>` : ""}${esc(f.label)}${selected ? ` <b aria-hidden="true">${selected}</b><span class="sr">, ${selected} selected</span>` : ""}</summary>
+  return `<details class="facet ${tone}" data-facet="${esc(f.id)}"${openFacet === f.id ? " open" : ""}><summary>${f.icon ? `<span class="pill-ico" aria-hidden="true">${iconHtml(f.icon)}</span>` : ""}${esc(f.label)}${selected ? ` <b aria-hidden="true">${selected}</b><span class="sr">, ${selected} selected</span>` : ""}</summary>
     <ul class="facet-list">${items || `<li class="dim small">no values stated</li>`}</ul></details>`;
 }
 
 // A control of the design whose values no record states yet: it opens to say so, it filters nothing.
 function unavailableFacetHtml(m, i, openFacet, tone) {
   const id = `na-${i}`;
-  return `<details class="facet unavailable ${tone}" data-facet="${id}"${openFacet === id ? " open" : ""}><summary><span class="pill-ico" aria-hidden="true">${esc(m.icon || "♨")}</span>${esc(m.label)}<span class="sr">, not available yet</span></summary>
+  return `<details class="facet unavailable ${tone}" data-facet="${id}"${openFacet === id ? " open" : ""}><summary><span class="pill-ico" aria-hidden="true">${iconHtml(m.icon, "♨")}</span>${esc(m.label)}<span class="sr">, not available yet</span></summary>
     <ul class="facet-list"><li class="dim small">${esc(m.why)}</li></ul></details>`;
 }
 

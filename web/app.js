@@ -160,7 +160,7 @@ async function draw() {
   const site = catalog.site || {};
   document.title = PAGE_NAMES[r.page] ? `${PAGE_NAMES[r.page]} – ${site.title || "FDO Knowledge Dashboard"}` : (site.title || "FDO Knowledge Dashboard");
   document.body.dataset.page = r.page;
-  if (embedded) { $("embed").innerHTML = embedStripHtml(catalog, fullSiteHref(location)); $("embed").hidden = false; }
+  if (embedded) ($("embed") || $("notice").insertAdjacentElement("afterend", Object.assign(document.createElement("p"), { className: "embed-strip", id: "embed" }))).innerHTML = embedStripHtml(catalog, fullSiteHref(location));
   document.querySelectorAll("#nav a[data-page]").forEach((a) => {
     const current = a.dataset.page === r.page || (a.dataset.page === "list" && r.page === "resource");
     current ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current");
